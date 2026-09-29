@@ -31,7 +31,7 @@ const rules = [
   },
   { files: domain, code: true, re: /fixtures|golden|readFileSync|require\(['"][^'"]+\.json['"]\)/, msg: 'domain code must not read fixtures' },
   { files: unitTests, re: /\b(test|it|describe)\.(skip|only|todo)\b|\bx(it|test|describe)\s*\(|\bf(it|describe)\s*\(/, msg: 'skipped or focused test' },
-  { files: phpTests, re: /markTestIncomplete|markTestSkipped/, msg: 'incomplete or skipped PHPUnit test (use requireMode() for mode-specific tests)' },
+  { files: phpTests, code: true, re: /markTestIncomplete|markTestSkipped/, msg: 'incomplete or skipped PHPUnit test (use requireMode() for mode-specific tests)' },
 ];
 
 const problems = [];
