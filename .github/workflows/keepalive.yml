@@ -1,0 +1,18 @@
+name: Keep demo awake
+
+# Render's free plan sleeps after 15 idle minutes; ping the live demo so judges never hit a cold start.
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Ping /health
+        run: curl -fsS --retry 5 --retry-delay 10 --max-time 90 https://cleancart-api.onrender.com/health

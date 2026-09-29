@@ -41,19 +41,21 @@
 
 ## **1\. Project Details (Max 100 words)**
 
-"We used Bob to modernize the notoriously tangled osCommerce platform. Historically, osCommerce suffers from 'spaghetti code' where UI, database queries, and business logic are fused into single files. We isolated the critical, legacy checkout module and used Bob to extract the core pricing algorithms without breaking them. We then transformed this logic into a secure, decoupled, and fully test-covered Node.js REST API. By generating automated tests and modern architecture, we proved that legacy enterprises can modernize mission-critical systems securely and efficiently using AI."
+"CleanCart modernizes the checkout math of osCommerce v2.3.4, a 20-year-old PHP shop where pricing, SQL and HTML share the same files. We first recorded the untouched PHP's outputs (2,296 cases) as golden fixtures, then used IBM Bob in four locked-down custom modes for 11 tasks: documenting 28 business rules and 10 quirks, pinning them with PHPUnit, translating the logic into 14 pure JavaScript modules, and writing 170 unit tests. The result is a stateless Node.js REST API on Render that reproduces the legacy results exactly, bugs included, proven by 3,118 tests, a random hold-out set and a live equivalence endpoint."
 
+* **Team:** I-will-win (Mario, solo)  
 * **Selected Track:** Modernize what matters  
-* **Tech Stack Used:** Legacy PHP (Baseline), Node.js, Express.js, Jest (Testing), Swagger (API Documentation), Render (Deployment), IBM Bob (AI Coding Assistant).
+* **Tech Stack Used:** IBM Bob (4 custom modes, 11 tasks), osCommerce v2.3.4 PHP run on PHP 7.4 via WebAssembly, PHPUnit 9, Node.js 24, Express 4, OpenAPI 3 + Swagger UI, Jest, ESLint, GitHub Actions, Render. Claude Code was used for the scaffolding and guardrails (see the README's "How this was built").
 
 ## **2\. Improvements Made**
 
-"We started with the legacy open-source osCommerce v2.3 codebase."
+"We started from the unmodified open-source osCommerce v2.3.4 codebase (kept in `legacy-baseline/`)."
 
-* **Decoupling:** We removed the tightly coupled HTML/UI code from the core shopping cart business logic.  
-* **Language Migration:** We translated the outdated, unstructured PHP logic into a modern, modular Node.js API.  
-* **Test Coverage:** The original code had zero automated tests. We used Bob to generate a 100% test-covered suite for the cart math to mathematically prove our modernization didn't disrupt core functionality.  
-* **API Enablement:** The cart logic is now accessible via REST API, allowing it to be integrated with modern web or mobile frontends.
+* **Decoupling:** The checkout pricing logic now lives in pure functions with no HTML, SQL, session or global state.  
+* **Language Migration:** Bob translated the PHP pricing logic (tax, currency, cart, order, shipping, order totals) into 14 modular Node.js modules.  
+* **Test Coverage:** The osCommerce checkout had no automated tests. There are now PHPUnit characterization tests on the legacy PHP and 3,118 Jest tests, with 100% line and branch coverage of the translated modules.  
+* **Proven equivalence:** Every result matches 2,296 outputs recorded from the untouched PHP, exactly and with its 10 documented quirks, plus a freshly generated random hold-out set on every CI run.  
+* **API Enablement:** The cart and checkout math is available as a documented REST API (OpenAPI + Swagger UI), deployed on Render, for modern web or mobile frontends.
 
 ## **3\. Pitch Deck Outline (PDF Structure)**
 

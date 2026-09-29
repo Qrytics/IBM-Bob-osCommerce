@@ -1,10 +1,16 @@
 # CleanCart: modernizing osCommerce with IBM Bob
 
-I used Bob to modernize osCommerce's tangled legacy checkout module. I extracted its core pricing logic
-and turned it into a secure, decoupled Node.js REST API with automated test coverage, showing how AI can
-help modernize mission-critical legacy systems safely and efficiently.
+I used IBM Bob to modernize the checkout math of osCommerce v2.3.4, where pricing, SQL and HTML share the same
+PHP files. Bob analyzed the legacy code, pinned its behavior with PHPUnit, translated it into a decoupled
+Node.js REST API and wrote the unit tests. The API reproduces the legacy results exactly, bugs included, and
+that is proven against 2,296 outputs recorded from the untouched PHP.
+
+**Team:** I-will-win (Mario, solo) · **Track:** Modernize what matters
 
 **Live demo:** [cleancart-api.onrender.com](https://cleancart-api.onrender.com) · [Swagger UI](https://cleancart-api.onrender.com/docs/) · [live equivalence report](https://cleancart-api.onrender.com/api/v1/equivalence)
+
+> The demo runs on Render's free plan. If it has been idle, the first request can take 30–60 seconds while the
+> instance wakes up; after that it responds instantly. A scheduled GitHub Action pings `/health` to keep it awake.
 
 ## The idea in one picture
 
@@ -88,6 +94,40 @@ See [`BOB_TASKS.md`](BOB_TASKS.md) for the 11 tasks and exact prompts, and
 [`docs/bob-sessions/`](docs/bob-sessions/) for the transcripts. Bob works in four project modes
 ([`.bob/custom_modes.yaml`](.bob/custom_modes.yaml)). Each mode can only edit the files of its task, and
 everything else is protected by a SHA-256 manifest checked in CI.
+
+| Mode | Tasks | What Bob produced |
+|---|---|---|
+| 📖 Analyst | T1, T10 | 28 business rules, 10 legacy quirks, legacy and modern architecture docs |
+| 🧪 Legacy Tester | T2 | PHPUnit characterization tests on the real legacy PHP, in both tax-display modes |
+| 🔁 Translator | T3–T9 | the 14 domain modules in `api/src/domain/`: every line of the translated business logic |
+| ✅ Unit Tester | T11 | 170 Jest unit tests naming BR-01..BR-28, 100% coverage of the translated files |
+
+## How this was built (AI tools used)
+
+Two AI tools were used, with a deliberate split:
+
+- **IBM Bob did the modernization itself:** the analysis and documentation, the legacy baseline tests, the
+  translation of the business logic, and the unit tests (the table above). Its sessions are in
+  [`docs/bob-sessions/`](docs/bob-sessions/).
+- **Claude Code prepared the safety net before Bob started:** the unmodified legacy baseline, the PHP 7.4
+  WebAssembly harness, the golden fixtures recorded from it, the API scaffolding (HTTP layer, data access,
+  stubbed domain functions), the equivalence checks, the guardrails (Bob modes, protected-file manifest,
+  integrity and lint rules), the demo UI, CI and deployment. It also committed and pushed the work, which is why
+  "Claude" appears as a co-author on commits, including the one that holds Bob's T1–T11 output.
+
+The split was on purpose: the oracle and the guardrails that judge the AI's work should not be written by the AI
+being judged. When Bob hit a genuine bug in those guardrails during T11 (an integrity rule that flagged a comment),
+it stopped and reported it instead of working around it; the fix is commit `528a533`.
+
+## Tech stack
+
+| Layer | Tools |
+|---|---|
+| AI | IBM Bob (4 custom modes, 11 tasks); Claude Code for scaffolding and guardrails |
+| Legacy baseline | osCommerce Online Merchant v2.3.4 (PHP), run on PHP 7.4 via WebAssembly (`@php-wasm/cli`), PHPUnit 9 |
+| Modern API | Node.js 24, Express 4, OpenAPI 3 with Swagger UI (`swagger-ui-express`), plain-JS demo UI |
+| Quality | Jest (unit, equivalence, API tests), ESLint (incl. anti-lookup-table rules), SHA-256 protected-file manifest |
+| Delivery | GitHub Actions (CI and keep-alive), Render (Blueprint in `render.yaml`) |
 
 ## Maintainers
 
