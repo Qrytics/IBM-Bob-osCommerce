@@ -1,0 +1,16 @@
+# Render Blueprint: New → Blueprint → select this repository.
+services:
+  - type: web
+    name: cleancart-api
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm ci --omit=dev --ignore-scripts
+    startCommand: node api/src/server.js
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: '24'
+      - key: NODE_ENV
+        value: production

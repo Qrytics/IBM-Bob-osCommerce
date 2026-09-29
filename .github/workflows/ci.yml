@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  protected:
+    name: Protected files unchanged
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Independent of scripts/protect.mjs, so a tampered script cannot hide changes.
+      - name: Verify SHA-256 manifest
+        run: shasum -a 256 --quiet -c scripts/protected.sha256
+
+  node:
+    name: API (lint, tests, coverage)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run check:protected
+      - run: npm run lint
+      - run: npm run check:integrity
+      - run: npm run status
+        continue-on-error: true
+      - run: npm run check:docs
+      - run: npm run test:coverage -w api
+
+  legacy:
+    name: Legacy PHP (golden fixtures, PHPUnit, hold-out)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          coverage: none
+      - run: npm ci
+      - name: Golden fixtures reproduce from the unmodified legacy PHP
+        run: npm run golden:verify
+        env: { PHP_BIN: php }
+      - name: PHPUnit characterization tests (both DISPLAY_PRICE_WITH_TAX modes)
+        run: npm run legacy:test
+        env: { PHP_BIN: php }
+      - name: Fresh random hold-out set
+        run: npm run holdout -- --seed ${{ github.run_id }}
+        env: { PHP_BIN: php }
