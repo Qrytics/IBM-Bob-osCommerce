@@ -1,0 +1,185 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-001",
+    "description": "Randomly generated scenario (seed 20260929, #1).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "JPY",
+      "shippingBox": {
+        "weight": "3",
+        "padding": "10",
+        "maxWeight": "100"
+      },
+      "freeShipping": {
+        "enabled": true,
+        "over": "250",
+        "destination": "international"
+      }
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 81
+    },
+    "shipping": {
+      "module": "item",
+      "taxClassId": 0,
+      "cost": "2.54",
+      "handling": "1.81"
+    },
+    "items": [
+      {
+        "productId": 4,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 16,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "72",
+      "weight": "30",
+      "count": 2
+    },
+    "shipment": {
+      "shippingWeight": "33",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "item",
+      "module": "Per Item",
+      "methods": [
+        {
+          "id": "item",
+          "title": "Best Way",
+          "cost": "6.89"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "item_item",
+      "title": "Per Item (Best Way)",
+      "cost": "6.89"
+    },
+    "products": [
+      {
+        "id": "4",
+        "qty": 1,
+        "name": "The Replacement Killers",
+        "model": "DVD-RPMK",
+        "price": "42",
+        "finalPrice": "42",
+        "weight": "23",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      },
+      {
+        "id": "16",
+        "qty": 1,
+        "name": "Courage Under Fire",
+        "model": "DVD-CUFI",
+        "price": "29.99",
+        "finalPrice": "29.99",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "72",
+      "tax": "5.04",
+      "taxGroups": [
+        {
+          "description": "MwSt 7%",
+          "amount": "5.04"
+        }
+      ],
+      "total": "77.04"
+    },
+    "orderBeforeTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "6.89",
+      "subtotal": "72",
+      "tax": "5.04",
+      "taxGroups": [
+        {
+          "description": "MwSt 7%",
+          "amount": "5.04"
+        }
+      ],
+      "total": "83.93"
+    },
+    "orderAfterTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "6.89",
+      "subtotal": "72",
+      "tax": "5.04",
+      "taxGroups": [
+        {
+          "description": "MwSt 7%",
+          "amount": "5.04"
+        }
+      ],
+      "total": "83.93"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "¥10,745",
+        "value": "72",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Per Item (Best Way):",
+        "text": "¥1,028",
+        "value": "6.89",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 7%:",
+        "text": "¥752",
+        "value": "5.04",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>¥12,525</strong>",
+        "value": "83.93",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "item_item",
+        "title": "Per Item (Best Way)",
+        "cost": 6.890000000000001
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-020",
+    "description": "Randomly generated scenario (seed 20260929, #20).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "USD",
+      "shippingBox": {
+        "weight": "5",
+        "padding": "0",
+        "maxWeight": "50"
+      }
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 79
+    },
+    "shipping": {
+      "module": "item",
+      "taxClassId": 1,
+      "cost": "2.91",
+      "handling": "1.39"
+    },
+    "items": [
+      {
+        "productId": 27,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "534.99",
+      "weight": "45",
+      "count": 1
+    },
+    "shipment": {
+      "shippingWeight": "50",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "item",
+      "module": "Per Item",
+      "methods": [
+        {
+          "id": "item",
+          "title": "Best Way",
+          "cost": "4.3"
+        }
+      ],
+      "tax": "19"
+    },
+    "selectedShipping": {
+      "id": "item_item",
+      "title": "Per Item (Best Way)",
+      "cost": "4.3"
+    },
+    "products": [
+      {
+        "id": "27",
+        "qty": 1,
+        "name": "Hewlett Packard LaserJet 1100Xi",
+        "model": "HPLJ1100XI",
+        "price": "499.99",
+        "finalPrice": "499.99",
+        "weight": "45",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "594.99",
+      "tax": "94.998403361345",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "94.998403361345"
+        }
+      ],
+      "total": "594.99"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "4.3",
+      "subtotal": "594.99",
+      "tax": "94.998403361345",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "94.998403361345"
+        }
+      ],
+      "total": "599.29"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "5.117",
+      "subtotal": "594.99",
+      "tax": "95.815403361345",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "95.815403361345"
+        }
+      ],
+      "total": "600.107"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$594.99",
+        "value": "594.99",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Per Item (Best Way):",
+        "text": "$5.12",
+        "value": "5.117",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "$95.82",
+        "value": "95.815403361345",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$600.11</strong>",
+        "value": "600.107",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "item_item",
+        "title": "Per Item (Best Way)",
+        "cost": 4.3
+      }
+    }
+  }
+}

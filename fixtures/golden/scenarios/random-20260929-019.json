@@ -1,0 +1,191 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-019",
+    "description": "Randomly generated scenario (seed 20260929, #19).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "USD",
+      "shippingBox": {
+        "weight": "3",
+        "padding": "25",
+        "maxWeight": "20"
+      }
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 43
+    },
+    "shipping": {
+      "module": "flat",
+      "taxClassId": 3,
+      "cost": "2.02"
+    },
+    "items": [
+      {
+        "productId": 31,
+        "qty": 5,
+        "attributes": []
+      },
+      {
+        "productId": 27,
+        "qty": 12,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "6494.88",
+      "weight": "550",
+      "count": 17
+    },
+    "shipment": {
+      "shippingWeight": "19.642857142857",
+      "numBoxes": 35
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "2.02"
+        }
+      ],
+      "tax": "0"
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "2.02"
+    },
+    "products": [
+      {
+        "id": "31",
+        "qty": 5,
+        "name": "Gift Wrap (untaxed)",
+        "model": "TAXFREE",
+        "price": "15",
+        "finalPrice": "15",
+        "weight": "2",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "27",
+        "qty": 12,
+        "name": "Hewlett Packard LaserJet 1100Xi",
+        "model": "HPLJ1100XI",
+        "price": "499.99",
+        "finalPrice": "499.99",
+        "weight": "45",
+        "tax": "8.5",
+        "taxDescription": "NY State 4% + NYC 4.5%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "6584.88",
+      "tax": "509.99059907834",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "NY State 4% + NYC 4.5%",
+          "amount": "509.99059907834"
+        }
+      ],
+      "total": "6584.88"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "2.02",
+      "subtotal": "6584.88",
+      "tax": "509.99059907834",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "NY State 4% + NYC 4.5%",
+          "amount": "509.99059907834"
+        }
+      ],
+      "total": "6586.9"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "2.02",
+      "subtotal": "6584.88",
+      "tax": "509.99059907834",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "NY State 4% + NYC 4.5%",
+          "amount": "509.99059907834"
+        }
+      ],
+      "total": "6586.9"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$6,584.88",
+        "value": "6584.88",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$2.02",
+        "value": "2.02",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "NY State 4% + NYC 4.5%:",
+        "text": "$509.99",
+        "value": "509.99059907834",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$6,586.90</strong>",
+        "value": "6586.9",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "2.02"
+      }
+    }
+  }
+}

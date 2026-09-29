@@ -1,0 +1,236 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-015",
+    "description": "Randomly generated scenario (seed 20260929, #15).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "JPY",
+      "shippingBox": {
+        "weight": "5",
+        "padding": "10",
+        "maxWeight": "50"
+      }
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 18
+    },
+    "shipping": {
+      "module": "flat",
+      "taxClassId": 0,
+      "cost": "19.69"
+    },
+    "items": [
+      {
+        "productId": 1,
+        "qty": 3,
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 1
+          }
+        ]
+      },
+      {
+        "productId": 2,
+        "qty": 7,
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 7
+          },
+          {
+            "optionId": 4,
+            "valueId": 3
+          }
+        ]
+      },
+      {
+        "productId": 22,
+        "qty": 5,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "6007",
+      "weight": "265",
+      "count": 15
+    },
+    "shipment": {
+      "shippingWeight": "48.583333333333",
+      "numBoxes": 6
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "19.69"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "19.69"
+    },
+    "products": [
+      {
+        "id": "1{4}1",
+        "qty": 3,
+        "name": "Matrox G200 MMS",
+        "model": "MG200MMS",
+        "price": "299.99",
+        "finalPrice": "299.99",
+        "weight": "23",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 1,
+            "optionName": "Memory",
+            "valueName": "4 mb",
+            "prefix": "+",
+            "price": "0"
+          }
+        ]
+      },
+      {
+        "id": "2{3}7{4}3",
+        "qty": 7,
+        "name": "Matrox G400 32MB",
+        "model": "MG400-32MB",
+        "price": "499.99",
+        "finalPrice": "609.99",
+        "weight": "23",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 7,
+            "optionName": "Model",
+            "valueName": "Deluxe",
+            "prefix": "+",
+            "price": "120"
+          },
+          {
+            "optionId": 4,
+            "valueId": 3,
+            "optionName": "Memory",
+            "valueName": "16 mb",
+            "prefix": "-",
+            "price": "10"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "qty": 5,
+        "name": "Unreal Tournament",
+        "model": "PC-UNTM",
+        "price": "89.99",
+        "finalPrice": "89.99",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "6014",
+      "tax": "393.43925233645",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "393.43925233645"
+        }
+      ],
+      "total": "6014"
+    },
+    "orderBeforeTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "19.69",
+      "subtotal": "6014",
+      "tax": "393.43925233645",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "393.43925233645"
+        }
+      ],
+      "total": "6033.69"
+    },
+    "orderAfterTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "19.69",
+      "subtotal": "6014",
+      "tax": "393.43925233645",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "393.43925233645"
+        }
+      ],
+      "total": "6033.69"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "¥897,469",
+        "value": "6014",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "¥2,938",
+        "value": "19.69",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "FL TAX 7.0%:",
+        "text": "¥58,713",
+        "value": "393.43925233645",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>¥900,408</strong>",
+        "value": "6033.69",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "19.69"
+      }
+    }
+  }
+}

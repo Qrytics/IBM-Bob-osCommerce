@@ -1,0 +1,116 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "us-fl-empty-cart",
+    "description": "Empty cart: only shipping is charged.",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD"
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 18
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "5.00",
+      "taxClassId": 0
+    },
+    "items": []
+  },
+  "expected": {
+    "cart": {
+      "total": "0",
+      "weight": "0",
+      "count": 0
+    },
+    "shipment": {
+      "shippingWeight": "3",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "5"
+    },
+    "products": [],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "0",
+      "tax": "0",
+      "taxGroups": [],
+      "total": "0"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "0",
+      "tax": "0",
+      "taxGroups": [],
+      "total": "5"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "0",
+      "tax": "0",
+      "taxGroups": [],
+      "total": "5"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$0.00",
+        "value": "0",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$5.00",
+        "value": "5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$5.00</strong>",
+        "value": "5",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "5.00"
+      }
+    }
+  }
+}

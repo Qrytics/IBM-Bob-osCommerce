@@ -1,0 +1,236 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-003",
+    "description": "Randomly generated scenario (seed 20260929, #3).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD",
+      "shippingBox": {
+        "weight": "0",
+        "padding": "0",
+        "maxWeight": "20"
+      }
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 76
+    },
+    "shipping": {
+      "module": "table",
+      "taxClassId": 0,
+      "mode": "price",
+      "table": "10:4.99,30:9.99,100:19.99,99999:49.99",
+      "handling": "1.50"
+    },
+    "items": [
+      {
+        "productId": 22,
+        "qty": 7,
+        "attributes": []
+      },
+      {
+        "productId": 7,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 2,
+        "qty": 2,
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 3
+          },
+          {
+            "optionId": 3,
+            "valueId": 6
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "1629.9",
+      "weight": "102",
+      "count": 10
+    },
+    "shipment": {
+      "shippingWeight": "17",
+      "numBoxes": 6
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "table",
+      "module": "Table Rate",
+      "methods": [
+        {
+          "id": "table",
+          "title": "Best Way",
+          "cost": "51.49"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "table_table",
+      "title": "Table Rate (Best Way)",
+      "cost": "51.49"
+    },
+    "products": [
+      {
+        "id": "22",
+        "qty": 7,
+        "name": "Unreal Tournament",
+        "model": "PC-UNTM",
+        "price": "89.99",
+        "finalPrice": "89.99",
+        "weight": "7",
+        "tax": "15.47375",
+        "taxDescription": "GST 5% + QST 9.975%",
+        "attributes": []
+      },
+      {
+        "id": "7",
+        "qty": 1,
+        "name": "You've Got Mail",
+        "model": "DVD-YGEM",
+        "price": "19.99",
+        "finalPrice": "19.99",
+        "weight": "7",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "2{4}3{3}6",
+        "qty": 2,
+        "name": "Matrox G400 32MB",
+        "model": "MG400-32MB",
+        "price": "499.99",
+        "finalPrice": "489.99",
+        "weight": "23",
+        "tax": "15.47375",
+        "taxDescription": "GST 5% + QST 9.975%",
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 3,
+            "optionName": "Memory",
+            "valueName": "16 mb",
+            "prefix": "-",
+            "price": "10"
+          },
+          {
+            "optionId": 3,
+            "valueId": 6,
+            "optionName": "Model",
+            "valueName": "Premium",
+            "prefix": "+",
+            "price": "0"
+          }
+        ]
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "1629.9",
+      "tax": "249.113448625",
+      "taxGroups": [
+        {
+          "description": "GST 5% + QST 9.975%",
+          "amount": "249.113448625"
+        },
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "1879.013448625"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "51.49",
+      "subtotal": "1629.9",
+      "tax": "249.113448625",
+      "taxGroups": [
+        {
+          "description": "GST 5% + QST 9.975%",
+          "amount": "249.113448625"
+        },
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "1930.503448625"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "51.49",
+      "subtotal": "1629.9",
+      "tax": "249.113448625",
+      "taxGroups": [
+        {
+          "description": "GST 5% + QST 9.975%",
+          "amount": "249.113448625"
+        },
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "1930.503448625"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$1,629.90",
+        "value": "1629.9",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Table Rate (Best Way):",
+        "text": "$51.49",
+        "value": "51.49",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "GST 5% + QST 9.975%:",
+        "text": "$249.11",
+        "value": "249.113448625",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$1,930.50</strong>",
+        "value": "1930.503448625",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "table_table",
+        "title": "Table Rate (Best Way)",
+        "cost": 51.49
+      }
+    }
+  }
+}

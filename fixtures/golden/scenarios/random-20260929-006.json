@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-006",
+    "description": "Randomly generated scenario (seed 20260929, #6).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "EUR",
+      "shippingBox": {
+        "weight": "5",
+        "padding": "0",
+        "maxWeight": "20"
+      }
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 81
+    },
+    "shipping": {
+      "module": "table",
+      "taxClassId": 0,
+      "mode": "price",
+      "table": "25:8.50,50:5.50,10000:0.00",
+      "handling": "1.50"
+    },
+    "items": [
+      {
+        "productId": 22,
+        "qty": 3,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "288.87",
+      "weight": "21",
+      "count": 3
+    },
+    "shipment": {
+      "shippingWeight": "13",
+      "numBoxes": 2
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "table",
+      "module": "Table Rate",
+      "methods": [
+        {
+          "id": "table",
+          "title": "Best Way",
+          "cost": "1.5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "table_table",
+      "title": "Table Rate (Best Way)",
+      "cost": "1.5"
+    },
+    "products": [
+      {
+        "id": "22",
+        "qty": 3,
+        "name": "Unreal Tournament",
+        "model": "PC-UNTM",
+        "price": "89.99",
+        "finalPrice": "89.99",
+        "weight": "7",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "321.27",
+      "tax": "51.295210084034",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "51.295210084034"
+        }
+      ],
+      "total": "321.27"
+    },
+    "orderBeforeTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "1.5",
+      "subtotal": "321.27",
+      "tax": "51.295210084034",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "51.295210084034"
+        }
+      ],
+      "total": "322.77"
+    },
+    "orderAfterTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "1.5",
+      "subtotal": "321.27",
+      "tax": "51.295210084034",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "51.295210084034"
+        }
+      ],
+      "total": "322.77"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "284,97€",
+        "value": "321.27",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Table Rate (Best Way):",
+        "text": "1,33€",
+        "value": "1.5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "45,50€",
+        "value": "51.295210084034",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>286,30€</strong>",
+        "value": "322.77",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "table_table",
+        "title": "Table Rate (Best Way)",
+        "cost": 1.5
+      }
+    }
+  }
+}

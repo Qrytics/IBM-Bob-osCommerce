@@ -1,0 +1,43 @@
+{
+  "name": "ca-free-shipping-international",
+  "description": "Free shipping for international orders; a Canadian order qualifies.",
+  "settings": {
+    "displayPriceWithTax": false,
+    "currency": "USD",
+    "freeShipping": {
+      "enabled": true,
+      "over": "50",
+      "destination": "international"
+    }
+  },
+  "delivery": {
+    "countryId": 38,
+    "zoneId": 74
+  },
+  "shipping": {
+    "module": "flat",
+    "cost": "5.00",
+    "taxClassId": 0
+  },
+  "items": [
+    {
+      "productId": 1,
+      "qty": 2,
+      "attributes": [
+        {
+          "optionId": 4,
+          "valueId": 2
+        },
+        {
+          "optionId": 3,
+          "valueId": 6
+        }
+      ]
+    },
+    {
+      "productId": 3,
+      "qty": 1,
+      "attributes": []
+    }
+  ]
+}

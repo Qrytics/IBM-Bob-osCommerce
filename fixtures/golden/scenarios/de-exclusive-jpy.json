@@ -1,0 +1,193 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "de-exclusive-jpy",
+    "description": "JPY has 0 decimal places: tep_round() to 0 digits.",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "JPY"
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 81
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "4.90",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 29,
+        "qty": 3,
+        "attributes": []
+      },
+      {
+        "productId": 6,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "60",
+      "weight": "8.5",
+      "count": 4
+    },
+    "shipment": {
+      "shippingWeight": "11.5",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "4.9"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "4.9"
+    },
+    "products": [
+      {
+        "id": "29",
+        "qty": 3,
+        "name": "Half-Cent Widget",
+        "model": "HALFCENT",
+        "price": "10.005",
+        "finalPrice": "10.005",
+        "weight": "0.5",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": []
+      },
+      {
+        "id": "6",
+        "qty": 1,
+        "name": "The Matrix",
+        "model": "DVD-MATR",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "60",
+      "tax": "7.8",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "5.7"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "2.1"
+        }
+      ],
+      "total": "67.8"
+    },
+    "orderBeforeTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "4.9",
+      "subtotal": "60",
+      "tax": "7.8",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "5.7"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "2.1"
+        }
+      ],
+      "total": "72.7"
+    },
+    "orderAfterTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "4.9",
+      "subtotal": "60",
+      "tax": "7.8",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "5.7"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "2.1"
+        }
+      ],
+      "total": "72.7"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "¥8,954",
+        "value": "60",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "¥731",
+        "value": "4.9",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "¥851",
+        "value": "5.7",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 7%:",
+        "text": "¥313",
+        "value": "2.1",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>¥10,849</strong>",
+        "value": "72.7",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "4.90"
+      }
+    }
+  }
+}

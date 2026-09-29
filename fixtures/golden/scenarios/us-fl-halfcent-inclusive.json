@@ -1,0 +1,174 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "us-fl-halfcent-inclusive",
+    "description": "Half-cent prices with tax included: tax is added, then rounded per unit, then multiplied.",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "USD"
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 18
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "5.00",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 29,
+        "qty": 7,
+        "attributes": []
+      },
+      {
+        "productId": 30,
+        "qty": 7,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "224.7",
+      "weight": "12.25",
+      "count": 14
+    },
+    "shipment": {
+      "shippingWeight": "15.25",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "5"
+    },
+    "products": [
+      {
+        "id": "29",
+        "qty": 7,
+        "name": "Half-Cent Widget",
+        "model": "HALFCENT",
+        "price": "10.005",
+        "finalPrice": "10.005",
+        "weight": "0.5",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": []
+      },
+      {
+        "id": "30",
+        "qty": 7,
+        "name": "Precision Gizmo",
+        "model": "PRECISION",
+        "price": "19.995",
+        "finalPrice": "19.995",
+        "weight": "1.25",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "224.7",
+      "tax": "14.7",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "14.7"
+        }
+      ],
+      "total": "224.7"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "224.7",
+      "tax": "14.7",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "14.7"
+        }
+      ],
+      "total": "229.7"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "224.7",
+      "tax": "14.7",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "14.7"
+        }
+      ],
+      "total": "229.7"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$224.70",
+        "value": "224.7",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$5.00",
+        "value": "5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "FL TAX 7.0%:",
+        "text": "$14.70",
+        "value": "14.7",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$229.70</strong>",
+        "value": "229.7",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "5.00"
+      }
+    }
+  }
+}

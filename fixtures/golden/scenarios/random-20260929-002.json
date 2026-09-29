@@ -1,0 +1,232 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-002",
+    "description": "Randomly generated scenario (seed 20260929, #2).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "JPY",
+      "shippingBox": {
+        "weight": "5",
+        "padding": "10",
+        "maxWeight": "50"
+      },
+      "freeShipping": {
+        "enabled": true,
+        "over": "100",
+        "destination": "international"
+      }
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 79
+    },
+    "shipping": {
+      "module": "flat",
+      "taxClassId": 0,
+      "cost": "11.84"
+    },
+    "items": [
+      {
+        "productId": 22,
+        "qty": 5,
+        "attributes": []
+      },
+      {
+        "productId": 26,
+        "qty": 7,
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 8
+          }
+        ]
+      },
+      {
+        "productId": 27,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 28,
+        "qty": 25,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "21548",
+      "weight": "161",
+      "count": 38
+    },
+    "shipment": {
+      "shippingWeight": "44.275",
+      "numBoxes": 4
+    },
+    "freeShippingOffered": true,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "11.84"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "free_free",
+      "title": "Free Shipping",
+      "cost": "0"
+    },
+    "products": [
+      {
+        "id": "22",
+        "qty": 5,
+        "name": "Unreal Tournament",
+        "model": "PC-UNTM",
+        "price": "89.99",
+        "finalPrice": "89.99",
+        "weight": "7",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": []
+      },
+      {
+        "id": "26{3}8",
+        "qty": 7,
+        "name": "Microsoft IntelliMouse Explorer",
+        "model": "MSIMEXP",
+        "price": "64.95",
+        "finalPrice": "64.95",
+        "weight": "8",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 8,
+            "optionName": "Model",
+            "valueName": "PS/2",
+            "prefix": "+",
+            "price": "0"
+          }
+        ]
+      },
+      {
+        "id": "27",
+        "qty": 1,
+        "name": "Hewlett Packard LaserJet 1100Xi",
+        "model": "HPLJ1100XI",
+        "price": "499.99",
+        "finalPrice": "499.99",
+        "weight": "45",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": []
+      },
+      {
+        "id": "28",
+        "qty": 25,
+        "name": "Samsung Galaxy Tab",
+        "model": "GT-P1000",
+        "price": "749.99",
+        "finalPrice": "749.99",
+        "weight": "1",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "23969",
+      "tax": "3826.9831932773",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "3826.9831932773"
+        }
+      ],
+      "total": "23969"
+    },
+    "orderBeforeTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Free Shipping",
+      "shippingCost": "0",
+      "subtotal": "23969",
+      "tax": "3826.9831932773",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "3826.9831932773"
+        }
+      ],
+      "total": "23969"
+    },
+    "orderAfterTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Free Shipping",
+      "shippingCost": "0",
+      "subtotal": "23969",
+      "tax": "3826.9831932773",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "3826.9831932773"
+        }
+      ],
+      "total": "23969"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "¥3,576,894",
+        "value": "23969",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Free Shipping:",
+        "text": "¥0",
+        "value": "0",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "¥571,101",
+        "value": "3826.9831932773",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>¥3,576,894</strong>",
+        "value": "23969",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "free_free",
+        "title": "Free Shipping",
+        "cost": "0"
+      }
+    }
+  }
+}

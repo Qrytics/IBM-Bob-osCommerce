@@ -1,0 +1,29 @@
+{
+  "name": "ca-free-shipping-tax-counts",
+  "description": "With prices shown without tax, the free-shipping threshold is compared to subtotal + tax: 89.99 + 13% HST qualifies for \"over 100\".",
+  "settings": {
+    "displayPriceWithTax": false,
+    "currency": "USD",
+    "freeShipping": {
+      "enabled": true,
+      "over": "100",
+      "destination": "both"
+    }
+  },
+  "delivery": {
+    "countryId": 38,
+    "zoneId": 74
+  },
+  "shipping": {
+    "module": "flat",
+    "cost": "5.00",
+    "taxClassId": 0
+  },
+  "items": [
+    {
+      "productId": 22,
+      "qty": 1,
+      "attributes": []
+    }
+  ]
+}

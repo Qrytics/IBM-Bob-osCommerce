@@ -1,0 +1,18 @@
+{
+  "name": "us-fl-empty-cart",
+  "description": "Empty cart: only shipping is charged.",
+  "settings": {
+    "displayPriceWithTax": false,
+    "currency": "USD"
+  },
+  "delivery": {
+    "countryId": 223,
+    "zoneId": 18
+  },
+  "shipping": {
+    "module": "flat",
+    "cost": "5.00",
+    "taxClassId": 0
+  },
+  "items": []
+}

@@ -1,0 +1,221 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-016",
+    "description": "Randomly generated scenario (seed 20260929, #16).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD",
+      "shippingBox": {
+        "weight": "0",
+        "padding": "10",
+        "maxWeight": "100"
+      },
+      "freeShipping": {
+        "enabled": true,
+        "over": "250",
+        "destination": "both"
+      }
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 81
+    },
+    "shipping": {
+      "module": "item",
+      "taxClassId": 0,
+      "cost": "4.71",
+      "handling": "0.68"
+    },
+    "items": [
+      {
+        "productId": 16,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 6,
+        "qty": 12,
+        "attributes": []
+      },
+      {
+        "productId": 30,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "409.99",
+      "weight": "92.25",
+      "count": 14
+    },
+    "shipment": {
+      "shippingWeight": "50.7375",
+      "numBoxes": 2
+    },
+    "freeShippingOffered": true,
+    "quote": {
+      "id": "item",
+      "module": "Per Item",
+      "methods": [
+        {
+          "id": "item",
+          "title": "Best Way",
+          "cost": "66.62"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "free_free",
+      "title": "Free Shipping",
+      "cost": "0"
+    },
+    "products": [
+      {
+        "id": "16",
+        "qty": 1,
+        "name": "Courage Under Fire",
+        "model": "DVD-CUFI",
+        "price": "29.99",
+        "finalPrice": "29.99",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      },
+      {
+        "id": "6",
+        "qty": 12,
+        "name": "The Matrix",
+        "model": "DVD-MATR",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      },
+      {
+        "id": "30",
+        "qty": 1,
+        "name": "Precision Gizmo",
+        "model": "PRECISION",
+        "price": "19.995",
+        "finalPrice": "19.995",
+        "weight": "1.25",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "409.99",
+      "tax": "31.0993",
+      "taxGroups": [
+        {
+          "description": "MwSt 7%",
+          "amount": "27.2993"
+        },
+        {
+          "description": "MwSt 19%",
+          "amount": "3.8"
+        }
+      ],
+      "total": "441.0893"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Free Shipping",
+      "shippingCost": "0",
+      "subtotal": "409.99",
+      "tax": "31.0993",
+      "taxGroups": [
+        {
+          "description": "MwSt 7%",
+          "amount": "27.2993"
+        },
+        {
+          "description": "MwSt 19%",
+          "amount": "3.8"
+        }
+      ],
+      "total": "441.0893"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Free Shipping",
+      "shippingCost": "0",
+      "subtotal": "409.99",
+      "tax": "31.0993",
+      "taxGroups": [
+        {
+          "description": "MwSt 7%",
+          "amount": "27.2993"
+        },
+        {
+          "description": "MwSt 19%",
+          "amount": "3.8"
+        }
+      ],
+      "total": "441.0893"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$409.99",
+        "value": "409.99",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Free Shipping:",
+        "text": "$0.00",
+        "value": "0",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 7%:",
+        "text": "$27.30",
+        "value": "27.2993",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "$3.80",
+        "value": "3.8",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$441.09</strong>",
+        "value": "441.0893",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "free_free",
+        "title": "Free Shipping",
+        "cost": "0"
+      }
+    }
+  }
+}

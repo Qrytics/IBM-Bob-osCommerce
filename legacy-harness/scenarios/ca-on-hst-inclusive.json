@@ -1,0 +1,29 @@
+{
+  "name": "ca-on-hst-inclusive",
+  "description": "Ontario HST 13% with prices including tax: the \">= 10\" divisor branch (\"1.\" . rate).",
+  "settings": {
+    "displayPriceWithTax": true,
+    "currency": "USD"
+  },
+  "delivery": {
+    "countryId": 38,
+    "zoneId": 74
+  },
+  "shipping": {
+    "module": "flat",
+    "cost": "5.00",
+    "taxClassId": 0
+  },
+  "items": [
+    {
+      "productId": 22,
+      "qty": 2,
+      "attributes": []
+    },
+    {
+      "productId": 28,
+      "qty": 1,
+      "attributes": []
+    }
+  ]
+}

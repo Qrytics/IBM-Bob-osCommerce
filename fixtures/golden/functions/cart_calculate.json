@@ -1,0 +1,5096 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "cases": [
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "10.01",
+        "weight": "0.5",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 7,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1839.97",
+        "weight": "155.25",
+        "count": 32
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 2,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          },
+          {
+            "productId": 4,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "3124",
+        "weight": "302",
+        "count": 11
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 31,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 5
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          },
+          {
+            "productId": 29,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "681",
+        "weight": "61.5",
+        "count": 11
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 29,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1565.18",
+        "weight": "66.5",
+        "count": 28
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 6,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1300.61",
+        "weight": "239",
+        "count": 33
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 7,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "994",
+        "weight": "361",
+        "count": 26
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 26,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          },
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 31,
+            "qty": 2,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "6384.63",
+        "weight": "584",
+        "count": 19
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "155",
+        "weight": "29",
+        "count": 4
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 1,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4949.88",
+        "weight": "311",
+        "count": 17
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 6,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1066.88",
+        "weight": "255",
+        "count": 34
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 5,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "376.88",
+        "weight": "69",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 29,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 2,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 4
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "10679.77",
+        "weight": "634.5",
+        "count": 34
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 6,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 1,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 5
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2816",
+        "weight": "314",
+        "count": 33
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "129.9",
+        "weight": "16",
+        "count": 2
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 2,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 4
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 31,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "18635",
+        "weight": "1136",
+        "count": 45
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 30,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1569.98",
+        "weight": "139.25",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 3,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "419",
+        "weight": "76",
+        "count": 8
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "499.75",
+        "weight": "175",
+        "count": 25
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 5,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 29,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "964.88",
+        "weight": "143.5",
+        "count": 43
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 31,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2157.19",
+        "weight": "244",
+        "count": 32
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "24750",
+        "weight": "565",
+        "count": 37
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 1,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 1
+              },
+              {
+                "optionId": 3,
+                "valueId": 6
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2799.93",
+        "weight": "161",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 16,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "259.89",
+        "weight": "44.5",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 2,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 4
+              }
+            ]
+          },
+          {
+            "productId": 7,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 31,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "3976.9",
+        "weight": "255",
+        "count": 36
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 5,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "210",
+        "weight": "49",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "20",
+        "weight": "1.25",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 6,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1881.75",
+        "weight": "244",
+        "count": 29
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 25,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 2,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 3
+              },
+              {
+                "optionId": 3,
+                "valueId": 7
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1479.87",
+        "weight": "119",
+        "count": 13
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "42",
+        "weight": "23",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4219.68",
+        "weight": "547.25",
+        "count": 63
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 3,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "480",
+        "weight": "84",
+        "count": 12
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 1,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 16,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 2,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1149.86",
+        "weight": "130",
+        "count": 14
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 28,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 5
+              },
+              {
+                "optionId": 4,
+                "valueId": 2
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4000",
+        "weight": "118",
+        "count": 8
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2650",
+        "weight": "249.75",
+        "count": 11
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 28,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4374.81",
+        "weight": "105",
+        "count": 19
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 5,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 31,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1274.99",
+        "weight": "86",
+        "count": 31
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 5
+              },
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 30,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1379.96",
+        "weight": "113",
+        "count": 16
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 16,
+            "qty": 2,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "357",
+        "weight": "53",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 22,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "513.97",
+        "weight": "182",
+        "count": 10
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "609.95",
+        "weight": "80.5",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "500",
+        "weight": "175",
+        "count": 25
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 2,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 7
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          },
+          {
+            "productId": 4,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "7670",
+        "weight": "757",
+        "count": 27
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 5,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1499.99",
+        "weight": "176",
+        "count": 26
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 4,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "366.49",
+        "weight": "169",
+        "count": 8
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "12720",
+        "weight": "1167.5",
+        "count": 32
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "13000",
+        "weight": "1300",
+        "count": 50
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "205.98",
+        "weight": "24",
+        "count": 3
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "500",
+        "weight": "175",
+        "count": 25
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 31,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "3284.9",
+        "weight": "237",
+        "count": 40
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "3500",
+        "weight": "315",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 16,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "522.18",
+        "weight": "85.75",
+        "count": 34
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 5,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "30",
+        "weight": "7",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "64.95",
+        "weight": "8",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 26,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1775",
+        "weight": "209.25",
+        "count": 33
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 2,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 7
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "9873.6",
+        "weight": "675",
+        "count": 65
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "6009.89",
+        "weight": "540.5",
+        "count": 13
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 30,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "454.75",
+        "weight": "46.25",
+        "count": 10
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "11315",
+        "weight": "662",
+        "count": 58
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 26,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          },
+          {
+            "productId": 31,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 4,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1079.89",
+        "weight": "177",
+        "count": 18
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 7,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "450",
+        "weight": "37",
+        "count": 3
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 3,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "13536.3",
+        "weight": "1300",
+        "count": 49
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 5,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "270",
+        "weight": "22",
+        "count": 13
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 29,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 3,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "391",
+        "weight": "42.5",
+        "count": 12
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1000.37",
+        "weight": "232.25",
+        "count": 33
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 26,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2454.48",
+        "weight": "351.25",
+        "count": 50
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1790",
+        "weight": "216",
+        "count": 20
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "189.92",
+        "weight": "56",
+        "count": 8
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4000",
+        "weight": "400.25",
+        "count": 20
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 22,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "5719.85",
+        "weight": "119",
+        "count": 23
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "499.99",
+        "weight": "45",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "142",
+        "weight": "16",
+        "count": 2
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 4,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "146",
+        "weight": "70.25",
+        "count": 4
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 3,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "120",
+        "weight": "21",
+        "count": 3
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 5,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1667",
+        "weight": "236",
+        "count": 31
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1931",
+        "weight": "208.5",
+        "count": 14
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 31,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "514.75",
+        "weight": "177",
+        "count": 26
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "6670",
+        "weight": "503",
+        "count": 39
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 6,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "3899.93",
+        "weight": "40",
+        "count": 10
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 7,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "229.99",
+        "weight": "122",
+        "count": 6
+      }
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "USD",
+        []
+      ],
+      "expected": {
+        "total": "0",
+        "weight": "0",
+        "count": 0
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "10.71",
+        "weight": "0.5",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 7,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1966.92",
+        "weight": "155.25",
+        "count": 32
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 2,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          },
+          {
+            "productId": 4,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "3338",
+        "weight": "302",
+        "count": 11
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 31,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 5
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          },
+          {
+            "productId": 29,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "724.15",
+        "weight": "61.5",
+        "count": 11
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 29,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1674.73",
+        "weight": "66.5",
+        "count": 28
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 6,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1357.86",
+        "weight": "239",
+        "count": 33
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 7,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1028",
+        "weight": "361",
+        "count": 26
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 26,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          },
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 31,
+            "qty": 2,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "6829.48",
+        "weight": "584",
+        "count": 19
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "162",
+        "weight": "29",
+        "count": 4
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 1,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "5289.63",
+        "weight": "311",
+        "count": 17
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 6,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1096.48",
+        "weight": "255",
+        "count": 34
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 5,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "398.67",
+        "weight": "69",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 29,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 2,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 4
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "11420.62",
+        "weight": "634.5",
+        "count": 34
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 6,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 1,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 5
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2989",
+        "weight": "314",
+        "count": 33
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "139",
+        "weight": "16",
+        "count": 2
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 2,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 4
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 31,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "19931",
+        "weight": "1136",
+        "count": 45
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 30,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1679.85",
+        "weight": "139.25",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 3,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "445",
+        "weight": "76",
+        "count": 8
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "512.25",
+        "weight": "175",
+        "count": 25
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 5,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 29,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1014.88",
+        "weight": "143.5",
+        "count": 43
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 31,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2304.34",
+        "weight": "244",
+        "count": 32
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "26470",
+        "weight": "565",
+        "count": 37
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 1,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 1
+              },
+              {
+                "optionId": 3,
+                "valueId": 6
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2995.93",
+        "weight": "161",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 16,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "272.69",
+        "weight": "44.5",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 2,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 4
+              }
+            ]
+          },
+          {
+            "productId": 7,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 31,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4224.45",
+        "weight": "255",
+        "count": 36
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 5,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "215.25",
+        "weight": "49",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "21.39",
+        "weight": "1.25",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 6,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2007.55",
+        "weight": "244",
+        "count": 29
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 25,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 2,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 3
+              },
+              {
+                "optionId": 3,
+                "valueId": 7
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1583.41",
+        "weight": "119",
+        "count": 13
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "43.05",
+        "weight": "23",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4452.07",
+        "weight": "547.25",
+        "count": 63
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 3,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "516",
+        "weight": "84",
+        "count": 12
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 1,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 16,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 2,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1214.16",
+        "weight": "130",
+        "count": 14
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 28,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 5
+              },
+              {
+                "optionId": 4,
+                "valueId": 2
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4281",
+        "weight": "118",
+        "count": 8
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2831",
+        "weight": "249.75",
+        "count": 11
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 28,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4681.05",
+        "weight": "105",
+        "count": 19
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 5,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 31,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1331.24",
+        "weight": "86",
+        "count": 31
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 5
+              },
+              {
+                "optionId": 4,
+                "valueId": 1
+              }
+            ]
+          },
+          {
+            "productId": 30,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1476.44",
+        "weight": "113",
+        "count": 16
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 16,
+            "qty": 2,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "378",
+        "weight": "53",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 22,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "536.72",
+        "weight": "182",
+        "count": 10
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "648.15",
+        "weight": "80.5",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "500",
+        "weight": "175",
+        "count": 25
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 2,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 7
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          },
+          {
+            "productId": 4,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "8187",
+        "weight": "757",
+        "count": 27
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 5,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1571.24",
+        "weight": "176",
+        "count": 26
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 4,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "378.91",
+        "weight": "169",
+        "count": 8
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "13608",
+        "weight": "1167.5",
+        "count": 32
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "13875",
+        "weight": "1300",
+        "count": 50
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "220.38",
+        "weight": "24",
+        "count": 3
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "500",
+        "weight": "175",
+        "count": 25
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 31,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "3466.4",
+        "weight": "237",
+        "count": 40
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "3745",
+        "weight": "315",
+        "count": 7
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 16,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "547.37",
+        "weight": "85.75",
+        "count": 34
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 5,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "31",
+        "weight": "7",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "69.5",
+        "weight": "8",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 26,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1883",
+        "weight": "209.25",
+        "count": 33
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 2,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 7
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 25,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "10542.11",
+        "weight": "675",
+        "count": 65
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "6430.59",
+        "weight": "540.5",
+        "count": 13
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 30,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 5,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "486.55",
+        "weight": "46.25",
+        "count": 10
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "12089",
+        "weight": "662",
+        "count": 58
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 26,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          },
+          {
+            "productId": 31,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 4,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1147.75",
+        "weight": "177",
+        "count": 18
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 7,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "479",
+        "weight": "37",
+        "count": 3
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 3,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "14464.99",
+        "weight": "1300",
+        "count": 49
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 5,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 12,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "287.43",
+        "weight": "22",
+        "count": 13
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 29,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 3,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 14
+              }
+            ]
+          },
+          {
+            "productId": 26,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 8
+              }
+            ]
+          },
+          {
+            "productId": 3,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "423",
+        "weight": "42.5",
+        "count": 12
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 25,
+            "qty": 7,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1047.86",
+        "weight": "232.25",
+        "count": 33
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 26,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 25,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2585.82",
+        "weight": "351.25",
+        "count": 50
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 5,
+            "attributes": []
+          },
+          {
+            "productId": 22,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1907",
+        "weight": "216",
+        "count": 20
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 16,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "194.67",
+        "weight": "56",
+        "count": 8
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 3,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 27,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4282",
+        "weight": "400.25",
+        "count": 20
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 22,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 7,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "6103.15",
+        "weight": "119",
+        "count": 23
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "534.99",
+        "weight": "45",
+        "count": 1
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "150",
+        "weight": "16",
+        "count": 2
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 4,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 30,
+            "qty": 1,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "150.54",
+        "weight": "70.25",
+        "count": 4
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 3,
+            "qty": 3,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "129",
+        "weight": "21",
+        "count": 3
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 5,
+            "qty": 12,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "1755",
+        "weight": "236",
+        "count": 31
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 29,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 5,
+            "qty": 7,
+            "attributes": []
+          },
+          {
+            "productId": 26,
+            "qty": 2,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 9
+              }
+            ]
+          },
+          {
+            "productId": 25,
+            "qty": 1,
+            "attributes": [
+              {
+                "optionId": 1,
+                "valueId": 15
+              }
+            ]
+          }
+        ]
+      ],
+      "expected": {
+        "total": "2057",
+        "weight": "208.5",
+        "count": 14
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 31,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "527.25",
+        "weight": "177",
+        "count": 26
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "JPY",
+        [
+          {
+            "productId": 27,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 1,
+            "qty": 12,
+            "attributes": [
+              {
+                "optionId": 3,
+                "valueId": 6
+              },
+              {
+                "optionId": 4,
+                "valueId": 3
+              }
+            ]
+          },
+          {
+            "productId": 6,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 7,
+            "qty": 25,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "7102",
+        "weight": "503",
+        "count": 39
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        [
+          {
+            "productId": 6,
+            "qty": 3,
+            "attributes": []
+          },
+          {
+            "productId": 16,
+            "qty": 2,
+            "attributes": []
+          },
+          {
+            "productId": 28,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "4166.18",
+        "weight": "40",
+        "count": 10
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "EUR",
+        [
+          {
+            "productId": 7,
+            "qty": 1,
+            "attributes": []
+          },
+          {
+            "productId": 4,
+            "qty": 5,
+            "attributes": []
+          }
+        ]
+      ],
+      "expected": {
+        "total": "235.74",
+        "weight": "122",
+        "count": 6
+      }
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "USD",
+        []
+      ],
+      "expected": {
+        "total": "0",
+        "weight": "0",
+        "count": 0
+      }
+    }
+  ]
+}

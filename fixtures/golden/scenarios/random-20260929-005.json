@@ -1,0 +1,205 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-005",
+    "description": "Randomly generated scenario (seed 20260929, #5).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "EUR",
+      "shippingBox": {
+        "weight": "3",
+        "padding": "10",
+        "maxWeight": "50"
+      }
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 12
+    },
+    "shipping": {
+      "module": "table",
+      "taxClassId": 0,
+      "mode": "weight",
+      "table": "25:8.50,50:5.50,10000:0.00",
+      "handling": "0"
+    },
+    "items": [
+      {
+        "productId": 2,
+        "qty": 3,
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 3
+          }
+        ]
+      },
+      {
+        "productId": 28,
+        "qty": 25,
+        "attributes": []
+      },
+      {
+        "productId": 30,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "20239.72",
+      "weight": "95.25",
+      "count": 29
+    },
+    "shipment": {
+      "shippingWeight": "34.925",
+      "numBoxes": 3
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "table",
+      "module": "Table Rate",
+      "methods": [
+        {
+          "id": "table",
+          "title": "Best Way",
+          "cost": "16.5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "table_table",
+      "title": "Table Rate (Best Way)",
+      "cost": "16.5"
+    },
+    "products": [
+      {
+        "id": "2{4}3",
+        "qty": 3,
+        "name": "Matrox G400 32MB",
+        "model": "MG400-32MB",
+        "price": "499.99",
+        "finalPrice": "489.99",
+        "weight": "23",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 3,
+            "optionName": "Memory",
+            "valueName": "16 mb",
+            "prefix": "-",
+            "price": "10"
+          }
+        ]
+      },
+      {
+        "id": "28",
+        "qty": 25,
+        "name": "Samsung Galaxy Tab",
+        "model": "GT-P1000",
+        "price": "749.99",
+        "finalPrice": "749.99",
+        "weight": "1",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "30",
+        "qty": 1,
+        "name": "Precision Gizmo",
+        "model": "PRECISION",
+        "price": "19.995",
+        "finalPrice": "19.995",
+        "weight": "1.25",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "20239.72",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "20239.72"
+    },
+    "orderBeforeTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "16.5",
+      "subtotal": "20239.72",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "20256.22"
+    },
+    "orderAfterTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "16.5",
+      "subtotal": "20239.72",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "20256.22"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "17.952,63€",
+        "value": "20239.72",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Table Rate (Best Way):",
+        "text": "14,64€",
+        "value": "16.5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>17.967,27€</strong>",
+        "value": "20256.22",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "table_table",
+        "title": "Table Rate (Best Way)",
+        "cost": 16.5
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "de-exclusive-jpy",
+  "description": "JPY has 0 decimal places: tep_round() to 0 digits.",
+  "settings": {
+    "displayPriceWithTax": false,
+    "currency": "JPY"
+  },
+  "delivery": {
+    "countryId": 81,
+    "zoneId": 81
+  },
+  "shipping": {
+    "module": "flat",
+    "cost": "4.90",
+    "taxClassId": 0
+  },
+  "items": [
+    {
+      "productId": 29,
+      "qty": 3,
+      "attributes": []
+    },
+    {
+      "productId": 6,
+      "qty": 1,
+      "attributes": []
+    }
+  ]
+}

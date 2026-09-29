@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-010",
+    "description": "Randomly generated scenario (seed 20260929, #10).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "EUR",
+      "shippingBox": {
+        "weight": "5",
+        "padding": "25",
+        "maxWeight": "20"
+      }
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 76
+    },
+    "shipping": {
+      "module": "item",
+      "taxClassId": 1,
+      "cost": "4.18",
+      "handling": "0.57"
+    },
+    "items": [
+      {
+        "productId": 5,
+        "qty": 5,
+        "attributes": []
+      },
+      {
+        "productId": 31,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 29,
+        "qty": 7,
+        "attributes": []
+      },
+      {
+        "productId": 26,
+        "qty": 2,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "364.97",
+      "weight": "56.5",
+      "count": 15
+    },
+    "shipment": {
+      "shippingWeight": "17.65625",
+      "numBoxes": 4
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "item",
+      "module": "Per Item",
+      "methods": [
+        {
+          "id": "item",
+          "title": "Best Way",
+          "cost": "63.27"
+        }
+      ],
+      "tax": "15.47375"
+    },
+    "selectedShipping": {
+      "id": "item_item",
+      "title": "Per Item (Best Way)",
+      "cost": "63.27"
+    },
+    "products": [
+      {
+        "id": "5",
+        "qty": 5,
+        "name": "Blade Runner - Director's Cut",
+        "model": "DVD-BLDRNDC",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "31",
+        "qty": 1,
+        "name": "Gift Wrap (untaxed)",
+        "model": "TAXFREE",
+        "price": "15",
+        "finalPrice": "15",
+        "weight": "2",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "29",
+        "qty": 7,
+        "name": "Half-Cent Widget",
+        "model": "HALFCENT",
+        "price": "10.005",
+        "finalPrice": "10.005",
+        "weight": "0.5",
+        "tax": "15.47375",
+        "taxDescription": "GST 5% + QST 9.975%",
+        "attributes": []
+      },
+      {
+        "id": "26",
+        "qty": 2,
+        "name": "Microsoft IntelliMouse Explorer",
+        "model": "MSIMEXP",
+        "price": "64.95",
+        "finalPrice": "64.95",
+        "weight": "8",
+        "tax": "15.47375",
+        "taxDescription": "GST 5% + QST 9.975%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "364.97",
+      "tax": "30.942857875",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "GST 5% + QST 9.975%",
+          "amount": "30.942857875"
+        }
+      ],
+      "total": "395.912857875"
+    },
+    "orderBeforeTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "63.27",
+      "subtotal": "364.97",
+      "tax": "30.942857875",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "GST 5% + QST 9.975%",
+          "amount": "30.942857875"
+        }
+      ],
+      "total": "459.182857875"
+    },
+    "orderAfterTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "63.27",
+      "subtotal": "364.97",
+      "tax": "40.7330995",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "GST 5% + QST 9.975%",
+          "amount": "40.7330995"
+        }
+      ],
+      "total": "468.9730995"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "323,73€",
+        "value": "364.97",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Per Item (Best Way):",
+        "text": "56,12€",
+        "value": "63.27",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "GST 5% + QST 9.975%:",
+        "text": "36,13€",
+        "value": "40.7330995",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>415,98€</strong>",
+        "value": "468.9730995",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "item_item",
+        "title": "Per Item (Best Way)",
+        "cost": 63.269999999999996
+      }
+    }
+  }
+}

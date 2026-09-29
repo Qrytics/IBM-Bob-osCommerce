@@ -1,0 +1,171 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "de-taxed-shipping-eur",
+    "description": "Germany: shipping taxed at 19% under a different tax class, merged into the same \"MwSt 19%\" group.",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "EUR"
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 81
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "4.90",
+      "taxClassId": 3
+    },
+    "items": [
+      {
+        "productId": 26,
+        "qty": 2,
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 8
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "139",
+      "weight": "16",
+      "count": 2
+    },
+    "shipment": {
+      "shippingWeight": "19",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "4.9"
+        }
+      ],
+      "tax": "19"
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "4.9"
+    },
+    "products": [
+      {
+        "id": "26{3}8",
+        "qty": 2,
+        "name": "Microsoft IntelliMouse Explorer",
+        "model": "MSIMEXP",
+        "price": "64.95",
+        "finalPrice": "64.95",
+        "weight": "8",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 8,
+            "optionName": "Model",
+            "valueName": "PS/2",
+            "prefix": "+",
+            "price": "0"
+          }
+        ]
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "154.58",
+      "tax": "24.680840336134",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "24.680840336134"
+        }
+      ],
+      "total": "154.58"
+    },
+    "orderBeforeTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "4.9",
+      "subtotal": "154.58",
+      "tax": "24.680840336134",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "24.680840336134"
+        }
+      ],
+      "total": "159.48"
+    },
+    "orderAfterTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5.831",
+      "subtotal": "154.58",
+      "tax": "25.611840336134",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "25.611840336134"
+        }
+      ],
+      "total": "160.411"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "137,11€",
+        "value": "154.58",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "5,17€",
+        "value": "5.831",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "22,72€",
+        "value": "25.611840336134",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>142,28€</strong>",
+        "value": "160.411",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "4.90"
+      }
+    }
+  }
+}

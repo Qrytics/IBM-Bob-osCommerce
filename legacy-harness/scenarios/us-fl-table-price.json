@@ -1,0 +1,31 @@
+{
+  "name": "us-fl-table-price",
+  "description": "Table rate by price: uses the cart total (store-location tax), not the order subtotal.",
+  "settings": {
+    "displayPriceWithTax": false,
+    "currency": "USD"
+  },
+  "delivery": {
+    "countryId": 223,
+    "zoneId": 18
+  },
+  "shipping": {
+    "module": "table",
+    "mode": "price",
+    "table": "100:12.00,500:6.00,99999:0",
+    "handling": "1.50",
+    "taxClassId": 0
+  },
+  "items": [
+    {
+      "productId": 22,
+      "qty": 3,
+      "attributes": []
+    },
+    {
+      "productId": 3,
+      "qty": 1,
+      "attributes": []
+    }
+  ]
+}

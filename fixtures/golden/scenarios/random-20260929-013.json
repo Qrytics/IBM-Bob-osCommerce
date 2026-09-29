@@ -1,0 +1,217 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-013",
+    "description": "Randomly generated scenario (seed 20260929, #13).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD",
+      "shippingBox": {
+        "weight": "5",
+        "padding": "10",
+        "maxWeight": "20"
+      }
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 79
+    },
+    "shipping": {
+      "module": "table",
+      "taxClassId": 1,
+      "mode": "price",
+      "table": "10:4.99,30:9.99,100:19.99,99999:49.99",
+      "handling": "1.50"
+    },
+    "items": [
+      {
+        "productId": 29,
+        "qty": 5,
+        "attributes": []
+      },
+      {
+        "productId": 5,
+        "qty": 5,
+        "attributes": []
+      },
+      {
+        "productId": 4,
+        "qty": 12,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "704.05",
+      "weight": "313.5",
+      "count": 22
+    },
+    "shipment": {
+      "shippingWeight": "19.158333333333",
+      "numBoxes": 18
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "table",
+      "module": "Table Rate",
+      "methods": [
+        {
+          "id": "table",
+          "title": "Best Way",
+          "cost": "51.49"
+        }
+      ],
+      "tax": "19"
+    },
+    "selectedShipping": {
+      "id": "table_table",
+      "title": "Table Rate (Best Way)",
+      "cost": "51.49"
+    },
+    "products": [
+      {
+        "id": "29",
+        "qty": 5,
+        "name": "Half-Cent Widget",
+        "model": "HALFCENT",
+        "price": "10.005",
+        "finalPrice": "10.005",
+        "weight": "0.5",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": []
+      },
+      {
+        "id": "5",
+        "qty": 5,
+        "name": "Blade Runner - Director's Cut",
+        "model": "DVD-BLDRNDC",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      },
+      {
+        "id": "4",
+        "qty": 12,
+        "name": "The Replacement Killers",
+        "model": "DVD-RPMK",
+        "price": "42",
+        "finalPrice": "42",
+        "weight": "23",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "704.05",
+      "tax": "55.2895",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "9.5095"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "45.78"
+        }
+      ],
+      "total": "759.3395"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "51.49",
+      "subtotal": "704.05",
+      "tax": "55.2895",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "9.5095"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "45.78"
+        }
+      ],
+      "total": "810.8295"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "51.49",
+      "subtotal": "704.05",
+      "tax": "65.0726",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "19.2926"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "45.78"
+        }
+      ],
+      "total": "820.6126"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$704.05",
+        "value": "704.05",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Table Rate (Best Way):",
+        "text": "$51.49",
+        "value": "51.49",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "$19.29",
+        "value": "19.2926",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 7%:",
+        "text": "$45.78",
+        "value": "45.78",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$820.61</strong>",
+        "value": "820.6126",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "table_table",
+        "title": "Table Rate (Best Way)",
+        "cost": 51.49
+      }
+    }
+  }
+}

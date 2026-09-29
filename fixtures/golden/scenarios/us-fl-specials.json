@@ -1,0 +1,261 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "us-fl-specials",
+    "description": "Active specials replace the price; an inactive special (status 0) is ignored; an expired special with status 1 is still applied.",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD"
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 18
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "5.00",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 3,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 5,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 6,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 16,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 1,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 7,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "449.96",
+      "weight": "58",
+      "count": 6
+    },
+    "shipment": {
+      "shippingWeight": "31.9",
+      "numBoxes": 2
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "5"
+    },
+    "products": [
+      {
+        "id": "3",
+        "qty": 1,
+        "name": "Microsoft IntelliMouse Pro",
+        "model": "MSIMPRO",
+        "price": "39.99",
+        "finalPrice": "39.99",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": []
+      },
+      {
+        "id": "5",
+        "qty": 1,
+        "name": "Blade Runner - Director's Cut",
+        "model": "DVD-BLDRNDC",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "2.5",
+        "taxDescription": "FL Reduced 2.5%",
+        "attributes": []
+      },
+      {
+        "id": "6",
+        "qty": 1,
+        "name": "The Matrix",
+        "model": "DVD-MATR",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "2.5",
+        "taxDescription": "FL Reduced 2.5%",
+        "attributes": []
+      },
+      {
+        "id": "16",
+        "qty": 1,
+        "name": "Courage Under Fire",
+        "model": "DVD-CUFI",
+        "price": "29.99",
+        "finalPrice": "29.99",
+        "weight": "7",
+        "tax": "2.5",
+        "taxDescription": "FL Reduced 2.5%",
+        "attributes": []
+      },
+      {
+        "id": "1",
+        "qty": 1,
+        "name": "Matrox G200 MMS",
+        "model": "MG200MMS",
+        "price": "299.99",
+        "finalPrice": "299.99",
+        "weight": "23",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": []
+      },
+      {
+        "id": "7",
+        "qty": 1,
+        "name": "You've Got Mail",
+        "model": "DVD-YGEM",
+        "price": "19.99",
+        "finalPrice": "19.99",
+        "weight": "7",
+        "tax": "2.5",
+        "taxDescription": "FL Reduced 2.5%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "449.96",
+      "tax": "26.5481",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "23.7986"
+        },
+        {
+          "description": "FL Reduced 2.5%",
+          "amount": "2.7495"
+        }
+      ],
+      "total": "476.5081"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "449.96",
+      "tax": "26.5481",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "23.7986"
+        },
+        {
+          "description": "FL Reduced 2.5%",
+          "amount": "2.7495"
+        }
+      ],
+      "total": "481.5081"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "449.96",
+      "tax": "26.5481",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "23.7986"
+        },
+        {
+          "description": "FL Reduced 2.5%",
+          "amount": "2.7495"
+        }
+      ],
+      "total": "481.5081"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$449.96",
+        "value": "449.96",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$5.00",
+        "value": "5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "FL TAX 7.0%:",
+        "text": "$23.80",
+        "value": "23.7986",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_tax",
+        "title": "FL Reduced 2.5%:",
+        "text": "$2.75",
+        "value": "2.7495",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$481.51</strong>",
+        "value": "481.5081",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "5.00"
+      }
+    }
+  }
+}

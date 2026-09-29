@@ -1,0 +1,202 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "us-fl-attr-rounding-exclusive",
+    "description": "Four-decimal attribute prices (+2.4950, -1.3333) with tax shown separately.",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD"
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 18
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "5.00",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 25,
+        "qty": 3,
+        "attributes": [
+          {
+            "optionId": 1,
+            "valueId": 14
+          }
+        ]
+      },
+      {
+        "productId": 25,
+        "qty": 2,
+        "attributes": [
+          {
+            "optionId": 1,
+            "valueId": 15
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "354.79",
+      "weight": "40",
+      "count": 5
+    },
+    "shipment": {
+      "shippingWeight": "44",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "5"
+    },
+    "products": [
+      {
+        "id": "25{1}14",
+        "qty": 3,
+        "name": "Microsoft Internet Keyboard PS/2",
+        "model": "MSINTKB",
+        "price": "69.99",
+        "finalPrice": "72.485",
+        "weight": "8",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": [
+          {
+            "optionId": 1,
+            "valueId": 14,
+            "optionName": "Color",
+            "valueName": "Red",
+            "prefix": "+",
+            "price": "2.495"
+          }
+        ]
+      },
+      {
+        "id": "25{1}15",
+        "qty": 2,
+        "name": "Microsoft Internet Keyboard PS/2",
+        "model": "MSINTKB",
+        "price": "69.99",
+        "finalPrice": "68.6567",
+        "weight": "8",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": [
+          {
+            "optionId": 1,
+            "valueId": 15,
+            "optionName": "Color",
+            "valueName": "Black",
+            "prefix": "-",
+            "price": "1.3333"
+          }
+        ]
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "354.79",
+      "tax": "24.8353",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "24.8353"
+        }
+      ],
+      "total": "379.6253"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "354.79",
+      "tax": "24.8353",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "24.8353"
+        }
+      ],
+      "total": "384.6253"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "354.79",
+      "tax": "24.8353",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "24.8353"
+        }
+      ],
+      "total": "384.6253"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$354.79",
+        "value": "354.79",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$5.00",
+        "value": "5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "FL TAX 7.0%:",
+        "text": "$24.84",
+        "value": "24.8353",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$384.63</strong>",
+        "value": "384.6253",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "5.00"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "us-fl-item-shipping",
+  "description": "Per-item shipping: 2.50 x item count + 1.25 handling.",
+  "settings": {
+    "displayPriceWithTax": false,
+    "currency": "USD"
+  },
+  "delivery": {
+    "countryId": 223,
+    "zoneId": 18
+  },
+  "shipping": {
+    "module": "item",
+    "cost": "2.50",
+    "handling": "1.25",
+    "taxClassId": 0
+  },
+  "items": [
+    {
+      "productId": 5,
+      "qty": 2,
+      "attributes": []
+    },
+    {
+      "productId": 6,
+      "qty": 4,
+      "attributes": []
+    }
+  ]
+}

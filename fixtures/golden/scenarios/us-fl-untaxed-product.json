@@ -1,0 +1,186 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "us-fl-untaxed-product",
+    "description": "Product with tax class 0: rate 0 under \"Unknown tax rate\"; zero-value tax groups are not shown.",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD"
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 18
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "5.00",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 31,
+        "qty": 2,
+        "attributes": []
+      },
+      {
+        "productId": 3,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "69.99",
+      "weight": "11",
+      "count": 3
+    },
+    "shipment": {
+      "shippingWeight": "14",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "5"
+    },
+    "products": [
+      {
+        "id": "31",
+        "qty": 2,
+        "name": "Gift Wrap (untaxed)",
+        "model": "TAXFREE",
+        "price": "15",
+        "finalPrice": "15",
+        "weight": "2",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "3",
+        "qty": 1,
+        "name": "Microsoft IntelliMouse Pro",
+        "model": "MSIMPRO",
+        "price": "39.99",
+        "finalPrice": "39.99",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "69.99",
+      "tax": "2.7993",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "2.7993"
+        }
+      ],
+      "total": "72.7893"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "69.99",
+      "tax": "2.7993",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "2.7993"
+        }
+      ],
+      "total": "77.7893"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "69.99",
+      "tax": "2.7993",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "2.7993"
+        }
+      ],
+      "total": "77.7893"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$69.99",
+        "value": "69.99",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$5.00",
+        "value": "5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "FL TAX 7.0%:",
+        "text": "$2.80",
+        "value": "2.7993",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$77.79</strong>",
+        "value": "77.7893",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "5.00"
+      }
+    }
+  }
+}

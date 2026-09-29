@@ -1,0 +1,136 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "cases": [
+    {
+      "args": [
+        "299.9900"
+      ],
+      "expected": "299.99"
+    },
+    {
+      "args": [
+        "1.07"
+      ],
+      "expected": "1.07"
+    },
+    {
+      "args": [
+        "1.0725"
+      ],
+      "expected": "1.0725"
+    },
+    {
+      "args": [
+        "1.1547375"
+      ],
+      "expected": "1.1547375"
+    },
+    {
+      "args": [
+        "1.01.0E-5"
+      ],
+      "expected": "1.01"
+    },
+    {
+      "args": [
+        ""
+      ],
+      "expected": "0"
+    },
+    {
+      "args": [
+        "abc"
+      ],
+      "expected": "0"
+    },
+    {
+      "args": [
+        " 5"
+      ],
+      "expected": "5"
+    },
+    {
+      "args": [
+        "5 "
+      ],
+      "expected": "5"
+    },
+    {
+      "args": [
+        "1e3"
+      ],
+      "expected": "1000"
+    },
+    {
+      "args": [
+        "0x1A"
+      ],
+      "expected": "0"
+    },
+    {
+      "args": [
+        ".5"
+      ],
+      "expected": "0.5"
+    },
+    {
+      "args": [
+        "-.5e1"
+      ],
+      "expected": "-5"
+    },
+    {
+      "args": [
+        "1."
+      ],
+      "expected": "1"
+    },
+    {
+      "args": [
+        "1.100"
+      ],
+      "expected": "1.1"
+    },
+    {
+      "args": [
+        "007"
+      ],
+      "expected": "7"
+    },
+    {
+      "args": [
+        "1.0"
+      ],
+      "expected": "1"
+    },
+    {
+      "args": [
+        "12abc"
+      ],
+      "expected": "12"
+    },
+    {
+      "args": [
+        "  -3.25xyz"
+      ],
+      "expected": "-3.25"
+    },
+    {
+      "args": [
+        "1E+20"
+      ],
+      "expected": "1.0E+20"
+    },
+    {
+      "args": [
+        "1.0E-5"
+      ],
+      "expected": "1.0E-5"
+    }
+  ]
+}

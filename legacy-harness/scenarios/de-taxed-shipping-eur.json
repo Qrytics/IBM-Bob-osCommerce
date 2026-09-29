@@ -1,0 +1,29 @@
+{
+  "name": "de-taxed-shipping-eur",
+  "description": "Germany: shipping taxed at 19% under a different tax class, merged into the same \"MwSt 19%\" group.",
+  "settings": {
+    "displayPriceWithTax": true,
+    "currency": "EUR"
+  },
+  "delivery": {
+    "countryId": 81,
+    "zoneId": 81
+  },
+  "shipping": {
+    "module": "flat",
+    "cost": "4.90",
+    "taxClassId": 3
+  },
+  "items": [
+    {
+      "productId": 26,
+      "qty": 2,
+      "attributes": [
+        {
+          "optionId": 3,
+          "valueId": 8
+        }
+      ]
+    }
+  ]
+}

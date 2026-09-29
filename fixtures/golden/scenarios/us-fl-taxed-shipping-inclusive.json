@@ -1,0 +1,200 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "us-fl-taxed-shipping-inclusive",
+    "description": "Taxed shipping with prices including tax: the shipping line itself grows by the tax.",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "USD"
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 18
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "9.99",
+      "taxClassId": 3
+    },
+    "items": [
+      {
+        "productId": 1,
+        "qty": 2,
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 2
+          },
+          {
+            "optionId": 3,
+            "valueId": 6
+          }
+        ]
+      },
+      {
+        "productId": 3,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "1005.77",
+      "weight": "53",
+      "count": 3
+    },
+    "shipment": {
+      "shippingWeight": "29.15",
+      "numBoxes": 2
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "9.99"
+        }
+      ],
+      "tax": "7"
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "9.99"
+    },
+    "products": [
+      {
+        "id": "1{4}2{3}6",
+        "qty": 2,
+        "name": "Matrox G200 MMS",
+        "model": "MG200MMS",
+        "price": "299.99",
+        "finalPrice": "449.99",
+        "weight": "23",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 2,
+            "optionName": "Memory",
+            "valueName": "8 mb",
+            "prefix": "+",
+            "price": "50"
+          },
+          {
+            "optionId": 3,
+            "valueId": 6,
+            "optionName": "Model",
+            "valueName": "Premium",
+            "prefix": "+",
+            "price": "100"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "qty": 1,
+        "name": "Microsoft IntelliMouse Pro",
+        "model": "MSIMPRO",
+        "price": "39.99",
+        "finalPrice": "39.99",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "1005.77",
+      "tax": "65.798037383178",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "65.798037383178"
+        }
+      ],
+      "total": "1005.77"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "9.99",
+      "subtotal": "1005.77",
+      "tax": "65.798037383178",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "65.798037383178"
+        }
+      ],
+      "total": "1015.76"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "10.6893",
+      "subtotal": "1005.77",
+      "tax": "66.497337383178",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "66.497337383178"
+        }
+      ],
+      "total": "1016.4593"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$1,005.77",
+        "value": "1005.77",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$10.69",
+        "value": "10.6893",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "FL TAX 7.0%:",
+        "text": "$66.50",
+        "value": "66.497337383178",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$1,016.46</strong>",
+        "value": "1016.4593",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "9.99"
+      }
+    }
+  }
+}

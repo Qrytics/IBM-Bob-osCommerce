@@ -1,0 +1,115 @@
+{
+  "_comment": "Demo dataset derived from legacy-baseline/catalog/install/oscommerce.sql. Decimal columns are strings, exactly as MySQL returns them to PHP. Additions beyond the upstream sample data are listed in fixtures/README.md.",
+  "store": { "countryId": 223, "zoneId": 18, "languageId": 1 },
+  "countries": [
+    { "countries_id": 223, "countries_name": "United States", "countries_iso_code_2": "US", "countries_iso_code_3": "USA", "address_format_id": 2 },
+    { "countries_id": 38, "countries_name": "Canada", "countries_iso_code_2": "CA", "countries_iso_code_3": "CAN", "address_format_id": 1 },
+    { "countries_id": 81, "countries_name": "Germany", "countries_iso_code_2": "DE", "countries_iso_code_3": "DEU", "address_format_id": 5 },
+    { "countries_id": 222, "countries_name": "United Kingdom", "countries_iso_code_2": "GB", "countries_iso_code_3": "GBR", "address_format_id": 1 }
+  ],
+  "zones": [
+    { "zone_id": 12, "zone_country_id": 223, "zone_code": "CA", "zone_name": "California" },
+    { "zone_id": 18, "zone_country_id": 223, "zone_code": "FL", "zone_name": "Florida" },
+    { "zone_id": 43, "zone_country_id": 223, "zone_code": "NY", "zone_name": "New York" },
+    { "zone_id": 74, "zone_country_id": 38, "zone_code": "ON", "zone_name": "Ontario" },
+    { "zone_id": 76, "zone_country_id": 38, "zone_code": "QC", "zone_name": "Quebec" },
+    { "zone_id": 79, "zone_country_id": 81, "zone_code": "NDS", "zone_name": "Niedersachsen" },
+    { "zone_id": 81, "zone_country_id": 81, "zone_code": "BAY", "zone_name": "Bayern" }
+  ],
+  "geo_zones": [
+    { "geo_zone_id": 1, "geo_zone_name": "Florida", "geo_zone_description": "Florida local sales tax zone" },
+    { "geo_zone_id": 2, "geo_zone_name": "Quebec", "geo_zone_description": "GST + QST (compounded by priority)" },
+    { "geo_zone_id": 3, "geo_zone_name": "Ontario", "geo_zone_description": "HST" },
+    { "geo_zone_id": 4, "geo_zone_name": "Germany", "geo_zone_description": "All German zones (zone_id 0)" },
+    { "geo_zone_id": 5, "geo_zone_name": "New York", "geo_zone_description": "State + city rates at the same priority (summed)" }
+  ],
+  "zones_to_geo_zones": [
+    { "association_id": 1, "zone_country_id": 223, "zone_id": 18, "geo_zone_id": 1 },
+    { "association_id": 2, "zone_country_id": 38, "zone_id": 76, "geo_zone_id": 2 },
+    { "association_id": 3, "zone_country_id": 38, "zone_id": 74, "geo_zone_id": 3 },
+    { "association_id": 4, "zone_country_id": 81, "zone_id": 0, "geo_zone_id": 4 },
+    { "association_id": 5, "zone_country_id": 223, "zone_id": 43, "geo_zone_id": 5 }
+  ],
+  "tax_class": [
+    { "tax_class_id": 1, "tax_class_title": "Taxable Goods" },
+    { "tax_class_id": 2, "tax_class_title": "Reduced Rate Goods" },
+    { "tax_class_id": 3, "tax_class_title": "Shipping" }
+  ],
+  "tax_rates": [
+    { "tax_rates_id": 1, "tax_zone_id": 1, "tax_class_id": 1, "tax_priority": 1, "tax_rate": "7.0000", "tax_description": "FL TAX 7.0%" },
+    { "tax_rates_id": 2, "tax_zone_id": 2, "tax_class_id": 1, "tax_priority": 1, "tax_rate": "5.0000", "tax_description": "GST 5%" },
+    { "tax_rates_id": 3, "tax_zone_id": 2, "tax_class_id": 1, "tax_priority": 2, "tax_rate": "9.9750", "tax_description": "QST 9.975%" },
+    { "tax_rates_id": 4, "tax_zone_id": 3, "tax_class_id": 1, "tax_priority": 1, "tax_rate": "13.0000", "tax_description": "HST 13%" },
+    { "tax_rates_id": 5, "tax_zone_id": 4, "tax_class_id": 1, "tax_priority": 1, "tax_rate": "19.0000", "tax_description": "MwSt 19%" },
+    { "tax_rates_id": 6, "tax_zone_id": 4, "tax_class_id": 2, "tax_priority": 1, "tax_rate": "7.0000", "tax_description": "MwSt 7%" },
+    { "tax_rates_id": 7, "tax_zone_id": 5, "tax_class_id": 1, "tax_priority": 1, "tax_rate": "4.0000", "tax_description": "NY State 4%" },
+    { "tax_rates_id": 8, "tax_zone_id": 5, "tax_class_id": 1, "tax_priority": 1, "tax_rate": "4.5000", "tax_description": "NYC 4.5%" },
+    { "tax_rates_id": 9, "tax_zone_id": 1, "tax_class_id": 2, "tax_priority": 1, "tax_rate": "2.5000", "tax_description": "FL Reduced 2.5%" },
+    { "tax_rates_id": 10, "tax_zone_id": 1, "tax_class_id": 3, "tax_priority": 1, "tax_rate": "7.0000", "tax_description": "FL TAX 7.0%" },
+    { "tax_rates_id": 11, "tax_zone_id": 4, "tax_class_id": 3, "tax_priority": 1, "tax_rate": "19.0000", "tax_description": "MwSt 19%" }
+  ],
+  "currencies": [
+    { "currencies_id": 1, "title": "U.S. Dollar", "code": "USD", "symbol_left": "$", "symbol_right": "", "decimal_point": ".", "thousands_point": ",", "decimal_places": "2", "value": "1.0000" },
+    { "currencies_id": 2, "title": "Euro", "code": "EUR", "symbol_left": "", "symbol_right": "€", "decimal_point": ",", "thousands_point": ".", "decimal_places": "2", "value": "0.8870" },
+    { "currencies_id": 3, "title": "Japanese Yen", "code": "JPY", "symbol_left": "¥", "symbol_right": "", "decimal_point": ".", "thousands_point": ",", "decimal_places": "0", "value": "149.2300" }
+  ],
+  "products": [
+    { "products_id": 1, "products_model": "MG200MMS", "products_price": "299.9900", "products_weight": "23.00", "products_tax_class_id": 1, "products_name": "Matrox G200 MMS" },
+    { "products_id": 2, "products_model": "MG400-32MB", "products_price": "499.9900", "products_weight": "23.00", "products_tax_class_id": 1, "products_name": "Matrox G400 32MB" },
+    { "products_id": 3, "products_model": "MSIMPRO", "products_price": "49.9900", "products_weight": "7.00", "products_tax_class_id": 1, "products_name": "Microsoft IntelliMouse Pro" },
+    { "products_id": 4, "products_model": "DVD-RPMK", "products_price": "42.0000", "products_weight": "23.00", "products_tax_class_id": 2, "products_name": "The Replacement Killers" },
+    { "products_id": 5, "products_model": "DVD-BLDRNDC", "products_price": "35.9900", "products_weight": "7.00", "products_tax_class_id": 2, "products_name": "Blade Runner - Director's Cut" },
+    { "products_id": 6, "products_model": "DVD-MATR", "products_price": "39.9900", "products_weight": "7.00", "products_tax_class_id": 2, "products_name": "The Matrix" },
+    { "products_id": 7, "products_model": "DVD-YGEM", "products_price": "34.9900", "products_weight": "7.00", "products_tax_class_id": 2, "products_name": "You've Got Mail" },
+    { "products_id": 16, "products_model": "DVD-CUFI", "products_price": "38.9900", "products_weight": "7.00", "products_tax_class_id": 2, "products_name": "Courage Under Fire" },
+    { "products_id": 22, "products_model": "PC-UNTM", "products_price": "89.9900", "products_weight": "7.00", "products_tax_class_id": 1, "products_name": "Unreal Tournament" },
+    { "products_id": 25, "products_model": "MSINTKB", "products_price": "69.9900", "products_weight": "8.00", "products_tax_class_id": 1, "products_name": "Microsoft Internet Keyboard PS/2" },
+    { "products_id": 26, "products_model": "MSIMEXP", "products_price": "64.9500", "products_weight": "8.00", "products_tax_class_id": 1, "products_name": "Microsoft IntelliMouse Explorer" },
+    { "products_id": 27, "products_model": "HPLJ1100XI", "products_price": "499.9900", "products_weight": "45.00", "products_tax_class_id": 1, "products_name": "Hewlett Packard LaserJet 1100Xi" },
+    { "products_id": 28, "products_model": "GT-P1000", "products_price": "749.9900", "products_weight": "1.00", "products_tax_class_id": 1, "products_name": "Samsung Galaxy Tab" },
+    { "products_id": 29, "products_model": "HALFCENT", "products_price": "10.0050", "products_weight": "0.50", "products_tax_class_id": 1, "products_name": "Half-Cent Widget" },
+    { "products_id": 30, "products_model": "PRECISION", "products_price": "19.9950", "products_weight": "1.25", "products_tax_class_id": 1, "products_name": "Precision Gizmo" },
+    { "products_id": 31, "products_model": "TAXFREE", "products_price": "15.0000", "products_weight": "2.00", "products_tax_class_id": 0, "products_name": "Gift Wrap (untaxed)" }
+  ],
+  "specials": [
+    { "specials_id": 1, "products_id": 3, "specials_new_products_price": "39.9900", "expires_date": null, "status": "1" },
+    { "specials_id": 2, "products_id": 5, "specials_new_products_price": "30.0000", "expires_date": null, "status": "1" },
+    { "specials_id": 3, "products_id": 6, "specials_new_products_price": "30.0000", "expires_date": null, "status": "1" },
+    { "specials_id": 4, "products_id": 16, "specials_new_products_price": "29.9900", "expires_date": null, "status": "1" },
+    { "specials_id": 5, "products_id": 1, "specials_new_products_price": "249.9900", "expires_date": null, "status": "0" },
+    { "specials_id": 6, "products_id": 7, "specials_new_products_price": "19.9900", "expires_date": "2001-01-01 00:00:00", "status": "1" }
+  ],
+  "products_options": [
+    { "products_options_id": 1, "language_id": 1, "products_options_name": "Color" },
+    { "products_options_id": 3, "language_id": 1, "products_options_name": "Model" },
+    { "products_options_id": 4, "language_id": 1, "products_options_name": "Memory" }
+  ],
+  "products_options_values": [
+    { "products_options_values_id": 1, "language_id": 1, "products_options_values_name": "4 mb" },
+    { "products_options_values_id": 2, "language_id": 1, "products_options_values_name": "8 mb" },
+    { "products_options_values_id": 3, "language_id": 1, "products_options_values_name": "16 mb" },
+    { "products_options_values_id": 4, "language_id": 1, "products_options_values_name": "32 mb" },
+    { "products_options_values_id": 5, "language_id": 1, "products_options_values_name": "Value" },
+    { "products_options_values_id": 6, "language_id": 1, "products_options_values_name": "Premium" },
+    { "products_options_values_id": 7, "language_id": 1, "products_options_values_name": "Deluxe" },
+    { "products_options_values_id": 8, "language_id": 1, "products_options_values_name": "PS/2" },
+    { "products_options_values_id": 9, "language_id": 1, "products_options_values_name": "USB" },
+    { "products_options_values_id": 14, "language_id": 1, "products_options_values_name": "Red" },
+    { "products_options_values_id": 15, "language_id": 1, "products_options_values_name": "Black" }
+  ],
+  "products_attributes": [
+    { "products_attributes_id": 1, "products_id": 1, "options_id": 4, "options_values_id": 1, "options_values_price": "0.0000", "price_prefix": "+" },
+    { "products_attributes_id": 2, "products_id": 1, "options_id": 4, "options_values_id": 2, "options_values_price": "50.0000", "price_prefix": "+" },
+    { "products_attributes_id": 3, "products_id": 1, "options_id": 4, "options_values_id": 3, "options_values_price": "70.0000", "price_prefix": "+" },
+    { "products_attributes_id": 4, "products_id": 1, "options_id": 3, "options_values_id": 5, "options_values_price": "0.0000", "price_prefix": "+" },
+    { "products_attributes_id": 5, "products_id": 1, "options_id": 3, "options_values_id": 6, "options_values_price": "100.0000", "price_prefix": "+" },
+    { "products_attributes_id": 6, "products_id": 2, "options_id": 4, "options_values_id": 3, "options_values_price": "10.0000", "price_prefix": "-" },
+    { "products_attributes_id": 7, "products_id": 2, "options_id": 4, "options_values_id": 4, "options_values_price": "0.0000", "price_prefix": "+" },
+    { "products_attributes_id": 8, "products_id": 2, "options_id": 3, "options_values_id": 6, "options_values_price": "0.0000", "price_prefix": "+" },
+    { "products_attributes_id": 9, "products_id": 2, "options_id": 3, "options_values_id": 7, "options_values_price": "120.0000", "price_prefix": "+" },
+    { "products_attributes_id": 10, "products_id": 26, "options_id": 3, "options_values_id": 8, "options_values_price": "0.0000", "price_prefix": "+" },
+    { "products_attributes_id": 11, "products_id": 26, "options_id": 3, "options_values_id": 9, "options_values_price": "6.0000", "price_prefix": "+" },
+    { "products_attributes_id": 28, "products_id": 25, "options_id": 1, "options_values_id": 14, "options_values_price": "2.4950", "price_prefix": "+" },
+    { "products_attributes_id": 29, "products_id": 25, "options_id": 1, "options_values_id": 15, "options_values_price": "1.3333", "price_prefix": "-" }
+  ]
+}

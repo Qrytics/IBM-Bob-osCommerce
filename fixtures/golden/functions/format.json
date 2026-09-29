@@ -1,0 +1,2413 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "cases": [
+    {
+      "args": [
+        0,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$0.00"
+    },
+    {
+      "args": [
+        0,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$0.00"
+    },
+    {
+      "args": [
+        0,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$0.00"
+    },
+    {
+      "args": [
+        0,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "0,00€"
+    },
+    {
+      "args": [
+        0,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "0,00€"
+    },
+    {
+      "args": [
+        0,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "0,00€"
+    },
+    {
+      "args": [
+        0,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥0"
+    },
+    {
+      "args": [
+        0,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥0"
+    },
+    {
+      "args": [
+        0,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥0"
+    },
+    {
+      "args": [
+        1,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$1.00"
+    },
+    {
+      "args": [
+        1,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$1.00"
+    },
+    {
+      "args": [
+        1,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$1.23"
+    },
+    {
+      "args": [
+        1,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "0,89€"
+    },
+    {
+      "args": [
+        1,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "1,00€"
+    },
+    {
+      "args": [
+        1,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "1,23€"
+    },
+    {
+      "args": [
+        1,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥149"
+    },
+    {
+      "args": [
+        1,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥1"
+    },
+    {
+      "args": [
+        1,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥1"
+    },
+    {
+      "args": [
+        5,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$5.00"
+    },
+    {
+      "args": [
+        5,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$5.00"
+    },
+    {
+      "args": [
+        5,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$6.17"
+    },
+    {
+      "args": [
+        5,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "4,44€"
+    },
+    {
+      "args": [
+        5,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "5,00€"
+    },
+    {
+      "args": [
+        5,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "6,17€"
+    },
+    {
+      "args": [
+        5,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥746"
+    },
+    {
+      "args": [
+        5,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥5"
+    },
+    {
+      "args": [
+        5,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥6"
+    },
+    {
+      "args": [
+        42.79,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$42.79"
+    },
+    {
+      "args": [
+        42.79,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$42.79"
+    },
+    {
+      "args": [
+        42.79,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$52.82"
+    },
+    {
+      "args": [
+        42.79,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "37,95€"
+    },
+    {
+      "args": [
+        42.79,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "42,79€"
+    },
+    {
+      "args": [
+        42.79,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "52,82€"
+    },
+    {
+      "args": [
+        42.79,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥6,386"
+    },
+    {
+      "args": [
+        42.79,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥43"
+    },
+    {
+      "args": [
+        42.79,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥53"
+    },
+    {
+      "args": [
+        1010.7679,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$1,010.77"
+    },
+    {
+      "args": [
+        1010.7679,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$1,010.77"
+    },
+    {
+      "args": [
+        1010.7679,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$1,247.79"
+    },
+    {
+      "args": [
+        1010.7679,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "896,55€"
+    },
+    {
+      "args": [
+        1010.7679,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "1.010,77€"
+    },
+    {
+      "args": [
+        1010.7679,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "1.247,79€"
+    },
+    {
+      "args": [
+        1010.7679,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥150,837"
+    },
+    {
+      "args": [
+        1010.7679,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥1,011"
+    },
+    {
+      "args": [
+        1010.7679,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥1,248"
+    },
+    {
+      "args": [
+        1234567.891,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$1,234,567.89"
+    },
+    {
+      "args": [
+        1234567.891,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$1,234,567.89"
+    },
+    {
+      "args": [
+        1234567.891,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$1,524,074.06"
+    },
+    {
+      "args": [
+        1234567.891,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "1.095.061,72€"
+    },
+    {
+      "args": [
+        1234567.891,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "1.234.567,89€"
+    },
+    {
+      "args": [
+        1234567.891,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "1.524.074,06€"
+    },
+    {
+      "args": [
+        1234567.891,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥184,234,566"
+    },
+    {
+      "args": [
+        1234567.891,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥1,234,568"
+    },
+    {
+      "args": [
+        1234567.891,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥1,524,074"
+    },
+    {
+      "args": [
+        999.995,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$1,000.00"
+    },
+    {
+      "args": [
+        999.995,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$1,000.00"
+    },
+    {
+      "args": [
+        999.995,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$1,234.49"
+    },
+    {
+      "args": [
+        999.995,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "887,00€"
+    },
+    {
+      "args": [
+        999.995,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "1.000,00€"
+    },
+    {
+      "args": [
+        999.995,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "1.234,49€"
+    },
+    {
+      "args": [
+        999.995,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥149,229"
+    },
+    {
+      "args": [
+        999.995,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥1,000"
+    },
+    {
+      "args": [
+        999.995,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥1,234"
+    },
+    {
+      "args": [
+        0.005,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$0.01"
+    },
+    {
+      "args": [
+        0.005,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$0.01"
+    },
+    {
+      "args": [
+        0.005,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$0.01"
+    },
+    {
+      "args": [
+        0.005,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "0,00€"
+    },
+    {
+      "args": [
+        0.005,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "0,01€"
+    },
+    {
+      "args": [
+        0.005,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "0,01€"
+    },
+    {
+      "args": [
+        0.005,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥1"
+    },
+    {
+      "args": [
+        0.005,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥0"
+    },
+    {
+      "args": [
+        0.005,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥0"
+    },
+    {
+      "args": [
+        1.005,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$1.01"
+    },
+    {
+      "args": [
+        1.005,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$1.01"
+    },
+    {
+      "args": [
+        1.005,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$1.24"
+    },
+    {
+      "args": [
+        1.005,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "0,89€"
+    },
+    {
+      "args": [
+        1.005,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "1,01€"
+    },
+    {
+      "args": [
+        1.005,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "1,24€"
+    },
+    {
+      "args": [
+        1.005,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥150"
+    },
+    {
+      "args": [
+        1.005,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥1"
+    },
+    {
+      "args": [
+        1.005,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥1"
+    },
+    {
+      "args": [
+        65.7979,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$65.80"
+    },
+    {
+      "args": [
+        65.7979,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$65.80"
+    },
+    {
+      "args": [
+        65.7979,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$81.23"
+    },
+    {
+      "args": [
+        65.7979,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "58,36€"
+    },
+    {
+      "args": [
+        65.7979,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "65,80€"
+    },
+    {
+      "args": [
+        65.7979,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "81,23€"
+    },
+    {
+      "args": [
+        65.7979,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥9,819"
+    },
+    {
+      "args": [
+        65.7979,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥66"
+    },
+    {
+      "args": [
+        65.7979,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥81"
+    },
+    {
+      "args": [
+        -12.345,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$-12.33"
+    },
+    {
+      "args": [
+        -12.345,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$-12.33"
+    },
+    {
+      "args": [
+        -12.345,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$-15.22"
+    },
+    {
+      "args": [
+        -12.345,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "-10,95€"
+    },
+    {
+      "args": [
+        -12.345,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "-12,33€"
+    },
+    {
+      "args": [
+        -12.345,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "-15,22€"
+    },
+    {
+      "args": [
+        -12.345,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥-1,842"
+    },
+    {
+      "args": [
+        -12.345,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥-12"
+    },
+    {
+      "args": [
+        -12.345,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥-15"
+    },
+    {
+      "args": [
+        1000000000,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$1,000,000,000.00"
+    },
+    {
+      "args": [
+        1000000000,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$1,000,000,000.00"
+    },
+    {
+      "args": [
+        1000000000,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$1,234,500,000.00"
+    },
+    {
+      "args": [
+        1000000000,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "887.000.000,00€"
+    },
+    {
+      "args": [
+        1000000000,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "1.000.000.000,00€"
+    },
+    {
+      "args": [
+        1000000000,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "1.234.500.000,00€"
+    },
+    {
+      "args": [
+        1000000000,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥149,230,000,000"
+    },
+    {
+      "args": [
+        1000000000,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥1,000,000,000"
+    },
+    {
+      "args": [
+        1000000000,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥1,234,500,000"
+    },
+    {
+      "args": [
+        0.30000000000000004,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$0.30"
+    },
+    {
+      "args": [
+        0.30000000000000004,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$0.30"
+    },
+    {
+      "args": [
+        0.30000000000000004,
+        "USD",
+        true,
+        "1.2345"
+      ],
+      "expected": "$0.37"
+    },
+    {
+      "args": [
+        0.30000000000000004,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "0,27€"
+    },
+    {
+      "args": [
+        0.30000000000000004,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "0,30€"
+    },
+    {
+      "args": [
+        0.30000000000000004,
+        "EUR",
+        true,
+        "1.2345"
+      ],
+      "expected": "0,37€"
+    },
+    {
+      "args": [
+        0.30000000000000004,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥45"
+    },
+    {
+      "args": [
+        0.30000000000000004,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥0"
+    },
+    {
+      "args": [
+        0.30000000000000004,
+        "JPY",
+        true,
+        "1.2345"
+      ],
+      "expected": "¥0"
+    },
+    {
+      "args": [
+        897.5671,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "796,14€"
+    },
+    {
+      "args": [
+        0.1,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "0,09€"
+    },
+    {
+      "args": [
+        58411,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥116,822"
+    },
+    {
+      "args": [
+        0.0127,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "0,01€"
+    },
+    {
+      "args": [
+        720.02543,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥107,449"
+    },
+    {
+      "args": [
+        47,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$94.00"
+    },
+    {
+      "args": [
+        97.3,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$97.30"
+    },
+    {
+      "args": [
+        32796.06,
+        "USD",
+        false,
+        "0.5"
+      ],
+      "expected": "$32,796.06"
+    },
+    {
+      "args": [
+        812,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥1,624"
+    },
+    {
+      "args": [
+        430.22,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$430.22"
+    },
+    {
+      "args": [
+        640.1,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥95,522"
+    },
+    {
+      "args": [
+        1.14,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$1.14"
+    },
+    {
+      "args": [
+        7.5,
+        "JPY",
+        true,
+        "0.5"
+      ],
+      "expected": "¥4"
+    },
+    {
+      "args": [
+        97426.12334,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$194,852.25"
+    },
+    {
+      "args": [
+        9.578,
+        "USD",
+        true,
+        ""
+      ],
+      "expected": "$9.58"
+    },
+    {
+      "args": [
+        18382,
+        "USD",
+        false,
+        "0.5"
+      ],
+      "expected": "$18,382.00"
+    },
+    {
+      "args": [
+        43014,
+        "JPY",
+        true,
+        "0.5"
+      ],
+      "expected": "¥21,507"
+    },
+    {
+      "args": [
+        672.94555,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$1,345.89"
+    },
+    {
+      "args": [
+        63.2779,
+        "JPY",
+        true,
+        "0.5"
+      ],
+      "expected": "¥32"
+    },
+    {
+      "args": [
+        8,
+        "USD",
+        true,
+        "0.5"
+      ],
+      "expected": "$4.00"
+    },
+    {
+      "args": [
+        46221.1506,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$46,221.15"
+    },
+    {
+      "args": [
+        225.200929,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥450"
+    },
+    {
+      "args": [
+        93273.2916,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥93,273"
+    },
+    {
+      "args": [
+        5.598,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$11.20"
+    },
+    {
+      "args": [
+        5.13,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "4,55€"
+    },
+    {
+      "args": [
+        0.82041,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥122"
+    },
+    {
+      "args": [
+        669.97,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥1,340"
+    },
+    {
+      "args": [
+        30249.35,
+        "USD",
+        false,
+        ""
+      ],
+      "expected": "$30,249.35"
+    },
+    {
+      "args": [
+        77642.055,
+        "JPY",
+        true,
+        "0.5"
+      ],
+      "expected": "¥38,821"
+    },
+    {
+      "args": [
+        8960.571932,
+        "JPY",
+        true,
+        ""
+      ],
+      "expected": "¥1,337,186"
+    },
+    {
+      "args": [
+        83044,
+        "JPY",
+        false,
+        "2"
+      ],
+      "expected": "¥83,044"
+    },
+    {
+      "args": [
+        89098.62,
+        "EUR",
+        true,
+        "0.5"
+      ],
+      "expected": "44.549,31€"
+    },
+    {
+      "args": [
+        28497.521,
+        "USD",
+        false,
+        "0.5"
+      ],
+      "expected": "$28,497.52"
+    },
+    {
+      "args": [
+        85510.479752,
+        "USD",
+        true,
+        "0.5"
+      ],
+      "expected": "$42,755.24"
+    },
+    {
+      "args": [
+        55552.95022,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥111,106"
+    },
+    {
+      "args": [
+        87404.7,
+        "USD",
+        false,
+        ""
+      ],
+      "expected": "$87,404.70"
+    },
+    {
+      "args": [
+        68864.958524,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$68,864.96"
+    },
+    {
+      "args": [
+        482.23,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥71,963"
+    },
+    {
+      "args": [
+        869.841028,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$869.84"
+    },
+    {
+      "args": [
+        7,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥1,045"
+    },
+    {
+      "args": [
+        54.4,
+        "JPY",
+        true,
+        "0.5"
+      ],
+      "expected": "¥27"
+    },
+    {
+      "args": [
+        931.5,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$1,863.00"
+    },
+    {
+      "args": [
+        5.931,
+        "USD",
+        true,
+        ""
+      ],
+      "expected": "$5.93"
+    },
+    {
+      "args": [
+        654.644547,
+        "USD",
+        true,
+        ""
+      ],
+      "expected": "$654.64"
+    },
+    {
+      "args": [
+        0.64963,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$1.30"
+    },
+    {
+      "args": [
+        134.381376,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "119,20€"
+    },
+    {
+      "args": [
+        9.64533,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥1,439"
+    },
+    {
+      "args": [
+        641.582,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$1,283.16"
+    },
+    {
+      "args": [
+        66918.215551,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥9,986,205"
+    },
+    {
+      "args": [
+        4.2,
+        "EUR",
+        true,
+        ""
+      ],
+      "expected": "3,73€"
+    },
+    {
+      "args": [
+        9.08,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥18"
+    },
+    {
+      "args": [
+        98777,
+        "EUR",
+        true,
+        ""
+      ],
+      "expected": "87.615,20€"
+    },
+    {
+      "args": [
+        3872.83633,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥577,943"
+    },
+    {
+      "args": [
+        5.1561,
+        "USD",
+        true,
+        ""
+      ],
+      "expected": "$5.16"
+    },
+    {
+      "args": [
+        6,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥12"
+    },
+    {
+      "args": [
+        989.937207,
+        "USD",
+        false,
+        "2"
+      ],
+      "expected": "$989.94"
+    },
+    {
+      "args": [
+        6.102552,
+        "USD",
+        false,
+        "2"
+      ],
+      "expected": "$6.10"
+    },
+    {
+      "args": [
+        170.064,
+        "USD",
+        false,
+        "0.5"
+      ],
+      "expected": "$170.06"
+    },
+    {
+      "args": [
+        45226.26409,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$90,452.53"
+    },
+    {
+      "args": [
+        25929.5725,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥51,859"
+    },
+    {
+      "args": [
+        2.32,
+        "EUR",
+        false,
+        "2"
+      ],
+      "expected": "2,32€"
+    },
+    {
+      "args": [
+        1,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "0,89€"
+    },
+    {
+      "args": [
+        66013.61618,
+        "JPY",
+        true,
+        ""
+      ],
+      "expected": "¥9,851,212"
+    },
+    {
+      "args": [
+        58102.74,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$58,102.74"
+    },
+    {
+      "args": [
+        1.4814,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥1"
+    },
+    {
+      "args": [
+        3.28245,
+        "JPY",
+        true,
+        ""
+      ],
+      "expected": "¥490"
+    },
+    {
+      "args": [
+        5.0626,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥755"
+    },
+    {
+      "args": [
+        522.3636,
+        "EUR",
+        true,
+        ""
+      ],
+      "expected": "463,34€"
+    },
+    {
+      "args": [
+        37.76301,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$37.76"
+    },
+    {
+      "args": [
+        77886.55534,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "155.773,11€"
+    },
+    {
+      "args": [
+        364,
+        "USD",
+        true,
+        "0.5"
+      ],
+      "expected": "$182.00"
+    },
+    {
+      "args": [
+        87512.900378,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$175,025.80"
+    },
+    {
+      "args": [
+        5,
+        "EUR",
+        true,
+        ""
+      ],
+      "expected": "4,44€"
+    },
+    {
+      "args": [
+        4.8,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "9,60€"
+    },
+    {
+      "args": [
+        7844,
+        "EUR",
+        false,
+        null
+      ],
+      "expected": "7.844,00€"
+    },
+    {
+      "args": [
+        4.40345,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥657"
+    },
+    {
+      "args": [
+        758.4651,
+        "JPY",
+        true,
+        ""
+      ],
+      "expected": "¥113,186"
+    },
+    {
+      "args": [
+        2.1767,
+        "EUR",
+        false,
+        "2"
+      ],
+      "expected": "2,18€"
+    },
+    {
+      "args": [
+        8.458,
+        "EUR",
+        true,
+        "0.5"
+      ],
+      "expected": "4,23€"
+    },
+    {
+      "args": [
+        79832.4,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "159.664,80€"
+    },
+    {
+      "args": [
+        22985.5,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$45,971.00"
+    },
+    {
+      "args": [
+        709.2236,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥709"
+    },
+    {
+      "args": [
+        780.15442,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$1,560.31"
+    },
+    {
+      "args": [
+        871.3863,
+        "JPY",
+        false,
+        null
+      ],
+      "expected": "¥871"
+    },
+    {
+      "args": [
+        4.992,
+        "USD",
+        true,
+        "0.5"
+      ],
+      "expected": "$2.50"
+    },
+    {
+      "args": [
+        819.5943,
+        "USD",
+        true,
+        "0.5"
+      ],
+      "expected": "$409.80"
+    },
+    {
+      "args": [
+        691.3,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$1,382.60"
+    },
+    {
+      "args": [
+        325,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "650,00€"
+    },
+    {
+      "args": [
+        10068.271,
+        "EUR",
+        true,
+        "0.5"
+      ],
+      "expected": "5.034,14€"
+    },
+    {
+      "args": [
+        1,
+        "USD",
+        false,
+        null
+      ],
+      "expected": "$1.00"
+    },
+    {
+      "args": [
+        735.1,
+        "EUR",
+        true,
+        ""
+      ],
+      "expected": "652,03€"
+    },
+    {
+      "args": [
+        2.9131,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥435"
+    },
+    {
+      "args": [
+        92521,
+        "EUR",
+        false,
+        ""
+      ],
+      "expected": "92.521,00€"
+    },
+    {
+      "args": [
+        59900.98,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "119.801,96€"
+    },
+    {
+      "args": [
+        18772.5065,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥2,801,421"
+    },
+    {
+      "args": [
+        677.7,
+        "USD",
+        true,
+        ""
+      ],
+      "expected": "$677.70"
+    },
+    {
+      "args": [
+        904.2,
+        "EUR",
+        false,
+        "2"
+      ],
+      "expected": "904,20€"
+    },
+    {
+      "args": [
+        451.1936,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥67,332"
+    },
+    {
+      "args": [
+        26.2416,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "23,28€"
+    },
+    {
+      "args": [
+        81831.91,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "72.584,90€"
+    },
+    {
+      "args": [
+        424,
+        "JPY",
+        true,
+        "0.5"
+      ],
+      "expected": "¥212"
+    },
+    {
+      "args": [
+        7,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥14"
+    },
+    {
+      "args": [
+        414.215,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "828,43€"
+    },
+    {
+      "args": [
+        924.95714,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$924.96"
+    },
+    {
+      "args": [
+        4.887651,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥729"
+    },
+    {
+      "args": [
+        41012.271098,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$41,012.27"
+    },
+    {
+      "args": [
+        2810.6103,
+        "USD",
+        false,
+        "0.5"
+      ],
+      "expected": "$2,810.61"
+    },
+    {
+      "args": [
+        1.4364,
+        "USD",
+        true,
+        "0.5"
+      ],
+      "expected": "$0.72"
+    },
+    {
+      "args": [
+        3.325,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "6,65€"
+    },
+    {
+      "args": [
+        41985.570686,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥6,265,507"
+    },
+    {
+      "args": [
+        4.277468,
+        "JPY",
+        true,
+        "2"
+      ],
+      "expected": "¥9"
+    },
+    {
+      "args": [
+        107.589,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥16,056"
+    },
+    {
+      "args": [
+        12043.746,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥1,797,288"
+    },
+    {
+      "args": [
+        642.66,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "1.285,32€"
+    },
+    {
+      "args": [
+        963.007021,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$963.01"
+    },
+    {
+      "args": [
+        54.7,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥8,163"
+    },
+    {
+      "args": [
+        6.3623,
+        "JPY",
+        true,
+        ""
+      ],
+      "expected": "¥949"
+    },
+    {
+      "args": [
+        5.142,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "4,56€"
+    },
+    {
+      "args": [
+        59661.39066,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "52.919,65€"
+    },
+    {
+      "args": [
+        20368.7,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "18.067,04€"
+    },
+    {
+      "args": [
+        34653,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "69.306,00€"
+    },
+    {
+      "args": [
+        85347.792,
+        "USD",
+        false,
+        "2"
+      ],
+      "expected": "$85,347.79"
+    },
+    {
+      "args": [
+        971.63,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$971.63"
+    },
+    {
+      "args": [
+        159,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$159.00"
+    },
+    {
+      "args": [
+        369,
+        "USD",
+        true,
+        ""
+      ],
+      "expected": "$369.00"
+    },
+    {
+      "args": [
+        3.175871,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "2,82€"
+    },
+    {
+      "args": [
+        183.139,
+        "EUR",
+        true,
+        "0.5"
+      ],
+      "expected": "91,57€"
+    },
+    {
+      "args": [
+        1.631,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥243"
+    },
+    {
+      "args": [
+        4.5585,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "4,04€"
+    },
+    {
+      "args": [
+        21079.86,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥3,145,748"
+    },
+    {
+      "args": [
+        3221.3946,
+        "USD",
+        false,
+        ""
+      ],
+      "expected": "$3,221.39"
+    },
+    {
+      "args": [
+        52403.77265,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "104.807,55€"
+    },
+    {
+      "args": [
+        93970.56345,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$93,970.56"
+    },
+    {
+      "args": [
+        90786.8,
+        "USD",
+        true,
+        "2"
+      ],
+      "expected": "$181,573.60"
+    },
+    {
+      "args": [
+        25.6742,
+        "USD",
+        false,
+        ""
+      ],
+      "expected": "$25.67"
+    },
+    {
+      "args": [
+        5.39366,
+        "JPY",
+        true,
+        ""
+      ],
+      "expected": "¥805"
+    },
+    {
+      "args": [
+        387.889487,
+        "EUR",
+        true,
+        "2"
+      ],
+      "expected": "775,78€"
+    },
+    {
+      "args": [
+        52204.914,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "46.305,76€"
+    },
+    {
+      "args": [
+        28095.831,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "24.921,00€"
+    },
+    {
+      "args": [
+        655,
+        "USD",
+        false,
+        ""
+      ],
+      "expected": "$655.00"
+    },
+    {
+      "args": [
+        77440.22,
+        "USD",
+        true,
+        ""
+      ],
+      "expected": "$77,440.22"
+    },
+    {
+      "args": [
+        43059.04622,
+        "JPY",
+        true,
+        ""
+      ],
+      "expected": "¥6,425,701"
+    },
+    {
+      "args": [
+        65876.6,
+        "EUR",
+        true,
+        ""
+      ],
+      "expected": "58.432,54€"
+    },
+    {
+      "args": [
+        98205.2,
+        "JPY",
+        true,
+        "0.5"
+      ],
+      "expected": "¥49,103"
+    },
+    {
+      "args": [
+        188.77,
+        "USD",
+        true,
+        null
+      ],
+      "expected": "$188.77"
+    },
+    {
+      "args": [
+        66.456,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥9,917"
+    },
+    {
+      "args": [
+        669.113,
+        "EUR",
+        true,
+        "0.5"
+      ],
+      "expected": "334,56€"
+    },
+    {
+      "args": [
+        1.98,
+        "JPY",
+        true,
+        null
+      ],
+      "expected": "¥295"
+    },
+    {
+      "args": [
+        258.05,
+        "EUR",
+        true,
+        "0.5"
+      ],
+      "expected": "129,03€"
+    },
+    {
+      "args": [
+        6.09448,
+        "EUR",
+        true,
+        null
+      ],
+      "expected": "5,41€"
+    }
+  ]
+}

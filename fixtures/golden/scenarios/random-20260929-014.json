@@ -1,0 +1,207 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-014",
+    "description": "Randomly generated scenario (seed 20260929, #14).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD",
+      "shippingBox": {
+        "weight": "5",
+        "padding": "25",
+        "maxWeight": "20"
+      }
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 74
+    },
+    "shipping": {
+      "module": "table",
+      "taxClassId": 0,
+      "mode": "price",
+      "table": "25:8.50,50:5.50,10000:0.00",
+      "handling": "0"
+    },
+    "items": [
+      {
+        "productId": 7,
+        "qty": 2,
+        "attributes": []
+      },
+      {
+        "productId": 26,
+        "qty": 25,
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 8
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "1663.73",
+      "weight": "214",
+      "count": 27
+    },
+    "shipment": {
+      "shippingWeight": "19.107142857143",
+      "numBoxes": 14
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "table",
+      "module": "Table Rate",
+      "methods": [
+        {
+          "id": "table",
+          "title": "Best Way",
+          "cost": "0"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "table_table",
+      "title": "Table Rate (Best Way)",
+      "cost": "0"
+    },
+    "products": [
+      {
+        "id": "7",
+        "qty": 2,
+        "name": "You've Got Mail",
+        "model": "DVD-YGEM",
+        "price": "19.99",
+        "finalPrice": "19.99",
+        "weight": "7",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "26{3}8",
+        "qty": 25,
+        "name": "Microsoft IntelliMouse Explorer",
+        "model": "MSIMEXP",
+        "price": "64.95",
+        "finalPrice": "64.95",
+        "weight": "8",
+        "tax": "13",
+        "taxDescription": "HST 13%",
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 8,
+            "optionName": "Model",
+            "valueName": "PS/2",
+            "prefix": "+",
+            "price": "0"
+          }
+        ]
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "1663.73",
+      "tax": "211.0875",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "HST 13%",
+          "amount": "211.0875"
+        }
+      ],
+      "total": "1874.8175"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "0",
+      "subtotal": "1663.73",
+      "tax": "211.0875",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "HST 13%",
+          "amount": "211.0875"
+        }
+      ],
+      "total": "1874.8175"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "0",
+      "subtotal": "1663.73",
+      "tax": "211.0875",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "HST 13%",
+          "amount": "211.0875"
+        }
+      ],
+      "total": "1874.8175"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$1,663.73",
+        "value": "1663.73",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Table Rate (Best Way):",
+        "text": "$0.00",
+        "value": "0",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "HST 13%:",
+        "text": "$211.09",
+        "value": "211.0875",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$1,874.82</strong>",
+        "value": "1874.8175",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "table_table",
+        "title": "Table Rate (Best Way)",
+        "cost": 0
+      }
+    }
+  }
+}

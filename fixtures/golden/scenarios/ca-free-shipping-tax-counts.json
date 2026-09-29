@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "ca-free-shipping-tax-counts",
+    "description": "With prices shown without tax, the free-shipping threshold is compared to subtotal + tax: 89.99 + 13% HST qualifies for \"over 100\".",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD",
+      "freeShipping": {
+        "enabled": true,
+        "over": "100",
+        "destination": "both"
+      }
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 74
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "5.00",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 22,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "89.99",
+      "weight": "7",
+      "count": 1
+    },
+    "shipment": {
+      "shippingWeight": "10",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": true,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "free_free",
+      "title": "Free Shipping",
+      "cost": "0"
+    },
+    "products": [
+      {
+        "id": "22",
+        "qty": 1,
+        "name": "Unreal Tournament",
+        "model": "PC-UNTM",
+        "price": "89.99",
+        "finalPrice": "89.99",
+        "weight": "7",
+        "tax": "13",
+        "taxDescription": "HST 13%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "89.99",
+      "tax": "11.6987",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "11.6987"
+        }
+      ],
+      "total": "101.6887"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Free Shipping",
+      "shippingCost": "0",
+      "subtotal": "89.99",
+      "tax": "11.6987",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "11.6987"
+        }
+      ],
+      "total": "101.6887"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Free Shipping",
+      "shippingCost": "0",
+      "subtotal": "89.99",
+      "tax": "11.6987",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "11.6987"
+        }
+      ],
+      "total": "101.6887"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$89.99",
+        "value": "89.99",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Free Shipping:",
+        "text": "$0.00",
+        "value": "0",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "HST 13%:",
+        "text": "$11.70",
+        "value": "11.6987",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$101.69</strong>",
+        "value": "101.6887",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "free_free",
+        "title": "Free Shipping",
+        "cost": "0"
+      }
+    }
+  }
+}

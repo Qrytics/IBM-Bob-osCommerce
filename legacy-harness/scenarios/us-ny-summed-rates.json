@@ -1,0 +1,38 @@
+{
+  "name": "us-ny-summed-rates",
+  "description": "New York: two rates with the same priority are summed (4% + 4.5% = 8.5%) and the descriptions joined with \" + \".",
+  "settings": {
+    "displayPriceWithTax": false,
+    "currency": "USD"
+  },
+  "delivery": {
+    "countryId": 223,
+    "zoneId": 43
+  },
+  "shipping": {
+    "module": "flat",
+    "cost": "5.00",
+    "taxClassId": 0
+  },
+  "items": [
+    {
+      "productId": 1,
+      "qty": 2,
+      "attributes": [
+        {
+          "optionId": 4,
+          "valueId": 2
+        },
+        {
+          "optionId": 3,
+          "valueId": 6
+        }
+      ]
+    },
+    {
+      "productId": 3,
+      "qty": 1,
+      "attributes": []
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-009",
+    "description": "Randomly generated scenario (seed 20260929, #9).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "USD",
+      "shippingBox": {
+        "weight": "3",
+        "padding": "10",
+        "maxWeight": "50"
+      }
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 79
+    },
+    "shipping": {
+      "module": "flat",
+      "taxClassId": 3,
+      "cost": "9.32"
+    },
+    "items": [
+      {
+        "productId": 16,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 30,
+        "qty": 3,
+        "attributes": []
+      },
+      {
+        "productId": 31,
+        "qty": 3,
+        "attributes": []
+      },
+      {
+        "productId": 5,
+        "qty": 12,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "508.91",
+      "weight": "100.75",
+      "count": 19
+    },
+    "shipment": {
+      "shippingWeight": "36.941666666667",
+      "numBoxes": 3
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "9.32"
+        }
+      ],
+      "tax": "19"
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "9.32"
+    },
+    "products": [
+      {
+        "id": "16",
+        "qty": 1,
+        "name": "Courage Under Fire",
+        "model": "DVD-CUFI",
+        "price": "29.99",
+        "finalPrice": "29.99",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      },
+      {
+        "id": "30",
+        "qty": 3,
+        "name": "Precision Gizmo",
+        "model": "PRECISION",
+        "price": "19.995",
+        "finalPrice": "19.995",
+        "weight": "1.25",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": []
+      },
+      {
+        "id": "31",
+        "qty": 3,
+        "name": "Gift Wrap (untaxed)",
+        "model": "TAXFREE",
+        "price": "15",
+        "finalPrice": "15",
+        "weight": "2",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "5",
+        "qty": 12,
+        "name": "Blade Runner - Director's Cut",
+        "model": "DVD-BLDRNDC",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "533.66",
+      "tax": "38.694555878426",
+      "taxGroups": [
+        {
+          "description": "MwSt 7%",
+          "amount": "27.299345794393"
+        },
+        {
+          "description": "MwSt 19%",
+          "amount": "11.395210084034"
+        },
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "533.66"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "9.32",
+      "subtotal": "533.66",
+      "tax": "38.694555878426",
+      "taxGroups": [
+        {
+          "description": "MwSt 7%",
+          "amount": "27.299345794393"
+        },
+        {
+          "description": "MwSt 19%",
+          "amount": "11.395210084034"
+        },
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "542.98"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "11.0908",
+      "subtotal": "533.66",
+      "tax": "40.465355878426",
+      "taxGroups": [
+        {
+          "description": "MwSt 7%",
+          "amount": "27.299345794393"
+        },
+        {
+          "description": "MwSt 19%",
+          "amount": "13.166010084034"
+        },
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "544.7508"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$533.66",
+        "value": "533.66",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$11.09",
+        "value": "11.0908",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 7%:",
+        "text": "$27.30",
+        "value": "27.299345794393",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "$13.17",
+        "value": "13.166010084034",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$544.75</strong>",
+        "value": "544.7508",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "9.32"
+      }
+    }
+  }
+}

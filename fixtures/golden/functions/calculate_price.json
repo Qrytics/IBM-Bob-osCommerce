@@ -1,0 +1,5010 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "cases": [
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "817.3563",
+        13,
+        100,
+        "JPY"
+      ],
+      "expected": "81700"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        20,
+        2,
+        "JPY"
+      ],
+      "expected": "20"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "822.1326",
+        8.5,
+        1,
+        "JPY"
+      ],
+      "expected": "822"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "545.6108",
+        15.473749999999997,
+        1,
+        "JPY"
+      ],
+      "expected": "546"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        12.3832,
+        100,
+        7,
+        "JPY"
+      ],
+      "expected": "84"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        29.9863,
+        99.5,
+        100,
+        "USD"
+      ],
+      "expected": "2999"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "863.9107",
+        19,
+        2,
+        "JPY"
+      ],
+      "expected": "1728"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.0784,
+        0,
+        25,
+        "JPY"
+      ],
+      "expected": "75"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "68.9812",
+        0.05,
+        10,
+        "USD"
+      ],
+      "expected": "689.8"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "635.8982",
+        7.0000001,
+        7,
+        "USD"
+      ],
+      "expected": "4451.3"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        5,
+        7,
+        "EUR"
+      ],
+      "expected": "9.31"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.4596,
+        2.5,
+        25,
+        "JPY"
+      ],
+      "expected": "75"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        7.0000001,
+        100,
+        "JPY"
+      ],
+      "expected": "2000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "264.3513",
+        9.67499999999999,
+        1,
+        "JPY"
+      ],
+      "expected": "264"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        4.5436,
+        9.975,
+        1,
+        "JPY"
+      ],
+      "expected": "5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        8.5,
+        3,
+        "JPY"
+      ],
+      "expected": "30"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "328.2257",
+        9.975,
+        25,
+        "USD"
+      ],
+      "expected": "8205.75"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        84.3358,
+        20,
+        1,
+        "JPY"
+      ],
+      "expected": "84"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "205.4348",
+        0,
+        7,
+        "EUR"
+      ],
+      "expected": "1438.01"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        7,
+        100,
+        "EUR"
+      ],
+      "expected": "2000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "529.1204",
+        99.5,
+        2,
+        "JPY"
+      ],
+      "expected": "1058"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        82.1076,
+        20,
+        1,
+        "USD"
+      ],
+      "expected": "82.11"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        9.975,
+        100,
+        "USD"
+      ],
+      "expected": "2000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        84.7996,
+        100,
+        7,
+        "USD"
+      ],
+      "expected": "593.6"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        12.25,
+        25,
+        "EUR"
+      ],
+      "expected": "500"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "343.0647",
+        7.0000001,
+        25,
+        "EUR"
+      ],
+      "expected": "8576.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        54.708,
+        150,
+        100,
+        "JPY"
+      ],
+      "expected": "5500"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "113.0291",
+        99.5,
+        100,
+        "EUR"
+      ],
+      "expected": "11303"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        8.5,
+        1,
+        "JPY"
+      ],
+      "expected": "10"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "801.0664",
+        13,
+        2,
+        "JPY"
+      ],
+      "expected": "1602"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        19,
+        1,
+        "EUR"
+      ],
+      "expected": "2.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "50.4719",
+        7.0000001,
+        2,
+        "USD"
+      ],
+      "expected": "100.94"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        21.4315,
+        0.05,
+        25,
+        "EUR"
+      ],
+      "expected": "535.75"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "720.1918",
+        9.975,
+        2,
+        "EUR"
+      ],
+      "expected": "1440.38"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        90.0008,
+        15.473749999999997,
+        2,
+        "USD"
+      ],
+      "expected": "180"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        4,
+        10,
+        "JPY"
+      ],
+      "expected": "200"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "655.1293",
+        7,
+        3,
+        "USD"
+      ],
+      "expected": "1965.39"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        8.5,
+        10,
+        "USD"
+      ],
+      "expected": "200"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        0.5,
+        2,
+        "EUR"
+      ],
+      "expected": "20.02"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "680.9506",
+        7.0000001,
+        3,
+        "USD"
+      ],
+      "expected": "2042.85"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "985.3895",
+        9.975,
+        3,
+        "JPY"
+      ],
+      "expected": "2955"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.1241,
+        5,
+        7,
+        "USD"
+      ],
+      "expected": "7.84"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "462.2519",
+        99.5,
+        1,
+        "USD"
+      ],
+      "expected": "462.25"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        5,
+        7,
+        "JPY"
+      ],
+      "expected": "70"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.0318,
+        20,
+        25,
+        "EUR"
+      ],
+      "expected": "25.75"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.2547,
+        5,
+        10,
+        "EUR"
+      ],
+      "expected": "12.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "668.1245",
+        0.5,
+        3,
+        "JPY"
+      ],
+      "expected": "2004"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        93.4817,
+        13,
+        1,
+        "JPY"
+      ],
+      "expected": "93"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        9.67499999999999,
+        10,
+        "USD"
+      ],
+      "expected": "25"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        24.3115,
+        100,
+        100,
+        "USD"
+      ],
+      "expected": "2431"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "203.4043",
+        7.0000001,
+        7,
+        "USD"
+      ],
+      "expected": "1423.8"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "651.8890",
+        12.25,
+        25,
+        "JPY"
+      ],
+      "expected": "16300"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        8.68,
+        1,
+        "JPY"
+      ],
+      "expected": "20"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        57.6645,
+        99.5,
+        3,
+        "USD"
+      ],
+      "expected": "172.98"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        56.666,
+        0,
+        3,
+        "EUR"
+      ],
+      "expected": "170.01"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        2.5,
+        1,
+        "JPY"
+      ],
+      "expected": "10"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        100,
+        1,
+        "USD"
+      ],
+      "expected": "20"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        10,
+        100,
+        "EUR"
+      ],
+      "expected": "2000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        5,
+        3,
+        "JPY"
+      ],
+      "expected": "3"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        20,
+        7,
+        "USD"
+      ],
+      "expected": "140"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        50.902,
+        9.975,
+        1,
+        "EUR"
+      ],
+      "expected": "50.9"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        5,
+        3,
+        "JPY"
+      ],
+      "expected": "6"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "898.6713",
+        19,
+        10,
+        "EUR"
+      ],
+      "expected": "8986.7"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        93.1334,
+        0.05,
+        1,
+        "JPY"
+      ],
+      "expected": "93"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        11.1766,
+        150,
+        1,
+        "USD"
+      ],
+      "expected": "11.18"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "529.7207",
+        7,
+        1,
+        "JPY"
+      ],
+      "expected": "530"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        20,
+        10,
+        "USD"
+      ],
+      "expected": "25"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        20,
+        10,
+        "JPY"
+      ],
+      "expected": "100"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "961.0969",
+        9.67499999999999,
+        3,
+        "EUR"
+      ],
+      "expected": "2883.3"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        4,
+        1,
+        "EUR"
+      ],
+      "expected": "10.01"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        93.1925,
+        8.68,
+        10,
+        "JPY"
+      ],
+      "expected": "930"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        83.3719,
+        9.975,
+        100,
+        "JPY"
+      ],
+      "expected": "8300"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        48.6469,
+        0,
+        7,
+        "JPY"
+      ],
+      "expected": "343"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        100,
+        100,
+        "USD"
+      ],
+      "expected": "2000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        13,
+        100,
+        "JPY"
+      ],
+      "expected": "2000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        5.6316,
+        99.5,
+        7,
+        "JPY"
+      ],
+      "expected": "42"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        30.8246,
+        20,
+        1,
+        "EUR"
+      ],
+      "expected": "30.82"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        15.473749999999997,
+        7,
+        "EUR"
+      ],
+      "expected": "9.31"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        90.4249,
+        8.68,
+        1,
+        "JPY"
+      ],
+      "expected": "90"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        42.7144,
+        15.473749999999997,
+        2,
+        "JPY"
+      ],
+      "expected": "86"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        100,
+        1,
+        "JPY"
+      ],
+      "expected": "1"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        93.9307,
+        10,
+        25,
+        "EUR"
+      ],
+      "expected": "2348.25"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "660.0969",
+        5,
+        3,
+        "JPY"
+      ],
+      "expected": "1980"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        7.0000001,
+        25,
+        "USD"
+      ],
+      "expected": "250.25"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        12.25,
+        7,
+        "EUR"
+      ],
+      "expected": "9.31"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        51.8832,
+        15.473749999999997,
+        100,
+        "EUR"
+      ],
+      "expected": "5188"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        13,
+        1,
+        "USD"
+      ],
+      "expected": "10.01"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "280.2474",
+        10,
+        10,
+        "USD"
+      ],
+      "expected": "2802.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        7.0000001,
+        100,
+        "USD"
+      ],
+      "expected": "250"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        77.4837,
+        13,
+        1,
+        "EUR"
+      ],
+      "expected": "77.48"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        61.7262,
+        0.5,
+        2,
+        "JPY"
+      ],
+      "expected": "124"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        52.8116,
+        9.67499999999999,
+        3,
+        "JPY"
+      ],
+      "expected": "159"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        83.462,
+        10,
+        1,
+        "EUR"
+      ],
+      "expected": "83.46"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        12.25,
+        2,
+        "USD"
+      ],
+      "expected": "2.66"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "787.3860",
+        15.473749999999997,
+        10,
+        "EUR"
+      ],
+      "expected": "7873.9"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "96.4375",
+        7,
+        2,
+        "JPY"
+      ],
+      "expected": "192"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "157.2932",
+        20,
+        1,
+        "EUR"
+      ],
+      "expected": "157.29"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        4,
+        1,
+        "USD"
+      ],
+      "expected": "1.33"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        70.5026,
+        15.473749999999997,
+        10,
+        "EUR"
+      ],
+      "expected": "705"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        8.68,
+        2,
+        "EUR"
+      ],
+      "expected": "2.66"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "420.3251",
+        100,
+        1,
+        "USD"
+      ],
+      "expected": "420.33"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        49.2449,
+        99.5,
+        100,
+        "USD"
+      ],
+      "expected": "4924"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "788.1536",
+        19,
+        7,
+        "EUR"
+      ],
+      "expected": "5517.05"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        95.849,
+        2.5,
+        100,
+        "USD"
+      ],
+      "expected": "9585"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "648.4434",
+        99.5,
+        25,
+        "USD"
+      ],
+      "expected": "16211"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        7.0000001,
+        1,
+        "JPY"
+      ],
+      "expected": "2"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "382.4395",
+        13,
+        3,
+        "USD"
+      ],
+      "expected": "1147.32"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        61.654,
+        2.5,
+        2,
+        "USD"
+      ],
+      "expected": "123.3"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        17.7062,
+        7.0000001,
+        3,
+        "USD"
+      ],
+      "expected": "53.13"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        99.7958,
+        10,
+        3,
+        "USD"
+      ],
+      "expected": "299.4"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "360.7901",
+        20,
+        3,
+        "JPY"
+      ],
+      "expected": "1083"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        89.599,
+        9.975,
+        2,
+        "EUR"
+      ],
+      "expected": "179.2"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        36.6559,
+        150,
+        1,
+        "USD"
+      ],
+      "expected": "36.66"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        0.4215,
+        7,
+        7,
+        "USD"
+      ],
+      "expected": "2.94"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        66.4124,
+        15.473749999999997,
+        100,
+        "USD"
+      ],
+      "expected": "6641"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "42.0412",
+        13,
+        7,
+        "USD"
+      ],
+      "expected": "294.28"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        53.0731,
+        13,
+        10,
+        "JPY"
+      ],
+      "expected": "530"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        9.67499999999999,
+        25,
+        "USD"
+      ],
+      "expected": "500"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        20,
+        1,
+        "EUR"
+      ],
+      "expected": "2.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "535.6898",
+        7,
+        1,
+        "JPY"
+      ],
+      "expected": "536"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        91.4564,
+        5,
+        1,
+        "JPY"
+      ],
+      "expected": "91"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        18.4693,
+        9.975,
+        1,
+        "JPY"
+      ],
+      "expected": "18"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        10,
+        1,
+        "JPY"
+      ],
+      "expected": "2"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        12.7044,
+        0.05,
+        100,
+        "USD"
+      ],
+      "expected": "1270"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        8.68,
+        25,
+        "EUR"
+      ],
+      "expected": "62.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        64.9413,
+        7.0000001,
+        1,
+        "EUR"
+      ],
+      "expected": "64.94"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        10,
+        2,
+        "JPY"
+      ],
+      "expected": "4"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "214.9993",
+        0.5,
+        1,
+        "EUR"
+      ],
+      "expected": "215"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        8.68,
+        2,
+        "EUR"
+      ],
+      "expected": "20.02"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "218.7272",
+        20,
+        7,
+        "JPY"
+      ],
+      "expected": "1533"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "450.5209",
+        8.68,
+        1,
+        "USD"
+      ],
+      "expected": "450.52"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.7828,
+        12.25,
+        3,
+        "EUR"
+      ],
+      "expected": "5.34"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        13,
+        2,
+        "USD"
+      ],
+      "expected": "40"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "802.3876",
+        12.25,
+        1,
+        "JPY"
+      ],
+      "expected": "802"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        100,
+        25,
+        "EUR"
+      ],
+      "expected": "500"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        150,
+        1,
+        "EUR"
+      ],
+      "expected": "2.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "988.6225",
+        2.5,
+        7,
+        "EUR"
+      ],
+      "expected": "6920.34"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        17.8886,
+        8.68,
+        1,
+        "JPY"
+      ],
+      "expected": "18"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "861.0432",
+        9.67499999999999,
+        1,
+        "EUR"
+      ],
+      "expected": "861.04"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        14.4787,
+        0,
+        1,
+        "EUR"
+      ],
+      "expected": "14.48"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        5,
+        10,
+        "JPY"
+      ],
+      "expected": "10"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "475.3566",
+        19,
+        1,
+        "EUR"
+      ],
+      "expected": "475.36"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        58.9341,
+        13,
+        1,
+        "JPY"
+      ],
+      "expected": "59"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        33.6281,
+        150,
+        25,
+        "EUR"
+      ],
+      "expected": "840.75"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        77.5839,
+        8.68,
+        7,
+        "USD"
+      ],
+      "expected": "543.06"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "626.8146",
+        19,
+        7,
+        "JPY"
+      ],
+      "expected": "4389"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        98.0083,
+        99.5,
+        10,
+        "USD"
+      ],
+      "expected": "980.1"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        59.7221,
+        13,
+        1,
+        "EUR"
+      ],
+      "expected": "59.72"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        78.7384,
+        12.25,
+        25,
+        "JPY"
+      ],
+      "expected": "1975"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        20.0623,
+        7,
+        100,
+        "EUR"
+      ],
+      "expected": "2006"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "994.8697",
+        13,
+        25,
+        "EUR"
+      ],
+      "expected": "24871.75"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        99.5,
+        3,
+        "USD"
+      ],
+      "expected": "30.03"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "394.5156",
+        10,
+        1,
+        "JPY"
+      ],
+      "expected": "395"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        150,
+        1,
+        "EUR"
+      ],
+      "expected": "20"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        93.6033,
+        0.05,
+        1,
+        "JPY"
+      ],
+      "expected": "94"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "288.5132",
+        0,
+        2,
+        "JPY"
+      ],
+      "expected": "578"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "260.9116",
+        8.68,
+        3,
+        "USD"
+      ],
+      "expected": "782.73"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        4,
+        25,
+        "EUR"
+      ],
+      "expected": "33.25"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "825.1272",
+        8.5,
+        3,
+        "EUR"
+      ],
+      "expected": "2475.39"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        17.2756,
+        4,
+        1,
+        "EUR"
+      ],
+      "expected": "17.28"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        11.5786,
+        5,
+        10,
+        "USD"
+      ],
+      "expected": "115.8"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        0.05,
+        7,
+        "JPY"
+      ],
+      "expected": "140"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        150,
+        25,
+        "JPY"
+      ],
+      "expected": "500"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        23.2088,
+        100,
+        25,
+        "USD"
+      ],
+      "expected": "580.25"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "625.1616",
+        15.473749999999997,
+        25,
+        "JPY"
+      ],
+      "expected": "15625"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        71.8471,
+        0.5,
+        100,
+        "JPY"
+      ],
+      "expected": "7200"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        0.5,
+        100,
+        "JPY"
+      ],
+      "expected": "2000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        58.0972,
+        9.67499999999999,
+        2,
+        "EUR"
+      ],
+      "expected": "116.2"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        76.9065,
+        7.0000001,
+        10,
+        "USD"
+      ],
+      "expected": "769.1"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        0,
+        10,
+        "USD"
+      ],
+      "expected": "13.3"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "926.3922",
+        0,
+        25,
+        "USD"
+      ],
+      "expected": "23159.75"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        38.3077,
+        15.473749999999997,
+        100,
+        "USD"
+      ],
+      "expected": "3831"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        20,
+        3,
+        "JPY"
+      ],
+      "expected": "3"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        18.5052,
+        13,
+        10,
+        "EUR"
+      ],
+      "expected": "185.1"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        15.473749999999997,
+        2,
+        "JPY"
+      ],
+      "expected": "20"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "618.2653",
+        0.05,
+        2,
+        "USD"
+      ],
+      "expected": "1236.54"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        7,
+        2,
+        "EUR"
+      ],
+      "expected": "2.66"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        100,
+        1,
+        "JPY"
+      ],
+      "expected": "20"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        13,
+        3,
+        "USD"
+      ],
+      "expected": "30.03"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "48.8975",
+        8.5,
+        3,
+        "USD"
+      ],
+      "expected": "146.7"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.5102,
+        0.5,
+        1,
+        "EUR"
+      ],
+      "expected": "2.51"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        51.6568,
+        13,
+        1,
+        "JPY"
+      ],
+      "expected": "52"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "424.3382",
+        7,
+        7,
+        "EUR"
+      ],
+      "expected": "2970.38"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        68.8559,
+        100,
+        7,
+        "JPY"
+      ],
+      "expected": "483"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        9.67499999999999,
+        1,
+        "EUR"
+      ],
+      "expected": "2.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        71.067,
+        19,
+        1,
+        "EUR"
+      ],
+      "expected": "71.07"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        13,
+        3,
+        "EUR"
+      ],
+      "expected": "3.99"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        10,
+        10,
+        "EUR"
+      ],
+      "expected": "25"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        61.357,
+        15.473749999999997,
+        25,
+        "EUR"
+      ],
+      "expected": "1534"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        26.7923,
+        2.5,
+        3,
+        "JPY"
+      ],
+      "expected": "81"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        80.5787,
+        13,
+        2,
+        "EUR"
+      ],
+      "expected": "161.16"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        0,
+        25,
+        "USD"
+      ],
+      "expected": "500"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        8.68,
+        7,
+        "EUR"
+      ],
+      "expected": "140"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        93.9909,
+        0.5,
+        10,
+        "USD"
+      ],
+      "expected": "939.9"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        4,
+        100,
+        "JPY"
+      ],
+      "expected": "1000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        8.5,
+        2,
+        "EUR"
+      ],
+      "expected": "5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        14.7368,
+        4,
+        2,
+        "JPY"
+      ],
+      "expected": "30"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "415.1667",
+        8.68,
+        1,
+        "JPY"
+      ],
+      "expected": "415"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        91.1124,
+        8.5,
+        7,
+        "USD"
+      ],
+      "expected": "637.77"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        74.1706,
+        8.5,
+        2,
+        "EUR"
+      ],
+      "expected": "148.34"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        19,
+        2,
+        "USD"
+      ],
+      "expected": "40"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "9.1519",
+        9.975,
+        1,
+        "EUR"
+      ],
+      "expected": "9.15"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        13,
+        2,
+        "USD"
+      ],
+      "expected": "2.66"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        50.1798,
+        20,
+        1,
+        "EUR"
+      ],
+      "expected": "50.18"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "298.3905",
+        19,
+        10,
+        "EUR"
+      ],
+      "expected": "2983.9"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        48.7941,
+        5,
+        1,
+        "USD"
+      ],
+      "expected": "48.79"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        12.25,
+        100,
+        "JPY"
+      ],
+      "expected": "100"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        8.459,
+        5,
+        25,
+        "JPY"
+      ],
+      "expected": "200"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        8.7047,
+        7.0000001,
+        1,
+        "EUR"
+      ],
+      "expected": "8.7"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "658.2709",
+        0.05,
+        10,
+        "EUR"
+      ],
+      "expected": "6582.7"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        19.3447,
+        13,
+        2,
+        "JPY"
+      ],
+      "expected": "38"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "371.2046",
+        100,
+        2,
+        "JPY"
+      ],
+      "expected": "742"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        4,
+        100,
+        "JPY"
+      ],
+      "expected": "100"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        16.0191,
+        20,
+        25,
+        "USD"
+      ],
+      "expected": "400.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        29.0038,
+        19,
+        10,
+        "EUR"
+      ],
+      "expected": "290"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        100,
+        100,
+        "JPY"
+      ],
+      "expected": "2000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "400.4549",
+        13,
+        25,
+        "JPY"
+      ],
+      "expected": "10000"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "561.0841",
+        15.473749999999997,
+        1,
+        "JPY"
+      ],
+      "expected": "561"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "513.4233",
+        0.05,
+        7,
+        "EUR"
+      ],
+      "expected": "3593.94"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "62.6010",
+        20,
+        25,
+        "USD"
+      ],
+      "expected": "1565"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        52.3947,
+        8.5,
+        100,
+        "USD"
+      ],
+      "expected": "5239"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        100,
+        100,
+        "EUR"
+      ],
+      "expected": "1001"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "921.5289",
+        0.05,
+        1,
+        "JPY"
+      ],
+      "expected": "922"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "479.1365",
+        100,
+        1,
+        "JPY"
+      ],
+      "expected": "479"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        4,
+        1,
+        "USD"
+      ],
+      "expected": "1.33"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "926.1258",
+        19,
+        2,
+        "JPY"
+      ],
+      "expected": "1852"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "146.2806",
+        8.68,
+        3,
+        "EUR"
+      ],
+      "expected": "438.84"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        13,
+        7,
+        "USD"
+      ],
+      "expected": "140"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        5,
+        2,
+        "JPY"
+      ],
+      "expected": "40"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "19.9950",
+        5,
+        25,
+        "JPY"
+      ],
+      "expected": "500"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0050",
+        99.5,
+        7,
+        "USD"
+      ],
+      "expected": "70.07"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "756.7815",
+        100,
+        7,
+        "JPY"
+      ],
+      "expected": "5299"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        10.4848,
+        15.473749999999997,
+        10,
+        "JPY"
+      ],
+      "expected": "100"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "2.4950",
+        9.67499999999999,
+        1,
+        "EUR"
+      ],
+      "expected": "2.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "186.4609",
+        13,
+        25,
+        "USD"
+      ],
+      "expected": "4661.5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        82.0163,
+        0.05,
+        10,
+        "USD"
+      ],
+      "expected": "820.2"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        8.68,
+        100,
+        "EUR"
+      ],
+      "expected": "133"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        9.975,
+        2,
+        "EUR"
+      ],
+      "expected": "2.66"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "182.5880",
+        99.5,
+        2,
+        "JPY"
+      ],
+      "expected": "366"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        43.8213,
+        99.5,
+        1,
+        "USD"
+      ],
+      "expected": "43.82"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        28.2628,
+        0,
+        1,
+        "JPY"
+      ],
+      "expected": "28"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        7.0669,
+        0,
+        1,
+        "EUR"
+      ],
+      "expected": "7.07"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        18.1677,
+        7,
+        100,
+        "EUR"
+      ],
+      "expected": "1817"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "661.7652",
+        12.25,
+        100,
+        "EUR"
+      ],
+      "expected": "66177"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "684.9808",
+        99.5,
+        1,
+        "USD"
+      ],
+      "expected": "684.98"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "280.4387",
+        99.5,
+        2,
+        "USD"
+      ],
+      "expected": "560.88"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        48.7244,
+        0.05,
+        1,
+        "JPY"
+      ],
+      "expected": "49"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "860.9210",
+        7.0000001,
+        100,
+        "EUR"
+      ],
+      "expected": "86092"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        94.9986,
+        8.5,
+        7,
+        "EUR"
+      ],
+      "expected": "665"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "1.3333",
+        4,
+        1,
+        "USD"
+      ],
+      "expected": "1.33"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "817.3563",
+        13,
+        100,
+        "JPY"
+      ],
+      "expected": "92400"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        20,
+        2,
+        "JPY"
+      ],
+      "expected": "24"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "822.1326",
+        8.5,
+        1,
+        "JPY"
+      ],
+      "expected": "892"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "545.6108",
+        15.473749999999997,
+        1,
+        "JPY"
+      ],
+      "expected": "630"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        12.3832,
+        100,
+        7,
+        "JPY"
+      ],
+      "expected": "175"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        29.9863,
+        99.5,
+        100,
+        "USD"
+      ],
+      "expected": "5982"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "863.9107",
+        19,
+        2,
+        "JPY"
+      ],
+      "expected": "2056"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.0784,
+        0,
+        25,
+        "JPY"
+      ],
+      "expected": "75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "68.9812",
+        0.05,
+        10,
+        "USD"
+      ],
+      "expected": "690.2"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "635.8982",
+        7.0000001,
+        7,
+        "USD"
+      ],
+      "expected": "4762.87"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        5,
+        7,
+        "EUR"
+      ],
+      "expected": "9.8"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.4596,
+        2.5,
+        25,
+        "JPY"
+      ],
+      "expected": "100"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        7.0000001,
+        100,
+        "JPY"
+      ],
+      "expected": "2100"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "264.3513",
+        9.67499999999999,
+        1,
+        "JPY"
+      ],
+      "expected": "290"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        4.5436,
+        9.975,
+        1,
+        "JPY"
+      ],
+      "expected": "5"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        8.5,
+        3,
+        "JPY"
+      ],
+      "expected": "33"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "328.2257",
+        9.975,
+        25,
+        "USD"
+      ],
+      "expected": "9024.25"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        84.3358,
+        20,
+        1,
+        "JPY"
+      ],
+      "expected": "101"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "205.4348",
+        0,
+        7,
+        "EUR"
+      ],
+      "expected": "1438.01"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        7,
+        100,
+        "EUR"
+      ],
+      "expected": "2139"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "529.1204",
+        99.5,
+        2,
+        "JPY"
+      ],
+      "expected": "2112"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        82.1076,
+        20,
+        1,
+        "USD"
+      ],
+      "expected": "98.53"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        9.975,
+        100,
+        "USD"
+      ],
+      "expected": "2199"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        84.7996,
+        100,
+        7,
+        "USD"
+      ],
+      "expected": "1187.2"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        12.25,
+        25,
+        "EUR"
+      ],
+      "expected": "561"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "343.0647",
+        7.0000001,
+        25,
+        "EUR"
+      ],
+      "expected": "9177"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        54.708,
+        150,
+        100,
+        "JPY"
+      ],
+      "expected": "13700"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "113.0291",
+        99.5,
+        100,
+        "EUR"
+      ],
+      "expected": "22549"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        8.5,
+        1,
+        "JPY"
+      ],
+      "expected": "11"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "801.0664",
+        13,
+        2,
+        "JPY"
+      ],
+      "expected": "1810"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        19,
+        1,
+        "EUR"
+      ],
+      "expected": "2.97"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "50.4719",
+        7.0000001,
+        2,
+        "USD"
+      ],
+      "expected": "108"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        21.4315,
+        0.05,
+        25,
+        "EUR"
+      ],
+      "expected": "536"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "720.1918",
+        9.975,
+        2,
+        "EUR"
+      ],
+      "expected": "1584.06"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        90.0008,
+        15.473749999999997,
+        2,
+        "USD"
+      ],
+      "expected": "207.86"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        4,
+        10,
+        "JPY"
+      ],
+      "expected": "210"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "655.1293",
+        7,
+        3,
+        "USD"
+      ],
+      "expected": "2102.97"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        8.5,
+        10,
+        "USD"
+      ],
+      "expected": "216.9"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        0.5,
+        2,
+        "EUR"
+      ],
+      "expected": "20.12"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "680.9506",
+        7.0000001,
+        3,
+        "USD"
+      ],
+      "expected": "2185.86"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "985.3895",
+        9.975,
+        3,
+        "JPY"
+      ],
+      "expected": "3252"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.1241,
+        5,
+        7,
+        "USD"
+      ],
+      "expected": "8.26"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "462.2519",
+        99.5,
+        1,
+        "USD"
+      ],
+      "expected": "922.19"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        5,
+        7,
+        "JPY"
+      ],
+      "expected": "77"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.0318,
+        20,
+        25,
+        "EUR"
+      ],
+      "expected": "31"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.2547,
+        5,
+        10,
+        "EUR"
+      ],
+      "expected": "13.2"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "668.1245",
+        0.5,
+        3,
+        "JPY"
+      ],
+      "expected": "2013"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        93.4817,
+        13,
+        1,
+        "JPY"
+      ],
+      "expected": "106"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        9.67499999999999,
+        10,
+        "USD"
+      ],
+      "expected": "27.4"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        24.3115,
+        100,
+        100,
+        "USD"
+      ],
+      "expected": "4862"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "203.4043",
+        7.0000001,
+        7,
+        "USD"
+      ],
+      "expected": "1523.48"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "651.8890",
+        12.25,
+        25,
+        "JPY"
+      ],
+      "expected": "18300"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        8.68,
+        1,
+        "JPY"
+      ],
+      "expected": "22"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        57.6645,
+        99.5,
+        3,
+        "USD"
+      ],
+      "expected": "345.12"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        56.666,
+        0,
+        3,
+        "EUR"
+      ],
+      "expected": "170.01"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        2.5,
+        1,
+        "JPY"
+      ],
+      "expected": "10"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        100,
+        1,
+        "USD"
+      ],
+      "expected": "39.99"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        10,
+        100,
+        "EUR"
+      ],
+      "expected": "2199"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        5,
+        3,
+        "JPY"
+      ],
+      "expected": "3"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        20,
+        7,
+        "USD"
+      ],
+      "expected": "167.93"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        50.902,
+        9.975,
+        1,
+        "EUR"
+      ],
+      "expected": "55.98"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        5,
+        3,
+        "JPY"
+      ],
+      "expected": "9"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "898.6713",
+        19,
+        10,
+        "EUR"
+      ],
+      "expected": "10694.2"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        93.1334,
+        0.05,
+        1,
+        "JPY"
+      ],
+      "expected": "93"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        11.1766,
+        150,
+        1,
+        "USD"
+      ],
+      "expected": "27.94"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "529.7207",
+        7,
+        1,
+        "JPY"
+      ],
+      "expected": "567"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        20,
+        10,
+        "USD"
+      ],
+      "expected": "29.9"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        20,
+        10,
+        "JPY"
+      ],
+      "expected": "120"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "961.0969",
+        9.67499999999999,
+        3,
+        "EUR"
+      ],
+      "expected": "3162.24"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        4,
+        1,
+        "EUR"
+      ],
+      "expected": "10.41"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        93.1925,
+        8.68,
+        10,
+        "JPY"
+      ],
+      "expected": "1010"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        83.3719,
+        9.975,
+        100,
+        "JPY"
+      ],
+      "expected": "9200"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        48.6469,
+        0,
+        7,
+        "JPY"
+      ],
+      "expected": "343"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        100,
+        100,
+        "USD"
+      ],
+      "expected": "3999"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        13,
+        100,
+        "JPY"
+      ],
+      "expected": "2300"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        5.6316,
+        99.5,
+        7,
+        "JPY"
+      ],
+      "expected": "77"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        30.8246,
+        20,
+        1,
+        "EUR"
+      ],
+      "expected": "36.99"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        15.473749999999997,
+        7,
+        "EUR"
+      ],
+      "expected": "10.78"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        90.4249,
+        8.68,
+        1,
+        "JPY"
+      ],
+      "expected": "98"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        42.7144,
+        15.473749999999997,
+        2,
+        "JPY"
+      ],
+      "expected": "98"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        100,
+        1,
+        "JPY"
+      ],
+      "expected": "3"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        93.9307,
+        10,
+        25,
+        "EUR"
+      ],
+      "expected": "2583"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "660.0969",
+        5,
+        3,
+        "JPY"
+      ],
+      "expected": "2079"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        7.0000001,
+        25,
+        "USD"
+      ],
+      "expected": "267.75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        12.25,
+        7,
+        "EUR"
+      ],
+      "expected": "10.5"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        51.8832,
+        15.473749999999997,
+        100,
+        "EUR"
+      ],
+      "expected": "5991"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        13,
+        1,
+        "USD"
+      ],
+      "expected": "11.31"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "280.2474",
+        10,
+        10,
+        "USD"
+      ],
+      "expected": "3082.7"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        7.0000001,
+        100,
+        "USD"
+      ],
+      "expected": "267"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        77.4837,
+        13,
+        1,
+        "EUR"
+      ],
+      "expected": "87.56"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        61.7262,
+        0.5,
+        2,
+        "JPY"
+      ],
+      "expected": "124"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        52.8116,
+        9.67499999999999,
+        3,
+        "JPY"
+      ],
+      "expected": "174"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        83.462,
+        10,
+        1,
+        "EUR"
+      ],
+      "expected": "91.81"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        12.25,
+        2,
+        "USD"
+      ],
+      "expected": "3"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "787.3860",
+        15.473749999999997,
+        10,
+        "EUR"
+      ],
+      "expected": "9092.2"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "96.4375",
+        7,
+        2,
+        "JPY"
+      ],
+      "expected": "206"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "157.2932",
+        20,
+        1,
+        "EUR"
+      ],
+      "expected": "188.75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        4,
+        1,
+        "USD"
+      ],
+      "expected": "1.39"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        70.5026,
+        15.473749999999997,
+        10,
+        "EUR"
+      ],
+      "expected": "814.1"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        8.68,
+        2,
+        "EUR"
+      ],
+      "expected": "2.9"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "420.3251",
+        100,
+        1,
+        "USD"
+      ],
+      "expected": "840.65"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        49.2449,
+        99.5,
+        100,
+        "USD"
+      ],
+      "expected": "9824"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "788.1536",
+        19,
+        7,
+        "EUR"
+      ],
+      "expected": "6565.3"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        95.849,
+        2.5,
+        100,
+        "USD"
+      ],
+      "expected": "9825"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "648.4434",
+        99.5,
+        25,
+        "USD"
+      ],
+      "expected": "32341"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        7.0000001,
+        1,
+        "JPY"
+      ],
+      "expected": "3"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "382.4395",
+        13,
+        3,
+        "USD"
+      ],
+      "expected": "1296.48"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        61.654,
+        2.5,
+        2,
+        "USD"
+      ],
+      "expected": "126.4"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        17.7062,
+        7.0000001,
+        3,
+        "USD"
+      ],
+      "expected": "56.85"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        99.7958,
+        10,
+        3,
+        "USD"
+      ],
+      "expected": "329.34"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "360.7901",
+        20,
+        3,
+        "JPY"
+      ],
+      "expected": "1299"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        89.599,
+        9.975,
+        2,
+        "EUR"
+      ],
+      "expected": "197.08"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        36.6559,
+        150,
+        1,
+        "USD"
+      ],
+      "expected": "91.64"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        0.4215,
+        7,
+        7,
+        "USD"
+      ],
+      "expected": "3.15"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        66.4124,
+        15.473749999999997,
+        100,
+        "USD"
+      ],
+      "expected": "7669"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "42.0412",
+        13,
+        7,
+        "USD"
+      ],
+      "expected": "332.57"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        53.0731,
+        13,
+        10,
+        "JPY"
+      ],
+      "expected": "600"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        9.67499999999999,
+        25,
+        "USD"
+      ],
+      "expected": "548.25"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        20,
+        1,
+        "EUR"
+      ],
+      "expected": "2.99"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "535.6898",
+        7,
+        1,
+        "JPY"
+      ],
+      "expected": "573"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        91.4564,
+        5,
+        1,
+        "JPY"
+      ],
+      "expected": "96"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        18.4693,
+        9.975,
+        1,
+        "JPY"
+      ],
+      "expected": "20"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        10,
+        1,
+        "JPY"
+      ],
+      "expected": "3"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        12.7044,
+        0.05,
+        100,
+        "USD"
+      ],
+      "expected": "1271"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        8.68,
+        25,
+        "EUR"
+      ],
+      "expected": "67.75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        64.9413,
+        7.0000001,
+        1,
+        "EUR"
+      ],
+      "expected": "69.49"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        10,
+        2,
+        "JPY"
+      ],
+      "expected": "6"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "214.9993",
+        0.5,
+        1,
+        "EUR"
+      ],
+      "expected": "216.07"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        8.68,
+        2,
+        "EUR"
+      ],
+      "expected": "21.74"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "218.7272",
+        20,
+        7,
+        "JPY"
+      ],
+      "expected": "1834"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "450.5209",
+        8.68,
+        1,
+        "USD"
+      ],
+      "expected": "489.63"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.7828,
+        12.25,
+        3,
+        "EUR"
+      ],
+      "expected": "6"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        13,
+        2,
+        "USD"
+      ],
+      "expected": "45.18"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "802.3876",
+        12.25,
+        1,
+        "JPY"
+      ],
+      "expected": "901"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        100,
+        25,
+        "EUR"
+      ],
+      "expected": "999.75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        150,
+        1,
+        "EUR"
+      ],
+      "expected": "6.24"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "988.6225",
+        2.5,
+        7,
+        "EUR"
+      ],
+      "expected": "7093.38"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        17.8886,
+        8.68,
+        1,
+        "JPY"
+      ],
+      "expected": "19"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "861.0432",
+        9.67499999999999,
+        1,
+        "EUR"
+      ],
+      "expected": "944.35"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        14.4787,
+        0,
+        1,
+        "EUR"
+      ],
+      "expected": "14.48"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        5,
+        10,
+        "JPY"
+      ],
+      "expected": "10"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "475.3566",
+        19,
+        1,
+        "EUR"
+      ],
+      "expected": "565.67"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        58.9341,
+        13,
+        1,
+        "JPY"
+      ],
+      "expected": "67"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        33.6281,
+        150,
+        25,
+        "EUR"
+      ],
+      "expected": "2101.75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        77.5839,
+        8.68,
+        7,
+        "USD"
+      ],
+      "expected": "590.24"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "626.8146",
+        19,
+        7,
+        "JPY"
+      ],
+      "expected": "5222"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        98.0083,
+        99.5,
+        10,
+        "USD"
+      ],
+      "expected": "1955.3"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        59.7221,
+        13,
+        1,
+        "EUR"
+      ],
+      "expected": "67.49"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        78.7384,
+        12.25,
+        25,
+        "JPY"
+      ],
+      "expected": "2200"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        20.0623,
+        7,
+        100,
+        "EUR"
+      ],
+      "expected": "2147"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "994.8697",
+        13,
+        25,
+        "EUR"
+      ],
+      "expected": "28105"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        99.5,
+        3,
+        "USD"
+      ],
+      "expected": "59.88"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "394.5156",
+        10,
+        1,
+        "JPY"
+      ],
+      "expected": "434"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        150,
+        1,
+        "EUR"
+      ],
+      "expected": "49.99"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        93.6033,
+        0.05,
+        1,
+        "JPY"
+      ],
+      "expected": "94"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "288.5132",
+        0,
+        2,
+        "JPY"
+      ],
+      "expected": "578"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "260.9116",
+        8.68,
+        3,
+        "USD"
+      ],
+      "expected": "850.68"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        4,
+        25,
+        "EUR"
+      ],
+      "expected": "34.75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "825.1272",
+        8.5,
+        3,
+        "EUR"
+      ],
+      "expected": "2685.78"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        17.2756,
+        4,
+        1,
+        "EUR"
+      ],
+      "expected": "17.97"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        11.5786,
+        5,
+        10,
+        "USD"
+      ],
+      "expected": "121.6"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        0.05,
+        7,
+        "JPY"
+      ],
+      "expected": "140"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        150,
+        25,
+        "JPY"
+      ],
+      "expected": "1250"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        23.2088,
+        100,
+        25,
+        "USD"
+      ],
+      "expected": "1160.5"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "625.1616",
+        15.473749999999997,
+        25,
+        "JPY"
+      ],
+      "expected": "18050"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        71.8471,
+        0.5,
+        100,
+        "JPY"
+      ],
+      "expected": "7200"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        0.5,
+        100,
+        "JPY"
+      ],
+      "expected": "2000"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        58.0972,
+        9.67499999999999,
+        2,
+        "EUR"
+      ],
+      "expected": "127.44"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        76.9065,
+        7.0000001,
+        10,
+        "USD"
+      ],
+      "expected": "822.9"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        0,
+        10,
+        "USD"
+      ],
+      "expected": "13.3"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "926.3922",
+        0,
+        25,
+        "USD"
+      ],
+      "expected": "23159.75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        38.3077,
+        15.473749999999997,
+        100,
+        "USD"
+      ],
+      "expected": "4424"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        20,
+        3,
+        "JPY"
+      ],
+      "expected": "6"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        18.5052,
+        13,
+        10,
+        "EUR"
+      ],
+      "expected": "209.1"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        15.473749999999997,
+        2,
+        "JPY"
+      ],
+      "expected": "24"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "618.2653",
+        0.05,
+        2,
+        "USD"
+      ],
+      "expected": "1237.14"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        7,
+        2,
+        "EUR"
+      ],
+      "expected": "2.86"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        100,
+        1,
+        "JPY"
+      ],
+      "expected": "40"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        13,
+        3,
+        "USD"
+      ],
+      "expected": "33.93"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "48.8975",
+        8.5,
+        3,
+        "USD"
+      ],
+      "expected": "159.15"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.5102,
+        0.5,
+        1,
+        "EUR"
+      ],
+      "expected": "2.52"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        51.6568,
+        13,
+        1,
+        "JPY"
+      ],
+      "expected": "58"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "424.3382",
+        7,
+        7,
+        "EUR"
+      ],
+      "expected": "3178.28"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        68.8559,
+        100,
+        7,
+        "JPY"
+      ],
+      "expected": "966"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        9.67499999999999,
+        1,
+        "EUR"
+      ],
+      "expected": "2.74"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        71.067,
+        19,
+        1,
+        "EUR"
+      ],
+      "expected": "84.57"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        13,
+        3,
+        "EUR"
+      ],
+      "expected": "4.53"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        10,
+        10,
+        "EUR"
+      ],
+      "expected": "27.4"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        61.357,
+        15.473749999999997,
+        25,
+        "EUR"
+      ],
+      "expected": "1771.25"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        26.7923,
+        2.5,
+        3,
+        "JPY"
+      ],
+      "expected": "81"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        80.5787,
+        13,
+        2,
+        "EUR"
+      ],
+      "expected": "182.1"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        0,
+        25,
+        "USD"
+      ],
+      "expected": "500"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        8.68,
+        7,
+        "EUR"
+      ],
+      "expected": "152.11"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        93.9909,
+        0.5,
+        10,
+        "USD"
+      ],
+      "expected": "944.6"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        4,
+        100,
+        "JPY"
+      ],
+      "expected": "1000"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        8.5,
+        2,
+        "EUR"
+      ],
+      "expected": "5.42"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        14.7368,
+        4,
+        2,
+        "JPY"
+      ],
+      "expected": "30"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "415.1667",
+        8.68,
+        1,
+        "JPY"
+      ],
+      "expected": "451"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        91.1124,
+        8.5,
+        7,
+        "USD"
+      ],
+      "expected": "692.02"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        74.1706,
+        8.5,
+        2,
+        "EUR"
+      ],
+      "expected": "160.96"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        19,
+        2,
+        "USD"
+      ],
+      "expected": "47.58"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "9.1519",
+        9.975,
+        1,
+        "EUR"
+      ],
+      "expected": "10.06"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        13,
+        2,
+        "USD"
+      ],
+      "expected": "3.02"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        50.1798,
+        20,
+        1,
+        "EUR"
+      ],
+      "expected": "60.22"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "298.3905",
+        19,
+        10,
+        "EUR"
+      ],
+      "expected": "3550.8"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        48.7941,
+        5,
+        1,
+        "USD"
+      ],
+      "expected": "51.23"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        12.25,
+        100,
+        "JPY"
+      ],
+      "expected": "100"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        8.459,
+        5,
+        25,
+        "JPY"
+      ],
+      "expected": "225"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        8.7047,
+        7.0000001,
+        1,
+        "EUR"
+      ],
+      "expected": "9.31"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "658.2709",
+        0.05,
+        10,
+        "EUR"
+      ],
+      "expected": "6586"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        19.3447,
+        13,
+        2,
+        "JPY"
+      ],
+      "expected": "44"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "371.2046",
+        100,
+        2,
+        "JPY"
+      ],
+      "expected": "1484"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        4,
+        100,
+        "JPY"
+      ],
+      "expected": "100"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        16.0191,
+        20,
+        25,
+        "USD"
+      ],
+      "expected": "480.5"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        29.0038,
+        19,
+        10,
+        "EUR"
+      ],
+      "expected": "345.1"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        100,
+        100,
+        "JPY"
+      ],
+      "expected": "4000"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "400.4549",
+        13,
+        25,
+        "JPY"
+      ],
+      "expected": "11325"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "561.0841",
+        15.473749999999997,
+        1,
+        "JPY"
+      ],
+      "expected": "648"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "513.4233",
+        0.05,
+        7,
+        "EUR"
+      ],
+      "expected": "3595.76"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "62.6010",
+        20,
+        25,
+        "USD"
+      ],
+      "expected": "1878"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        52.3947,
+        8.5,
+        100,
+        "USD"
+      ],
+      "expected": "5685"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        100,
+        100,
+        "EUR"
+      ],
+      "expected": "2001"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "921.5289",
+        0.05,
+        1,
+        "JPY"
+      ],
+      "expected": "922"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "479.1365",
+        100,
+        1,
+        "JPY"
+      ],
+      "expected": "958"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        4,
+        1,
+        "USD"
+      ],
+      "expected": "1.39"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "926.1258",
+        19,
+        2,
+        "JPY"
+      ],
+      "expected": "2204"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "146.2806",
+        8.68,
+        3,
+        "EUR"
+      ],
+      "expected": "476.94"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        13,
+        7,
+        "USD"
+      ],
+      "expected": "158.13"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        5,
+        2,
+        "JPY"
+      ],
+      "expected": "42"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "19.9950",
+        5,
+        25,
+        "JPY"
+      ],
+      "expected": "525"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0050",
+        99.5,
+        7,
+        "USD"
+      ],
+      "expected": "139.72"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "756.7815",
+        100,
+        7,
+        "JPY"
+      ],
+      "expected": "10598"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        10.4848,
+        15.473749999999997,
+        10,
+        "JPY"
+      ],
+      "expected": "120"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "2.4950",
+        9.67499999999999,
+        1,
+        "EUR"
+      ],
+      "expected": "2.74"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "186.4609",
+        13,
+        25,
+        "USD"
+      ],
+      "expected": "5267.5"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        82.0163,
+        0.05,
+        10,
+        "USD"
+      ],
+      "expected": "820.6"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        8.68,
+        100,
+        "EUR"
+      ],
+      "expected": "145"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        9.975,
+        2,
+        "EUR"
+      ],
+      "expected": "2.94"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "182.5880",
+        99.5,
+        2,
+        "JPY"
+      ],
+      "expected": "728"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        43.8213,
+        99.5,
+        1,
+        "USD"
+      ],
+      "expected": "87.42"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        28.2628,
+        0,
+        1,
+        "JPY"
+      ],
+      "expected": "28"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        7.0669,
+        0,
+        1,
+        "EUR"
+      ],
+      "expected": "7.07"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        18.1677,
+        7,
+        100,
+        "EUR"
+      ],
+      "expected": "1944"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "661.7652",
+        12.25,
+        100,
+        "EUR"
+      ],
+      "expected": "74283"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "684.9808",
+        99.5,
+        1,
+        "USD"
+      ],
+      "expected": "1366.54"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "280.4387",
+        99.5,
+        2,
+        "USD"
+      ],
+      "expected": "1118.96"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        48.7244,
+        0.05,
+        1,
+        "JPY"
+      ],
+      "expected": "49"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "860.9210",
+        7.0000001,
+        100,
+        "EUR"
+      ],
+      "expected": "92119"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        94.9986,
+        8.5,
+        7,
+        "EUR"
+      ],
+      "expected": "721.49"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "1.3333",
+        4,
+        1,
+        "USD"
+      ],
+      "expected": "1.39"
+    }
+  ]
+}

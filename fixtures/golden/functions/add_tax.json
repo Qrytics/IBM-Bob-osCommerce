@@ -1,0 +1,1994 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "cases": [
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        831.4381,
+        19
+      ],
+      "expected": "831.4381"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "713.9717",
+        99.5
+      ],
+      "expected": "713.9717"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "251.3739",
+        7.0000001
+      ],
+      "expected": "251.3739"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.6,
+        9.975
+      ],
+      "expected": "3.6"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        407.8726,
+        9.975
+      ],
+      "expected": "407.8726"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        490.218,
+        8.5
+      ],
+      "expected": "490.218"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        242.2587,
+        0
+      ],
+      "expected": "242.2587"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        4.34,
+        8.5
+      ],
+      "expected": "4.34"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        76.757,
+        13
+      ],
+      "expected": "76.757"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        749.2893,
+        2.5
+      ],
+      "expected": "749.2893"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.61,
+        0.05
+      ],
+      "expected": "2.61"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "873.5489",
+        7.0000001
+      ],
+      "expected": "873.5489"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        4.23,
+        99.5
+      ],
+      "expected": "4.23"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        9.8475,
+        0.05
+      ],
+      "expected": "9.8475"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "615.4214",
+        0.5
+      ],
+      "expected": "615.4214"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.95,
+        20
+      ],
+      "expected": "3.95"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.23,
+        4
+      ],
+      "expected": "3.23"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        627.3125,
+        19
+      ],
+      "expected": "627.3125"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.15,
+        0
+      ],
+      "expected": "1.15"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        369.8866,
+        9.975
+      ],
+      "expected": "369.8866"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.13,
+        2.5
+      ],
+      "expected": "3.13"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        399.4948,
+        5
+      ],
+      "expected": "399.4948"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        284.4124,
+        150
+      ],
+      "expected": "284.4124"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "161.8100",
+        8.68
+      ],
+      "expected": "161.81"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "475.8716",
+        0.5
+      ],
+      "expected": "475.8716"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        4.68,
+        8.5
+      ],
+      "expected": "4.68"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        4.23,
+        20
+      ],
+      "expected": "4.23"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.79,
+        0.05
+      ],
+      "expected": "2.79"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        792.9998,
+        7.0000001
+      ],
+      "expected": "792.9998"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "192.5624",
+        7.0000001
+      ],
+      "expected": "192.5624"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        0.7,
+        150
+      ],
+      "expected": "0.7"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        565.5808,
+        7.0000001
+      ],
+      "expected": "565.5808"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        89.1831,
+        13
+      ],
+      "expected": "89.1831"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        988.7365,
+        7
+      ],
+      "expected": "988.7365"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        121.625,
+        8.68
+      ],
+      "expected": "121.625"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        188.8588,
+        4
+      ],
+      "expected": "188.8588"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "188.0868",
+        0.5
+      ],
+      "expected": "188.0868"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        4.88,
+        20
+      ],
+      "expected": "4.88"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.1,
+        150
+      ],
+      "expected": "2.1"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        596.074,
+        20
+      ],
+      "expected": "596.074"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        209.5702,
+        8.68
+      ],
+      "expected": "209.5702"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "722.1018",
+        2.5
+      ],
+      "expected": "722.1018"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "694.2220",
+        0.5
+      ],
+      "expected": "694.222"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        656.2305,
+        0.05
+      ],
+      "expected": "656.2305"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        342.4851,
+        7.0000001
+      ],
+      "expected": "342.4851"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        195.9978,
+        4
+      ],
+      "expected": "195.9978"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.8,
+        10
+      ],
+      "expected": "2.8"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        729.423,
+        20
+      ],
+      "expected": "729.423"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        0.96,
+        8.68
+      ],
+      "expected": "0.96"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "706.6406",
+        13
+      ],
+      "expected": "706.6406"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        0.92,
+        0.05
+      ],
+      "expected": "0.92"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "490.8954",
+        0.05
+      ],
+      "expected": "490.8954"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "907.4452",
+        9.975
+      ],
+      "expected": "907.4452"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "832.4365",
+        8.5
+      ],
+      "expected": "832.4365"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "62.9428",
+        5
+      ],
+      "expected": "62.9428"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "80.8071",
+        2.5
+      ],
+      "expected": "80.8071"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.87,
+        10
+      ],
+      "expected": "1.87"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "247.1258",
+        20
+      ],
+      "expected": "247.1258"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "884.0471",
+        0
+      ],
+      "expected": "884.0471"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.79,
+        9.975
+      ],
+      "expected": "3.79"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        4.75,
+        0
+      ],
+      "expected": "4.75"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        757.9773,
+        20
+      ],
+      "expected": "757.9773"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        977.3513,
+        12.25
+      ],
+      "expected": "977.3513"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        412.9616,
+        99.5
+      ],
+      "expected": "412.9616"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        304.8793,
+        4
+      ],
+      "expected": "304.8793"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "886.1456",
+        9.67499999999999
+      ],
+      "expected": "886.1456"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        589.8657,
+        0
+      ],
+      "expected": "589.8657"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        626.6456,
+        8.5
+      ],
+      "expected": "626.6456"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        203.7359,
+        19
+      ],
+      "expected": "203.7359"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.22,
+        2.5
+      ],
+      "expected": "2.22"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.91,
+        20
+      ],
+      "expected": "3.91"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        254.9941,
+        15.473749999999997
+      ],
+      "expected": "254.9941"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        0.55,
+        7.0000001
+      ],
+      "expected": "0.55"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        691.6833,
+        9.975
+      ],
+      "expected": "691.6833"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        204.304,
+        99.5
+      ],
+      "expected": "204.304"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "988.8421",
+        12.25
+      ],
+      "expected": "988.8421"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "325.4520",
+        7
+      ],
+      "expected": "325.452"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.83,
+        5
+      ],
+      "expected": "2.83"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        0.4,
+        8.68
+      ],
+      "expected": "0.4"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.55,
+        12.25
+      ],
+      "expected": "1.55"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.61,
+        4
+      ],
+      "expected": "2.61"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.94,
+        9.67499999999999
+      ],
+      "expected": "3.94"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.94,
+        4
+      ],
+      "expected": "1.94"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.31,
+        12.25
+      ],
+      "expected": "1.31"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.93,
+        8.68
+      ],
+      "expected": "1.93"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        407.6308,
+        12.25
+      ],
+      "expected": "407.6308"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        975.8684,
+        99.5
+      ],
+      "expected": "975.8684"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.61,
+        8.5
+      ],
+      "expected": "3.61"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.23,
+        12.25
+      ],
+      "expected": "3.23"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.39,
+        8.5
+      ],
+      "expected": "1.39"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.21,
+        10
+      ],
+      "expected": "3.21"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        251.2186,
+        13
+      ],
+      "expected": "251.2186"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.7,
+        7
+      ],
+      "expected": "2.7"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "576.2570",
+        100
+      ],
+      "expected": "576.257"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "135.8658",
+        150
+      ],
+      "expected": "135.8658"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "845.3787",
+        12.25
+      ],
+      "expected": "845.3787"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        0.26,
+        20
+      ],
+      "expected": "0.26"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.3,
+        19
+      ],
+      "expected": "3.3"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        1.96,
+        99.5
+      ],
+      "expected": "1.96"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "250.9887",
+        12.25
+      ],
+      "expected": "250.9887"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        44.6495,
+        9.67499999999999
+      ],
+      "expected": "44.6495"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.15,
+        20
+      ],
+      "expected": "3.15"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "128.3775",
+        2.5
+      ],
+      "expected": "128.3775"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3,
+        100
+      ],
+      "expected": "3"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        203.8827,
+        4
+      ],
+      "expected": "203.8827"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        792.0515,
+        20
+      ],
+      "expected": "792.0515"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        366.3617,
+        0.5
+      ],
+      "expected": "366.3617"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "633.4720",
+        150
+      ],
+      "expected": "633.472"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "964.2092",
+        19
+      ],
+      "expected": "964.2092"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "854.2783",
+        7.0000001
+      ],
+      "expected": "854.2783"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        0.61,
+        9.67499999999999
+      ],
+      "expected": "0.61"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        45.2558,
+        20
+      ],
+      "expected": "45.2558"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        317.0803,
+        15.473749999999997
+      ],
+      "expected": "317.0803"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        2.06,
+        99.5
+      ],
+      "expected": "2.06"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        334.5933,
+        8.68
+      ],
+      "expected": "334.5933"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        4.25,
+        0.05
+      ],
+      "expected": "4.25"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        3.78,
+        15.473749999999997
+      ],
+      "expected": "3.78"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        764.6963,
+        2.5
+      ],
+      "expected": "764.6963"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        360.0651,
+        10
+      ],
+      "expected": "360.0651"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "663.9341",
+        0.5
+      ],
+      "expected": "663.9341"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "0.0000",
+        7
+      ],
+      "expected": "0"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "10.0000",
+        0
+      ],
+      "expected": "10"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        -5,
+        7
+      ],
+      "expected": "-5"
+    },
+    {
+      "displayPriceWithTax": false,
+      "args": [
+        "15.0000",
+        -1
+      ],
+      "expected": "15"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        831.4381,
+        19
+      ],
+      "expected": "989.411339"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "713.9717",
+        99.5
+      ],
+      "expected": "1424.3735415"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "251.3739",
+        7.0000001
+      ],
+      "expected": "268.97007325137"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.6,
+        9.975
+      ],
+      "expected": "3.9591"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        407.8726,
+        9.975
+      ],
+      "expected": "448.55789185"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        490.218,
+        8.5
+      ],
+      "expected": "531.88653"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        242.2587,
+        0
+      ],
+      "expected": "242.2587"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        4.34,
+        8.5
+      ],
+      "expected": "4.7089"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        76.757,
+        13
+      ],
+      "expected": "86.73541"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        749.2893,
+        2.5
+      ],
+      "expected": "768.0215325"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.61,
+        0.05
+      ],
+      "expected": "2.611305"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "873.5489",
+        7.0000001
+      ],
+      "expected": "934.69732387355"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        4.23,
+        99.5
+      ],
+      "expected": "8.43885"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        9.8475,
+        0.05
+      ],
+      "expected": "9.85242375"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "615.4214",
+        0.5
+      ],
+      "expected": "618.498507"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.95,
+        20
+      ],
+      "expected": "4.74"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.23,
+        4
+      ],
+      "expected": "3.3592"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        627.3125,
+        19
+      ],
+      "expected": "746.501875"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.15,
+        0
+      ],
+      "expected": "1.15"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        369.8866,
+        9.975
+      ],
+      "expected": "406.78278835"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.13,
+        2.5
+      ],
+      "expected": "3.20825"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        399.4948,
+        5
+      ],
+      "expected": "419.46954"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        284.4124,
+        150
+      ],
+      "expected": "711.031"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "161.8100",
+        8.68
+      ],
+      "expected": "175.855108"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "475.8716",
+        0.5
+      ],
+      "expected": "478.250958"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        4.68,
+        8.5
+      ],
+      "expected": "5.0778"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        4.23,
+        20
+      ],
+      "expected": "5.076"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.79,
+        0.05
+      ],
+      "expected": "2.791395"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        792.9998,
+        7.0000001
+      ],
+      "expected": "848.509786793"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "192.5624",
+        7.0000001
+      ],
+      "expected": "206.04176819256"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        0.7,
+        150
+      ],
+      "expected": "1.75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        565.5808,
+        7.0000001
+      ],
+      "expected": "605.17145656558"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        89.1831,
+        13
+      ],
+      "expected": "100.776903"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        988.7365,
+        7
+      ],
+      "expected": "1057.948055"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        121.625,
+        8.68
+      ],
+      "expected": "132.18205"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        188.8588,
+        4
+      ],
+      "expected": "196.413152"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "188.0868",
+        0.5
+      ],
+      "expected": "189.027234"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        4.88,
+        20
+      ],
+      "expected": "5.856"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.1,
+        150
+      ],
+      "expected": "5.25"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        596.074,
+        20
+      ],
+      "expected": "715.2888"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        209.5702,
+        8.68
+      ],
+      "expected": "227.76089336"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "722.1018",
+        2.5
+      ],
+      "expected": "740.154345"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "694.2220",
+        0.5
+      ],
+      "expected": "697.69311"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        656.2305,
+        0.05
+      ],
+      "expected": "656.55861525"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        342.4851,
+        7.0000001
+      ],
+      "expected": "366.45905734249"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        195.9978,
+        4
+      ],
+      "expected": "203.837712"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.8,
+        10
+      ],
+      "expected": "3.08"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        729.423,
+        20
+      ],
+      "expected": "875.3076"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        0.96,
+        8.68
+      ],
+      "expected": "1.043328"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "706.6406",
+        13
+      ],
+      "expected": "798.503878"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        0.92,
+        0.05
+      ],
+      "expected": "0.92046"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "490.8954",
+        0.05
+      ],
+      "expected": "491.1408477"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "907.4452",
+        9.975
+      ],
+      "expected": "997.9628587"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "832.4365",
+        8.5
+      ],
+      "expected": "903.1936025"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "62.9428",
+        5
+      ],
+      "expected": "66.08994"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "80.8071",
+        2.5
+      ],
+      "expected": "82.8272775"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.87,
+        10
+      ],
+      "expected": "2.057"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "247.1258",
+        20
+      ],
+      "expected": "296.55096"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "884.0471",
+        0
+      ],
+      "expected": "884.0471"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.79,
+        9.975
+      ],
+      "expected": "4.1680525"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        4.75,
+        0
+      ],
+      "expected": "4.75"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        757.9773,
+        20
+      ],
+      "expected": "909.57276"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        977.3513,
+        12.25
+      ],
+      "expected": "1097.07683425"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        412.9616,
+        99.5
+      ],
+      "expected": "823.858392"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        304.8793,
+        4
+      ],
+      "expected": "317.074472"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "886.1456",
+        9.67499999999999
+      ],
+      "expected": "971.8801868"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        589.8657,
+        0
+      ],
+      "expected": "589.8657"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        626.6456,
+        8.5
+      ],
+      "expected": "679.910476"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        203.7359,
+        19
+      ],
+      "expected": "242.445721"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.22,
+        2.5
+      ],
+      "expected": "2.2755"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.91,
+        20
+      ],
+      "expected": "4.692"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        254.9941,
+        15.473749999999997
+      ],
+      "expected": "294.45124954875"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        0.55,
+        7.0000001
+      ],
+      "expected": "0.58850000055"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        691.6833,
+        9.975
+      ],
+      "expected": "760.678709175"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        204.304,
+        99.5
+      ],
+      "expected": "407.58648"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "988.8421",
+        12.25
+      ],
+      "expected": "1109.97525725"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "325.4520",
+        7
+      ],
+      "expected": "348.23364"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.83,
+        5
+      ],
+      "expected": "2.9715"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        0.4,
+        8.68
+      ],
+      "expected": "0.43472"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.55,
+        12.25
+      ],
+      "expected": "1.739875"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.61,
+        4
+      ],
+      "expected": "2.7144"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.94,
+        9.67499999999999
+      ],
+      "expected": "4.321195"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.94,
+        4
+      ],
+      "expected": "2.0176"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.31,
+        12.25
+      ],
+      "expected": "1.470475"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.93,
+        8.68
+      ],
+      "expected": "2.097524"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        407.6308,
+        12.25
+      ],
+      "expected": "457.565573"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        975.8684,
+        99.5
+      ],
+      "expected": "1946.857458"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.61,
+        8.5
+      ],
+      "expected": "3.91685"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.23,
+        12.25
+      ],
+      "expected": "3.625675"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.39,
+        8.5
+      ],
+      "expected": "1.50815"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.21,
+        10
+      ],
+      "expected": "3.531"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        251.2186,
+        13
+      ],
+      "expected": "283.877018"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.7,
+        7
+      ],
+      "expected": "2.889"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "576.2570",
+        100
+      ],
+      "expected": "1152.514"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "135.8658",
+        150
+      ],
+      "expected": "339.6645"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "845.3787",
+        12.25
+      ],
+      "expected": "948.93759075"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        0.26,
+        20
+      ],
+      "expected": "0.312"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.3,
+        19
+      ],
+      "expected": "3.927"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        1.96,
+        99.5
+      ],
+      "expected": "3.9102"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "250.9887",
+        12.25
+      ],
+      "expected": "281.73481575"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        44.6495,
+        9.67499999999999
+      ],
+      "expected": "48.969339125"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.15,
+        20
+      ],
+      "expected": "3.78"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "128.3775",
+        2.5
+      ],
+      "expected": "131.5869375"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3,
+        100
+      ],
+      "expected": "6"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        203.8827,
+        4
+      ],
+      "expected": "212.038008"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        792.0515,
+        20
+      ],
+      "expected": "950.4618"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        366.3617,
+        0.5
+      ],
+      "expected": "368.1935085"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "633.4720",
+        150
+      ],
+      "expected": "1583.68"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "964.2092",
+        19
+      ],
+      "expected": "1147.408948"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "854.2783",
+        7.0000001
+      ],
+      "expected": "914.07778185428"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        0.61,
+        9.67499999999999
+      ],
+      "expected": "0.6690175"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        45.2558,
+        20
+      ],
+      "expected": "54.30696"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        317.0803,
+        15.473749999999997
+      ],
+      "expected": "366.14451292125"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        2.06,
+        99.5
+      ],
+      "expected": "4.1097"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        334.5933,
+        8.68
+      ],
+      "expected": "363.63599844"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        4.25,
+        0.05
+      ],
+      "expected": "4.252125"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        3.78,
+        15.473749999999997
+      ],
+      "expected": "4.36490775"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        764.6963,
+        2.5
+      ],
+      "expected": "783.8137075"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        360.0651,
+        10
+      ],
+      "expected": "396.07161"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "663.9341",
+        0.5
+      ],
+      "expected": "667.2537705"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "0.0000",
+        7
+      ],
+      "expected": "0"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "10.0000",
+        0
+      ],
+      "expected": "10"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        -5,
+        7
+      ],
+      "expected": "-5.35"
+    },
+    {
+      "displayPriceWithTax": true,
+      "args": [
+        "15.0000",
+        -1
+      ],
+      "expected": "15"
+    }
+  ]
+}

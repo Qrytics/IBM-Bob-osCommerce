@@ -1,0 +1,53 @@
+{
+  "name": "us-fl-jpy-rounds-dollars",
+  "description": "Display currency JPY (0 decimals): calculate_price() rounds the USD base price to whole dollars before converting, and the cart rounds product and attribute separately, so cart total and order subtotal disagree.",
+  "settings": {
+    "displayPriceWithTax": true,
+    "currency": "JPY"
+  },
+  "delivery": {
+    "countryId": 223,
+    "zoneId": 18
+  },
+  "shipping": {
+    "module": "flat",
+    "cost": "5.00",
+    "taxClassId": 0
+  },
+  "items": [
+    {
+      "productId": 25,
+      "qty": 3,
+      "attributes": [
+        {
+          "optionId": 1,
+          "valueId": 14
+        }
+      ]
+    },
+    {
+      "productId": 1,
+      "qty": 1,
+      "attributes": [
+        {
+          "optionId": 4,
+          "valueId": 2
+        },
+        {
+          "optionId": 3,
+          "valueId": 6
+        }
+      ]
+    },
+    {
+      "productId": 26,
+      "qty": 2,
+      "attributes": [
+        {
+          "optionId": 3,
+          "valueId": 9
+        }
+      ]
+    }
+  ]
+}

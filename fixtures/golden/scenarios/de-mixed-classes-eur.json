@@ -1,0 +1,224 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "de-mixed-classes-eur",
+    "description": "Germany, EUR, prices including tax: 19% and reduced 7% classes produce two tax groups; amounts are converted at 0.8870.",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "EUR"
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 81
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "4.90",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 26,
+        "qty": 1,
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 9
+          }
+        ]
+      },
+      {
+        "productId": 4,
+        "qty": 2,
+        "attributes": []
+      },
+      {
+        "productId": 5,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "192.77",
+      "weight": "61",
+      "count": 4
+    },
+    "shipment": {
+      "shippingWeight": "33.55",
+      "numBoxes": 2
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "4.9"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "4.9"
+    },
+    "products": [
+      {
+        "id": "26{3}9",
+        "qty": 1,
+        "name": "Microsoft IntelliMouse Explorer",
+        "model": "MSIMEXP",
+        "price": "64.95",
+        "finalPrice": "70.95",
+        "weight": "8",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 9,
+            "optionName": "Model",
+            "valueName": "USB",
+            "prefix": "+",
+            "price": "6"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "qty": 2,
+        "name": "The Replacement Killers",
+        "model": "DVD-RPMK",
+        "price": "42",
+        "finalPrice": "42",
+        "weight": "23",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      },
+      {
+        "id": "5",
+        "qty": 1,
+        "name": "Blade Runner - Director's Cut",
+        "model": "DVD-BLDRNDC",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "206.41",
+      "tax": "21.460420168067",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "13.480420168067"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "7.98"
+        }
+      ],
+      "total": "206.41"
+    },
+    "orderBeforeTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "4.9",
+      "subtotal": "206.41",
+      "tax": "21.460420168067",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "13.480420168067"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "7.98"
+        }
+      ],
+      "total": "211.31"
+    },
+    "orderAfterTotals": {
+      "currency": "EUR",
+      "currencyValue": "0.887",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "4.9",
+      "subtotal": "206.41",
+      "tax": "21.460420168067",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "13.480420168067"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "7.98"
+        }
+      ],
+      "total": "211.31"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "183,09€",
+        "value": "206.41",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "4,35€",
+        "value": "4.9",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "11,96€",
+        "value": "13.480420168067",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 7%:",
+        "text": "7,08€",
+        "value": "7.98",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>187,43€</strong>",
+        "value": "211.31",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "4.90"
+      }
+    }
+  }
+}

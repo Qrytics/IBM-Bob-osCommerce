@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LOCKED. Run with: npm run legacy:test (runs both DISPLAY_PRICE_WITH_TAX modes). -->
+<phpunit bootstrap="tests/bootstrap.php"
+         cacheResult="false"
+         colors="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         failOnIncomplete="true"
+         beStrictAboutTestsThatDoNotTestAnything="true">
+    <testsuites>
+        <testsuite name="golden">
+            <file>tests/GoldenFunctionsTest.php</file>
+        </testsuite>
+        <testsuite name="bob">
+            <directory suffix="Test.php">tests/bob</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

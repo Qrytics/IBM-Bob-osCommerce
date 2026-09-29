@@ -1,0 +1,222 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-008",
+    "description": "Randomly generated scenario (seed 20260929, #8).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "USD",
+      "shippingBox": {
+        "weight": "3",
+        "padding": "0",
+        "maxWeight": "50"
+      }
+    },
+    "delivery": {
+      "countryId": 222,
+      "zoneId": 0
+    },
+    "shipping": {
+      "module": "table",
+      "taxClassId": 0,
+      "mode": "weight",
+      "table": "25:8.50,50:5.50,10000:0.00",
+      "handling": "0"
+    },
+    "items": [
+      {
+        "productId": 16,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 22,
+        "qty": 1,
+        "attributes": []
+      },
+      {
+        "productId": 6,
+        "qty": 7,
+        "attributes": []
+      },
+      {
+        "productId": 2,
+        "qty": 1,
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 7
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "1005.67",
+      "weight": "86",
+      "count": 10
+    },
+    "shipment": {
+      "shippingWeight": "44.5",
+      "numBoxes": 2
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "table",
+      "module": "Table Rate",
+      "methods": [
+        {
+          "id": "table",
+          "title": "Best Way",
+          "cost": "11"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "table_table",
+      "title": "Table Rate (Best Way)",
+      "cost": "11"
+    },
+    "products": [
+      {
+        "id": "16",
+        "qty": 1,
+        "name": "Courage Under Fire",
+        "model": "DVD-CUFI",
+        "price": "29.99",
+        "finalPrice": "29.99",
+        "weight": "7",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "22",
+        "qty": 1,
+        "name": "Unreal Tournament",
+        "model": "PC-UNTM",
+        "price": "89.99",
+        "finalPrice": "89.99",
+        "weight": "7",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "6",
+        "qty": 7,
+        "name": "The Matrix",
+        "model": "DVD-MATR",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "2{3}7",
+        "qty": 1,
+        "name": "Matrox G400 32MB",
+        "model": "MG400-32MB",
+        "price": "499.99",
+        "finalPrice": "619.99",
+        "weight": "23",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": [
+          {
+            "optionId": 3,
+            "valueId": 7,
+            "optionName": "Model",
+            "valueName": "Deluxe",
+            "prefix": "+",
+            "price": "120"
+          }
+        ]
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "949.97",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "949.97"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "11",
+      "subtotal": "949.97",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "960.97"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "11",
+      "subtotal": "949.97",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "960.97"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$949.97",
+        "value": "949.97",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Table Rate (Best Way):",
+        "text": "$11.00",
+        "value": "11",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$960.97</strong>",
+        "value": "960.97",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "table_table",
+        "title": "Table Rate (Best Way)",
+        "cost": 11
+      }
+    }
+  }
+}

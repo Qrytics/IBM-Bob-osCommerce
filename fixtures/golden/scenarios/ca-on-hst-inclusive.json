@@ -1,0 +1,174 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "ca-on-hst-inclusive",
+    "description": "Ontario HST 13% with prices including tax: the \">= 10\" divisor branch (\"1.\" . rate).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "USD"
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 74
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "5.00",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 22,
+        "qty": 2,
+        "attributes": []
+      },
+      {
+        "productId": 28,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "995.07",
+      "weight": "15",
+      "count": 3
+    },
+    "shipment": {
+      "shippingWeight": "18",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "5"
+    },
+    "products": [
+      {
+        "id": "22",
+        "qty": 2,
+        "name": "Unreal Tournament",
+        "model": "PC-UNTM",
+        "price": "89.99",
+        "finalPrice": "89.99",
+        "weight": "7",
+        "tax": "13",
+        "taxDescription": "HST 13%",
+        "attributes": []
+      },
+      {
+        "id": "28",
+        "qty": 1,
+        "name": "Samsung Galaxy Tab",
+        "model": "GT-P1000",
+        "price": "749.99",
+        "finalPrice": "749.99",
+        "weight": "1",
+        "tax": "13",
+        "taxDescription": "HST 13%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "1050.87",
+      "tax": "120.89654867257",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "120.89654867257"
+        }
+      ],
+      "total": "1050.87"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "1050.87",
+      "tax": "120.89654867257",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "120.89654867257"
+        }
+      ],
+      "total": "1055.87"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "1050.87",
+      "tax": "120.89654867257",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "120.89654867257"
+        }
+      ],
+      "total": "1055.87"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$1,050.87",
+        "value": "1050.87",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$5.00",
+        "value": "5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "HST 13%:",
+        "text": "$120.90",
+        "value": "120.89654867257",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$1,055.87</strong>",
+        "value": "1055.87",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "5.00"
+      }
+    }
+  }
+}

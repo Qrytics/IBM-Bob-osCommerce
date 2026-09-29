@@ -1,0 +1,38 @@
+{
+  "name": "us-fl-taxed-shipping-inclusive",
+  "description": "Taxed shipping with prices including tax: the shipping line itself grows by the tax.",
+  "settings": {
+    "displayPriceWithTax": true,
+    "currency": "USD"
+  },
+  "delivery": {
+    "countryId": 223,
+    "zoneId": 18
+  },
+  "shipping": {
+    "module": "flat",
+    "cost": "9.99",
+    "taxClassId": 3
+  },
+  "items": [
+    {
+      "productId": 1,
+      "qty": 2,
+      "attributes": [
+        {
+          "optionId": 4,
+          "valueId": 2
+        },
+        {
+          "optionId": 3,
+          "valueId": 6
+        }
+      ]
+    },
+    {
+      "productId": 3,
+      "qty": 1,
+      "attributes": []
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-004",
+    "description": "Randomly generated scenario (seed 20260929, #4).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "JPY",
+      "shippingBox": {
+        "weight": "5",
+        "padding": "10",
+        "maxWeight": "100"
+      }
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 74
+    },
+    "shipping": {
+      "module": "flat",
+      "taxClassId": 0,
+      "cost": "10.85"
+    },
+    "items": [
+      {
+        "productId": 16,
+        "qty": 12,
+        "attributes": []
+      },
+      {
+        "productId": 27,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "907",
+      "weight": "129",
+      "count": 13
+    },
+    "shipment": {
+      "shippingWeight": "70.95",
+      "numBoxes": 2
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "10.85"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "10.85"
+    },
+    "products": [
+      {
+        "id": "16",
+        "qty": 12,
+        "name": "Courage Under Fire",
+        "model": "DVD-CUFI",
+        "price": "29.99",
+        "finalPrice": "29.99",
+        "weight": "7",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "27",
+        "qty": 1,
+        "name": "Hewlett Packard LaserJet 1100Xi",
+        "model": "HPLJ1100XI",
+        "price": "499.99",
+        "finalPrice": "499.99",
+        "weight": "45",
+        "tax": "13",
+        "taxDescription": "HST 13%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "925",
+      "tax": "65",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "HST 13%",
+          "amount": "65"
+        }
+      ],
+      "total": "925"
+    },
+    "orderBeforeTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "10.85",
+      "subtotal": "925",
+      "tax": "65",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "HST 13%",
+          "amount": "65"
+        }
+      ],
+      "total": "935.85"
+    },
+    "orderAfterTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "10.85",
+      "subtotal": "925",
+      "tax": "65",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "HST 13%",
+          "amount": "65"
+        }
+      ],
+      "total": "935.85"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "¥138,038",
+        "value": "925",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "¥1,619",
+        "value": "10.85",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "HST 13%:",
+        "text": "¥9,700",
+        "value": "65",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>¥139,657</strong>",
+        "value": "935.85",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "10.85"
+      }
+    }
+  }
+}

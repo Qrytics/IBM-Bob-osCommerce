@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-018",
+    "description": "Randomly generated scenario (seed 20260929, #18).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "JPY",
+      "shippingBox": {
+        "weight": "3",
+        "padding": "25",
+        "maxWeight": "50"
+      },
+      "freeShipping": {
+        "enabled": true,
+        "over": "1000",
+        "destination": "both"
+      }
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 76
+    },
+    "shipping": {
+      "module": "table",
+      "taxClassId": 0,
+      "mode": "weight",
+      "table": "10:4.99,30:9.99,100:19.99,99999:49.99",
+      "handling": "0"
+    },
+    "items": [
+      {
+        "productId": 16,
+        "qty": 7,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "210",
+      "weight": "49",
+      "count": 7
+    },
+    "shipment": {
+      "shippingWeight": "30.625",
+      "numBoxes": 2
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "table",
+      "module": "Table Rate",
+      "methods": [
+        {
+          "id": "table",
+          "title": "Best Way",
+          "cost": "39.98"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "table_table",
+      "title": "Table Rate (Best Way)",
+      "cost": "39.98"
+    },
+    "products": [
+      {
+        "id": "16",
+        "qty": 7,
+        "name": "Courage Under Fire",
+        "model": "DVD-CUFI",
+        "price": "29.99",
+        "finalPrice": "29.99",
+        "weight": "7",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "210",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "210"
+    },
+    "orderBeforeTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "39.98",
+      "subtotal": "210",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "249.98"
+    },
+    "orderAfterTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "39.98",
+      "subtotal": "210",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "249.98"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "¥31,338",
+        "value": "210",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Table Rate (Best Way):",
+        "text": "¥5,966",
+        "value": "39.98",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>¥37,305</strong>",
+        "value": "249.98",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "table_table",
+        "title": "Table Rate (Best Way)",
+        "cost": 39.98
+      }
+    }
+  }
+}

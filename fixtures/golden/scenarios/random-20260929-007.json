@@ -1,0 +1,190 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-007",
+    "description": "Randomly generated scenario (seed 20260929, #7).",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "JPY",
+      "shippingBox": {
+        "weight": "0",
+        "padding": "0",
+        "maxWeight": "100"
+      }
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 0
+    },
+    "shipping": {
+      "module": "item",
+      "taxClassId": 3,
+      "cost": "4.27",
+      "handling": "1.32"
+    },
+    "items": [
+      {
+        "productId": 31,
+        "qty": 3,
+        "attributes": []
+      },
+      {
+        "productId": 26,
+        "qty": 7,
+        "attributes": []
+      },
+      {
+        "productId": 30,
+        "qty": 3,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "591",
+      "weight": "65.75",
+      "count": 13
+    },
+    "shipment": {
+      "shippingWeight": "65.75",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "item",
+      "module": "Per Item",
+      "methods": [
+        {
+          "id": "item",
+          "title": "Best Way",
+          "cost": "56.83"
+        }
+      ],
+      "tax": "0"
+    },
+    "selectedShipping": {
+      "id": "item_item",
+      "title": "Per Item (Best Way)",
+      "cost": "56.83"
+    },
+    "products": [
+      {
+        "id": "31",
+        "qty": 3,
+        "name": "Gift Wrap (untaxed)",
+        "model": "TAXFREE",
+        "price": "15",
+        "finalPrice": "15",
+        "weight": "2",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "26",
+        "qty": 7,
+        "name": "Microsoft IntelliMouse Explorer",
+        "model": "MSIMEXP",
+        "price": "64.95",
+        "finalPrice": "64.95",
+        "weight": "8",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "30",
+        "qty": 3,
+        "name": "Precision Gizmo",
+        "model": "PRECISION",
+        "price": "19.995",
+        "finalPrice": "19.995",
+        "weight": "1.25",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "560",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "560"
+    },
+    "orderBeforeTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "56.83",
+      "subtotal": "560",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "616.83"
+    },
+    "orderAfterTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "56.83",
+      "subtotal": "560",
+      "tax": "0",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        }
+      ],
+      "total": "616.83"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "¥83,569",
+        "value": "560",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Per Item (Best Way):",
+        "text": "¥8,481",
+        "value": "56.83",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>¥92,050</strong>",
+        "value": "616.83",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "item_item",
+        "title": "Per Item (Best Way)",
+        "cost": 56.82999999999999
+      }
+    }
+  }
+}

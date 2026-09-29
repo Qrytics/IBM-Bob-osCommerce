@@ -1,0 +1,410 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "cases": [
+    {
+      "args": [
+        0,
+        223,
+        18
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        0,
+        223,
+        12
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        0,
+        223,
+        43
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        0,
+        38,
+        74
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        0,
+        38,
+        76
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        0,
+        81,
+        79
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        0,
+        81,
+        81
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        0,
+        81,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        0,
+        222,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        0,
+        223,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        1,
+        223,
+        18
+      ],
+      "expected": "FL TAX 7.0%"
+    },
+    {
+      "args": [
+        1,
+        223,
+        12
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        1,
+        223,
+        43
+      ],
+      "expected": "NY State 4% + NYC 4.5%"
+    },
+    {
+      "args": [
+        1,
+        38,
+        74
+      ],
+      "expected": "HST 13%"
+    },
+    {
+      "args": [
+        1,
+        38,
+        76
+      ],
+      "expected": "GST 5% + QST 9.975%"
+    },
+    {
+      "args": [
+        1,
+        81,
+        79
+      ],
+      "expected": "MwSt 19%"
+    },
+    {
+      "args": [
+        1,
+        81,
+        81
+      ],
+      "expected": "MwSt 19%"
+    },
+    {
+      "args": [
+        1,
+        81,
+        0
+      ],
+      "expected": "MwSt 19%"
+    },
+    {
+      "args": [
+        1,
+        222,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        1,
+        223,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        2,
+        223,
+        18
+      ],
+      "expected": "FL Reduced 2.5%"
+    },
+    {
+      "args": [
+        2,
+        223,
+        12
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        2,
+        223,
+        43
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        2,
+        38,
+        74
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        2,
+        38,
+        76
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        2,
+        81,
+        79
+      ],
+      "expected": "MwSt 7%"
+    },
+    {
+      "args": [
+        2,
+        81,
+        81
+      ],
+      "expected": "MwSt 7%"
+    },
+    {
+      "args": [
+        2,
+        81,
+        0
+      ],
+      "expected": "MwSt 7%"
+    },
+    {
+      "args": [
+        2,
+        222,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        2,
+        223,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        3,
+        223,
+        18
+      ],
+      "expected": "FL TAX 7.0%"
+    },
+    {
+      "args": [
+        3,
+        223,
+        12
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        3,
+        223,
+        43
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        3,
+        38,
+        74
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        3,
+        38,
+        76
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        3,
+        81,
+        79
+      ],
+      "expected": "MwSt 19%"
+    },
+    {
+      "args": [
+        3,
+        81,
+        81
+      ],
+      "expected": "MwSt 19%"
+    },
+    {
+      "args": [
+        3,
+        81,
+        0
+      ],
+      "expected": "MwSt 19%"
+    },
+    {
+      "args": [
+        3,
+        222,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        3,
+        223,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        223,
+        18
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        223,
+        12
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        223,
+        43
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        38,
+        74
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        38,
+        76
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        81,
+        79
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        81,
+        81
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        81,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        222,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    },
+    {
+      "args": [
+        99,
+        223,
+        0
+      ],
+      "expected": "Unknown tax rate"
+    }
+  ]
+}

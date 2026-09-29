@@ -1,0 +1,159 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "ca-table-price-inclusive",
+    "description": "Table rate by price with prices including tax, shipped to Ontario: the cart total uses Florida tax (store location) while the order uses Ontario tax.",
+    "settings": {
+      "displayPriceWithTax": true,
+      "currency": "USD"
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 74
+    },
+    "shipping": {
+      "module": "table",
+      "mode": "price",
+      "table": "100:12.00,500:6.00,99999:0",
+      "handling": "0",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 22,
+        "qty": 5,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "481.45",
+      "weight": "35",
+      "count": 5
+    },
+    "shipment": {
+      "shippingWeight": "38.5",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "table",
+      "module": "Table Rate",
+      "methods": [
+        {
+          "id": "table",
+          "title": "Best Way",
+          "cost": "6"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "table_table",
+      "title": "Table Rate (Best Way)",
+      "cost": "6"
+    },
+    "products": [
+      {
+        "id": "22",
+        "qty": 5,
+        "name": "Unreal Tournament",
+        "model": "PC-UNTM",
+        "price": "89.99",
+        "finalPrice": "89.99",
+        "weight": "7",
+        "tax": "13",
+        "taxDescription": "HST 13%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "508.45",
+      "tax": "58.494247787611",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "58.494247787611"
+        }
+      ],
+      "total": "508.45"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "6",
+      "subtotal": "508.45",
+      "tax": "58.494247787611",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "58.494247787611"
+        }
+      ],
+      "total": "514.45"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "6",
+      "subtotal": "508.45",
+      "tax": "58.494247787611",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "58.494247787611"
+        }
+      ],
+      "total": "514.45"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$508.45",
+        "value": "508.45",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Table Rate (Best Way):",
+        "text": "$6.00",
+        "value": "6",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "HST 13%:",
+        "text": "$58.49",
+        "value": "58.494247787611",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$514.45</strong>",
+        "value": "514.45",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "table_table",
+        "title": "Table Rate (Best Way)",
+        "cost": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "ca-free-shipping-national-only",
+    "description": "Free shipping restricted to national orders; a Canadian order pays shipping.",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD",
+      "freeShipping": {
+        "enabled": true,
+        "over": "50",
+        "destination": "national"
+      }
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 74
+    },
+    "shipping": {
+      "module": "flat",
+      "cost": "5.00",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 1,
+        "qty": 2,
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 2
+          },
+          {
+            "optionId": 3,
+            "valueId": 6
+          }
+        ]
+      },
+      {
+        "productId": 3,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "939.97",
+      "weight": "53",
+      "count": 3
+    },
+    "shipment": {
+      "shippingWeight": "29.15",
+      "numBoxes": 2
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "flat",
+      "module": "Flat Rate",
+      "methods": [
+        {
+          "id": "flat",
+          "title": "Best Way",
+          "cost": "5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "flat_flat",
+      "title": "Flat Rate (Best Way)",
+      "cost": "5"
+    },
+    "products": [
+      {
+        "id": "1{4}2{3}6",
+        "qty": 2,
+        "name": "Matrox G200 MMS",
+        "model": "MG200MMS",
+        "price": "299.99",
+        "finalPrice": "449.99",
+        "weight": "23",
+        "tax": "13",
+        "taxDescription": "HST 13%",
+        "attributes": [
+          {
+            "optionId": 4,
+            "valueId": 2,
+            "optionName": "Memory",
+            "valueName": "8 mb",
+            "prefix": "+",
+            "price": "50"
+          },
+          {
+            "optionId": 3,
+            "valueId": 6,
+            "optionName": "Model",
+            "valueName": "Premium",
+            "prefix": "+",
+            "price": "100"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "qty": 1,
+        "name": "Microsoft IntelliMouse Pro",
+        "model": "MSIMPRO",
+        "price": "39.99",
+        "finalPrice": "39.99",
+        "weight": "7",
+        "tax": "13",
+        "taxDescription": "HST 13%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "939.97",
+      "tax": "122.1961",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "122.1961"
+        }
+      ],
+      "total": "1062.1661"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "939.97",
+      "tax": "122.1961",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "122.1961"
+        }
+      ],
+      "total": "1067.1661"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Flat Rate (Best Way)",
+      "shippingCost": "5",
+      "subtotal": "939.97",
+      "tax": "122.1961",
+      "taxGroups": [
+        {
+          "description": "HST 13%",
+          "amount": "122.1961"
+        }
+      ],
+      "total": "1067.1661"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$939.97",
+        "value": "939.97",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Flat Rate (Best Way):",
+        "text": "$5.00",
+        "value": "5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "HST 13%:",
+        "text": "$122.20",
+        "value": "122.1961",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$1,067.17</strong>",
+        "value": "1067.1661",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "flat_flat",
+        "title": "Flat Rate (Best Way)",
+        "cost": "5.00"
+      }
+    }
+  }
+}

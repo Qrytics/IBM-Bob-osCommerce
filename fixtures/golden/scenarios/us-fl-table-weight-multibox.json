@@ -1,0 +1,159 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": null
+  },
+  "scenario": {
+    "name": "us-fl-table-weight-multibox",
+    "description": "Table rate by weight: 135 kg + padding is split into 3 boxes of 49.5 kg; cost per box x boxes.",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD"
+    },
+    "delivery": {
+      "countryId": 223,
+      "zoneId": 18
+    },
+    "shipping": {
+      "module": "table",
+      "mode": "weight",
+      "table": "25:8.50,50:5.50,10000:0.00",
+      "handling": "0",
+      "taxClassId": 0
+    },
+    "items": [
+      {
+        "productId": 27,
+        "qty": 3,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "1499.97",
+      "weight": "135",
+      "count": 3
+    },
+    "shipment": {
+      "shippingWeight": "49.5",
+      "numBoxes": 3
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "table",
+      "module": "Table Rate",
+      "methods": [
+        {
+          "id": "table",
+          "title": "Best Way",
+          "cost": "16.5"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "table_table",
+      "title": "Table Rate (Best Way)",
+      "cost": "16.5"
+    },
+    "products": [
+      {
+        "id": "27",
+        "qty": 3,
+        "name": "Hewlett Packard LaserJet 1100Xi",
+        "model": "HPLJ1100XI",
+        "price": "499.99",
+        "finalPrice": "499.99",
+        "weight": "45",
+        "tax": "7",
+        "taxDescription": "FL TAX 7.0%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "1499.97",
+      "tax": "104.9979",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "104.9979"
+        }
+      ],
+      "total": "1604.9679"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "16.5",
+      "subtotal": "1499.97",
+      "tax": "104.9979",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "104.9979"
+        }
+      ],
+      "total": "1621.4679"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Table Rate (Best Way)",
+      "shippingCost": "16.5",
+      "subtotal": "1499.97",
+      "tax": "104.9979",
+      "taxGroups": [
+        {
+          "description": "FL TAX 7.0%",
+          "amount": "104.9979"
+        }
+      ],
+      "total": "1621.4679"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$1,499.97",
+        "value": "1499.97",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Table Rate (Best Way):",
+        "text": "$16.50",
+        "value": "16.5",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "FL TAX 7.0%:",
+        "text": "$105.00",
+        "value": "104.9979",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$1,621.47</strong>",
+        "value": "1621.4679",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "table_table",
+        "title": "Table Rate (Best Way)",
+        "cost": 16.5
+      }
+    }
+  }
+}

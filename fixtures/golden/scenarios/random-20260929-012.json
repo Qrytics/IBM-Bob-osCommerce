@@ -1,0 +1,209 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-012",
+    "description": "Randomly generated scenario (seed 20260929, #12).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "USD",
+      "shippingBox": {
+        "weight": "3",
+        "padding": "25",
+        "maxWeight": "100"
+      }
+    },
+    "delivery": {
+      "countryId": 38,
+      "zoneId": 76
+    },
+    "shipping": {
+      "module": "item",
+      "taxClassId": 0,
+      "cost": "2.40",
+      "handling": "1.54"
+    },
+    "items": [
+      {
+        "productId": 5,
+        "qty": 25,
+        "attributes": []
+      },
+      {
+        "productId": 4,
+        "qty": 5,
+        "attributes": []
+      },
+      {
+        "productId": 28,
+        "qty": 2,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "2459.98",
+      "weight": "292",
+      "count": 32
+    },
+    "shipment": {
+      "shippingWeight": "91.25",
+      "numBoxes": 4
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "item",
+      "module": "Per Item",
+      "methods": [
+        {
+          "id": "item",
+          "title": "Best Way",
+          "cost": "78.34"
+        }
+      ],
+      "tax": null
+    },
+    "selectedShipping": {
+      "id": "item_item",
+      "title": "Per Item (Best Way)",
+      "cost": "78.34"
+    },
+    "products": [
+      {
+        "id": "5",
+        "qty": 25,
+        "name": "Blade Runner - Director's Cut",
+        "model": "DVD-BLDRNDC",
+        "price": "30",
+        "finalPrice": "30",
+        "weight": "7",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "4",
+        "qty": 5,
+        "name": "The Replacement Killers",
+        "model": "DVD-RPMK",
+        "price": "42",
+        "finalPrice": "42",
+        "weight": "23",
+        "tax": "0",
+        "taxDescription": "Unknown tax rate",
+        "attributes": []
+      },
+      {
+        "id": "28",
+        "qty": 2,
+        "name": "Samsung Galaxy Tab",
+        "model": "GT-P1000",
+        "price": "749.99",
+        "finalPrice": "749.99",
+        "weight": "1",
+        "tax": "15.47375",
+        "taxDescription": "GST 5% + QST 9.975%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "2459.98",
+      "tax": "232.10315525",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "GST 5% + QST 9.975%",
+          "amount": "232.10315525"
+        }
+      ],
+      "total": "2692.08315525"
+    },
+    "orderBeforeTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "78.34",
+      "subtotal": "2459.98",
+      "tax": "232.10315525",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "GST 5% + QST 9.975%",
+          "amount": "232.10315525"
+        }
+      ],
+      "total": "2770.42315525"
+    },
+    "orderAfterTotals": {
+      "currency": "USD",
+      "currencyValue": "1",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "78.34",
+      "subtotal": "2459.98",
+      "tax": "232.10315525",
+      "taxGroups": [
+        {
+          "description": "Unknown tax rate",
+          "amount": "0"
+        },
+        {
+          "description": "GST 5% + QST 9.975%",
+          "amount": "232.10315525"
+        }
+      ],
+      "total": "2770.42315525"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "$2,459.98",
+        "value": "2459.98",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Per Item (Best Way):",
+        "text": "$78.34",
+        "value": "78.34",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "GST 5% + QST 9.975%:",
+        "text": "$232.10",
+        "value": "232.10315525",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>$2,770.42</strong>",
+        "value": "2770.42315525",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "item_item",
+        "title": "Per Item (Best Way)",
+        "cost": 78.34
+      }
+    }
+  }
+}

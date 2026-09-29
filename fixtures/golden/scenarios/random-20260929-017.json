@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "generator": "scripts/golden/generate.mjs",
+    "legacy": "osCommerce v2.3.4 (329d51a), legacy-baseline/catalog",
+    "php": "7.4",
+    "seed": 20260929
+  },
+  "scenario": {
+    "name": "random-20260929-017",
+    "description": "Randomly generated scenario (seed 20260929, #17).",
+    "settings": {
+      "displayPriceWithTax": false,
+      "currency": "JPY",
+      "shippingBox": {
+        "weight": "0",
+        "padding": "25",
+        "maxWeight": "100"
+      }
+    },
+    "delivery": {
+      "countryId": 81,
+      "zoneId": 79
+    },
+    "shipping": {
+      "module": "item",
+      "taxClassId": 1,
+      "cost": "0.96",
+      "handling": "2.65"
+    },
+    "items": [
+      {
+        "productId": 25,
+        "qty": 3,
+        "attributes": [
+          {
+            "optionId": 1,
+            "valueId": 15
+          }
+        ]
+      },
+      {
+        "productId": 4,
+        "qty": 1,
+        "attributes": []
+      }
+    ]
+  },
+  "expected": {
+    "cart": {
+      "total": "249",
+      "weight": "47",
+      "count": 4
+    },
+    "shipment": {
+      "shippingWeight": "58.75",
+      "numBoxes": 1
+    },
+    "freeShippingOffered": false,
+    "quote": {
+      "id": "item",
+      "module": "Per Item",
+      "methods": [
+        {
+          "id": "item",
+          "title": "Best Way",
+          "cost": "6.49"
+        }
+      ],
+      "tax": "19"
+    },
+    "selectedShipping": {
+      "id": "item_item",
+      "title": "Per Item (Best Way)",
+      "cost": "6.49"
+    },
+    "products": [
+      {
+        "id": "25{1}15",
+        "qty": 3,
+        "name": "Microsoft Internet Keyboard PS/2",
+        "model": "MSINTKB",
+        "price": "69.99",
+        "finalPrice": "68.6567",
+        "weight": "8",
+        "tax": "19",
+        "taxDescription": "MwSt 19%",
+        "attributes": [
+          {
+            "optionId": 1,
+            "valueId": 15,
+            "optionName": "Color",
+            "valueName": "Black",
+            "prefix": "-",
+            "price": "1.3333"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "qty": 1,
+        "name": "The Replacement Killers",
+        "model": "DVD-RPMK",
+        "price": "42",
+        "finalPrice": "42",
+        "weight": "23",
+        "tax": "7",
+        "taxDescription": "MwSt 7%",
+        "attributes": []
+      }
+    ],
+    "orderBeforeShipping": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "",
+      "shippingCost": "0",
+      "subtotal": "249",
+      "tax": "42.27",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "39.33"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "2.94"
+        }
+      ],
+      "total": "291.27"
+    },
+    "orderBeforeTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "6.49",
+      "subtotal": "249",
+      "tax": "42.27",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "39.33"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "2.94"
+        }
+      ],
+      "total": "297.76"
+    },
+    "orderAfterTotals": {
+      "currency": "JPY",
+      "currencyValue": "149.23",
+      "shippingMethod": "Per Item (Best Way)",
+      "shippingCost": "6.49",
+      "subtotal": "249",
+      "tax": "43.5031",
+      "taxGroups": [
+        {
+          "description": "MwSt 19%",
+          "amount": "40.5631"
+        },
+        {
+          "description": "MwSt 7%",
+          "amount": "2.94"
+        }
+      ],
+      "total": "298.9931"
+    },
+    "orderTotals": [
+      {
+        "code": "ot_subtotal",
+        "title": "Sub-Total:",
+        "text": "¥37,158",
+        "value": "249",
+        "sortOrder": 1
+      },
+      {
+        "code": "ot_shipping",
+        "title": "Per Item (Best Way):",
+        "text": "¥969",
+        "value": "6.49",
+        "sortOrder": 2
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 19%:",
+        "text": "¥6,053",
+        "value": "40.5631",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_tax",
+        "title": "MwSt 7%:",
+        "text": "¥439",
+        "value": "2.94",
+        "sortOrder": 3
+      },
+      {
+        "code": "ot_total",
+        "title": "Total:",
+        "text": "<strong>¥44,619</strong>",
+        "value": "298.9931",
+        "sortOrder": 4
+      }
+    ],
+    "exact": {
+      "selectedShipping": {
+        "id": "item_item",
+        "title": "Per Item (Best Way)",
+        "cost": 6.49
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "us-fl-table-weight-multibox",
+  "description": "Table rate by weight: 135 kg + padding is split into 3 boxes of 49.5 kg; cost per box x boxes.",
+  "settings": {
+    "displayPriceWithTax": false,
+    "currency": "USD"
+  },
+  "delivery": {
+    "countryId": 223,
+    "zoneId": 18
+  },
+  "shipping": {
+    "module": "table",
+    "mode": "weight",
+    "table": "25:8.50,50:5.50,10000:0.00",
+    "handling": "0",
+    "taxClassId": 0
+  },
+  "items": [
+    {
+      "productId": 27,
+      "qty": 3,
+      "attributes": []
+    }
+  ]
+}
