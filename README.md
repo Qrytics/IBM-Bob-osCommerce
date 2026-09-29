@@ -4,7 +4,7 @@ I used Bob to modernize osCommerce's tangled legacy checkout module. I extracted
 and turned it into a secure, decoupled Node.js REST API with automated test coverage, showing how AI can
 help modernize mission-critical legacy systems safely and efficiently.
 
-**Live demo:** _coming soon (Render)_ · [Swagger UI](#run-it-locally) at `/docs` · live equivalence report at `/api/v1/equivalence`
+**Live demo:** [cleancart-api.onrender.com](https://cleancart-api.onrender.com) · [Swagger UI](https://cleancart-api.onrender.com/docs/) · [live equivalence report](https://cleancart-api.onrender.com/api/v1/equivalence)
 
 ## The idea in one picture
 
