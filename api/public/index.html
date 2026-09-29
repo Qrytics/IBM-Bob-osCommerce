@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CleanCart</title>
+  <meta name="description" content="osCommerce v2.3.4 checkout math, modernized into a REST API and verified against the legacy PHP.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <h1>CleanCart</h1>
+        <p>osCommerce v2.3.4 checkout math, rebuilt as a REST API and checked against the original PHP.</p>
+      </div>
+      <nav>
+        <a href="/docs">Swagger UI</a>
+        <a href="/openapi.json">OpenAPI</a>
+        <a href="/api/v1/equivalence">Equivalence JSON</a>
+        <a id="repo-link" href="https://github.com/Qrytics/IBM-Bob-osCommerce">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" id="equivalence">
+      <div class="card-head">
+        <h2>Equivalence with legacy PHP</h2>
+        <span class="badge" id="eq-badge">checking…</span>
+      </div>
+      <p class="muted">Each check below replays outputs recorded from the real osCommerce PHP code (run under PHP 7.4) against the running Node.js code. A case passes only when both produce the same value.</p>
+      <div id="eq-modules" class="modules"></div>
+    </section>
+
+    <section class="card" id="compare">
+      <div class="card-head">
+        <h2>Legacy vs. modern, one checkout</h2>
+      </div>
+      <label class="row">
+        <span>Golden scenario</span>
+        <select id="scenario-select"></select>
+      </label>
+      <p id="scenario-desc" class="muted"></p>
+      <div id="compare-result"></div>
+    </section>
+
+    <section class="card" id="try">
+      <div class="card-head">
+        <h2>Try the API</h2>
+        <span class="muted small">POST /api/v1/checkout/totals</span>
+      </div>
+      <form id="checkout-form">
+        <div class="grid">
+          <label>Currency <select name="currency" id="f-currency"></select></label>
+          <label>Prices shown <select name="displayPriceWithTax"><option value="false">without tax</option><option value="true">with tax</option></select></label>
+          <label>Deliver to <select name="delivery" id="f-delivery"></select></label>
+          <label>Shipping
+            <select name="module" id="f-module">
+              <option value="flat">Flat rate</option>
+              <option value="item">Per item</option>
+              <option value="table">Table rate</option>
+            </select>
+          </label>
+          <label>Cost / per item <input name="cost" value="5.00" inputmode="decimal"></label>
+          <label>Handling <input name="handling" value="0" inputmode="decimal"></label>
+          <label>Table (limit:cost,…) <input name="table" value="25:8.50,50:5.50,10000:0.00"></label>
+          <label>Table mode <select name="mode"><option>weight</option><option>price</option></select></label>
+          <label>Shipping tax class <select name="shippingTax"><option value="0">none</option><option value="3">Shipping (class 3)</option><option value="1">Taxable Goods (class 1)</option></select></label>
+          <label>Free shipping over <input name="freeOver" placeholder="off" inputmode="decimal"></label>
+          <label>Free shipping for <select name="freeDest"><option>national</option><option>international</option><option>both</option></select></label>
+        </div>
+        <h3>Cart</h3>
+        <div id="cart-lines"></div>
+        <div class="actions">
+          <button type="button" id="add-line" class="secondary">+ Add product</button>
+          <button type="submit">Calculate</button>
+        </div>
+      </form>
+      <div id="try-result"></div>
+    </section>
+  </main>
+
+  <footer class="wrap muted small">
+    Legacy source: osCommerce Online Merchant v2.3.4 (GPL-2.0). Modernized with IBM Bob. The legacy output in the golden fixtures comes from running the unmodified PHP.
+  </footer>
+
+  <template id="line-template">
+    <div class="line">
+      <select class="product"></select>
+      <span class="options"></span>
+      <input class="qty" type="number" min="1" max="10000" value="1" aria-label="Quantity">
+      <button type="button" class="remove secondary" aria-label="Remove line">✕</button>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

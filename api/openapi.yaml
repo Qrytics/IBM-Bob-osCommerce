@@ -1,0 +1,388 @@
+openapi: 3.0.3
+info:
+  title: CleanCart API
+  version: 1.0.0
+  description: |
+    The cart, tax and checkout-total logic of **osCommerce v2.3.4**, pulled out of its
+    PHP pages and rebuilt as a stateless REST API.
+
+    Every result is checked against the output of the original PHP code: see
+    `GET /api/v1/equivalence` for a live report, and `GET /api/v1/scenarios/{name}/compare`
+    for a side-by-side view of one checkout.
+
+    Numbers are returned as the legacy code computed them (unrounded floats, for
+    example `65.7979`). Display strings (`text` in `orderTotals`) are formatted exactly
+    like the legacy storefront formatted them.
+  license:
+    name: GPL-2.0-only
+servers:
+  - url: /
+tags:
+  - name: Pricing
+    description: Tax, cart and checkout calculations
+  - name: Catalog
+    description: The demo store (the osCommerce sample catalog)
+  - name: Verification
+    description: Proof of equivalence with the legacy PHP
+paths:
+  /health:
+    get:
+      tags: [Verification]
+      summary: Liveness probe
+      responses:
+        '200':
+          description: Service is up
+          content:
+            application/json:
+              example: { status: ok, service: cleancart-api, version: 1.0.0 }
+  /api/v1/tax/rate:
+    post:
+      tags: [Pricing]
+      summary: Tax rate for a tax class at a location (tep_get_tax_rate)
+      description: Rates at the same priority are summed; different priorities are compounded.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/TaxRateRequest' }
+            examples:
+              florida: { summary: Florida 7%, value: { taxClassId: 1, countryId: 223, zoneId: 18 } }
+              quebec: { summary: Quebec GST 5% compounded with QST 9.975%, value: { taxClassId: 1, countryId: 38, zoneId: 76 } }
+              newYork: { summary: New York 4% + 4.5% (same priority), value: { taxClassId: 1, countryId: 223, zoneId: 43 } }
+      responses:
+        '200':
+          description: Rate and description
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/TaxRateResponse' }
+        '400': { $ref: '#/components/responses/ValidationError' }
+        '501': { $ref: '#/components/responses/NotImplemented' }
+  /api/v1/cart/calculate:
+    post:
+      tags: [Pricing]
+      summary: Cart total and weight (shoppingCart::calculate)
+      description: |
+        Guest cart: tax, when shown, uses the **store** location (Florida), exactly like the
+        legacy cart page.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/CartRequest' }
+            examples:
+              matrox:
+                summary: A graphics card with two options plus a mouse on special
+                value:
+                  settings: { displayPriceWithTax: true, currency: USD }
+                  items:
+                    - { productId: 1, qty: 2, attributes: [{ optionId: 4, valueId: 2 }, { optionId: 3, valueId: 6 }] }
+                    - { productId: 3, qty: 1, attributes: [] }
+      responses:
+        '200':
+          description: Cart totals and cart lines
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/CartResponse' }
+        '400': { $ref: '#/components/responses/ValidationError' }
+        '501': { $ref: '#/components/responses/NotImplemented' }
+  /api/v1/checkout/totals:
+    post:
+      tags: [Pricing]
+      summary: Full checkout calculation (order, shipping, order-total lines)
+      description: |
+        Runs the same sequence as the legacy pages: cart, order without shipping, box weights,
+        free-shipping check, shipping quote, order with shipping, then the order-total modules
+        (`ot_subtotal`, `ot_shipping`, `ot_tax`, `ot_total`).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/CheckoutRequest' }
+            examples:
+              florida:
+                summary: Florida, tax shown separately, flat shipping (golden scenario us-fl-basic-flat)
+                value:
+                  settings: { displayPriceWithTax: false, currency: USD }
+                  delivery: { countryId: 223, zoneId: 18 }
+                  shipping: { module: flat, cost: '5.00', taxClassId: 0 }
+                  items:
+                    - { productId: 1, qty: 2, attributes: [{ optionId: 4, valueId: 2 }, { optionId: 3, valueId: 6 }] }
+                    - { productId: 3, qty: 1, attributes: [] }
+              germanyEur:
+                summary: Germany, prices incl. 19% and 7% VAT, shown in EUR (de-mixed-classes-eur)
+                value:
+                  settings: { displayPriceWithTax: true, currency: EUR }
+                  delivery: { countryId: 81, zoneId: 81 }
+                  shipping: { module: flat, cost: '4.90', taxClassId: 0 }
+                  items:
+                    - { productId: 26, qty: 1, attributes: [{ optionId: 3, valueId: 9 }] }
+                    - { productId: 4, qty: 2, attributes: [] }
+                    - { productId: 5, qty: 1, attributes: [] }
+              freeShipping:
+                summary: Free shipping over 100, where tax counts towards the threshold (ca-free-shipping-tax-counts)
+                value:
+                  settings: { displayPriceWithTax: false, currency: USD, freeShipping: { enabled: true, over: '100', destination: both } }
+                  delivery: { countryId: 38, zoneId: 74 }
+                  shipping: { module: flat, cost: '5.00', taxClassId: 0 }
+                  items: [{ productId: 22, qty: 1, attributes: [] }]
+              tableByWeight:
+                summary: Heavy order split into 3 boxes, table rate by weight (us-fl-table-weight-multibox)
+                value:
+                  settings: { displayPriceWithTax: false, currency: USD }
+                  delivery: { countryId: 223, zoneId: 18 }
+                  shipping: { module: table, mode: weight, table: '25:8.50,50:5.50,10000:0.00', handling: '0', taxClassId: 0 }
+                  items: [{ productId: 27, qty: 3, attributes: [] }]
+      responses:
+        '200':
+          description: Every intermediate value the legacy checkout produced
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/CheckoutResponse' }
+        '400': { $ref: '#/components/responses/ValidationError' }
+        '501': { $ref: '#/components/responses/NotImplemented' }
+  /api/v1/products:
+    get:
+      tags: [Catalog]
+      summary: Demo catalog with specials and options
+      responses:
+        '200':
+          description: Products
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  products: { type: array, items: { $ref: '#/components/schemas/Product' } }
+  /api/v1/products/{id}:
+    get:
+      tags: [Catalog]
+      summary: One product
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: integer }, example: 1 }
+      responses:
+        '200':
+          description: Product
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Product' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /api/v1/reference:
+    get:
+      tags: [Catalog]
+      summary: Currencies, countries, zones and tax classes
+      responses:
+        '200': { description: Reference data, content: { application/json: { schema: { type: object } } } }
+  /api/v1/scenarios:
+    get:
+      tags: [Verification]
+      summary: Golden checkout scenarios recorded from the legacy PHP
+      responses:
+        '200': { description: Scenario list, content: { application/json: { schema: { type: object } } } }
+  /api/v1/scenarios/{name}:
+    get:
+      tags: [Verification]
+      summary: One golden scenario (input and legacy output)
+      parameters:
+        - { name: name, in: path, required: true, schema: { type: string }, example: us-fl-basic-flat }
+      responses:
+        '200': { description: Scenario, content: { application/json: { schema: { type: object } } } }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /api/v1/scenarios/{name}/compare:
+    get:
+      tags: [Verification]
+      summary: Run a golden scenario through the modern code and diff it with the legacy output
+      parameters:
+        - { name: name, in: path, required: true, schema: { type: string }, example: ca-qc-compound-inclusive }
+      responses:
+        '200':
+          description: Comparison
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name: { type: string }
+                  identical: { type: boolean }
+                  differences: { type: array, items: { type: string } }
+                  legacy: { type: object }
+                  modern: { type: object }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '501': { $ref: '#/components/responses/NotImplemented' }
+  /api/v1/equivalence:
+    get:
+      tags: [Verification]
+      summary: Live equivalence report over every golden fixture
+      responses:
+        '200': { description: Report, content: { application/json: { schema: { type: object } } } }
+components:
+  responses:
+    ValidationError:
+      description: Invalid request
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+    NotFound:
+      description: Not found
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+    NotImplemented:
+      description: The domain function behind this endpoint has not been translated yet
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+  schemas:
+    Error:
+      type: object
+      properties:
+        error: { type: string }
+        message: { type: string }
+        details: { type: array, items: { type: object, properties: { path: { type: string }, message: { type: string } } } }
+        task: { type: string }
+        function: { type: string }
+    Decimal:
+      description: Non-negative decimal as a string (or number), at most 4 decimal places
+      oneOf:
+        - { type: string, pattern: '^\d{1,9}(\.\d{1,4})?$', example: '5.00' }
+        - { type: number, minimum: 0 }
+    CartItem:
+      type: object
+      required: [productId, qty]
+      additionalProperties: false
+      properties:
+        productId: { type: integer, example: 1 }
+        qty: { type: integer, minimum: 1, maximum: 10000, example: 2 }
+        attributes:
+          type: array
+          description: Chosen options, in the order the customer chose them
+          items:
+            type: object
+            required: [optionId, valueId]
+            additionalProperties: false
+            properties:
+              optionId: { type: integer, example: 4 }
+              valueId: { type: integer, example: 2 }
+    PricingSettings:
+      type: object
+      additionalProperties: false
+      properties:
+        displayPriceWithTax: { type: boolean, default: false, description: 'DISPLAY_PRICE_WITH_TAX' }
+        currency: { type: string, enum: [USD, EUR, JPY], default: USD }
+    CheckoutSettings:
+      allOf:
+        - $ref: '#/components/schemas/PricingSettings'
+        - type: object
+          properties:
+            freeShipping:
+              type: object
+              required: [enabled, over, destination]
+              properties:
+                enabled: { type: boolean }
+                over: { $ref: '#/components/schemas/Decimal' }
+                destination: { type: string, enum: [national, international, both] }
+            shippingBox:
+              type: object
+              description: 'SHIPPING_BOX_WEIGHT, SHIPPING_BOX_PADDING (%), SHIPPING_MAX_WEIGHT. Defaults 3 / 10 / 50.'
+              properties:
+                weight: { $ref: '#/components/schemas/Decimal' }
+                padding: { $ref: '#/components/schemas/Decimal' }
+                maxWeight: { $ref: '#/components/schemas/Decimal' }
+    Location:
+      type: object
+      required: [countryId, zoneId]
+      additionalProperties: false
+      properties:
+        countryId: { type: integer, example: 223 }
+        zoneId: { type: integer, description: 0 for none, example: 18 }
+    Shipping:
+      type: object
+      required: [module]
+      description: Configuration of the selected shipping module
+      properties:
+        module: { type: string, enum: [flat, item, table] }
+        cost: { $ref: '#/components/schemas/Decimal' }
+        handling: { $ref: '#/components/schemas/Decimal' }
+        table: { type: string, example: '25:8.50,50:5.50,10000:0.00' }
+        mode: { type: string, enum: [weight, price] }
+        taxClassId: { type: integer, default: 0 }
+    TaxRateRequest:
+      type: object
+      required: [taxClassId, countryId, zoneId]
+      properties:
+        taxClassId: { type: integer }
+        countryId: { type: integer }
+        zoneId: { type: integer }
+    TaxRateResponse:
+      type: object
+      properties:
+        taxClassId: { type: integer }
+        countryId: { type: integer }
+        zoneId: { type: integer }
+        rate: { type: number, example: 15.473749999999997 }
+        description: { type: string, example: GST 5% + QST 9.975% }
+    CartRequest:
+      type: object
+      required: [items]
+      properties:
+        items: { type: array, maxItems: 50, items: { $ref: '#/components/schemas/CartItem' } }
+        settings: { $ref: '#/components/schemas/PricingSettings' }
+    CartResponse:
+      type: object
+      properties:
+        total: { type: number }
+        weight: { type: number }
+        count: { type: integer }
+        currency: { type: string }
+        products: { type: array, items: { type: object } }
+    CheckoutRequest:
+      type: object
+      required: [items, delivery, shipping]
+      properties:
+        items: { type: array, maxItems: 50, items: { $ref: '#/components/schemas/CartItem' } }
+        settings: { $ref: '#/components/schemas/CheckoutSettings' }
+        delivery: { $ref: '#/components/schemas/Location' }
+        shipping: { $ref: '#/components/schemas/Shipping' }
+    OrderInfo:
+      type: object
+      properties:
+        currency: { type: string }
+        currencyValue: { type: string }
+        shippingMethod: { type: string }
+        shippingCost: { type: number }
+        subtotal: { type: number }
+        tax: { type: number }
+        taxGroups: { type: array, items: { type: object, properties: { description: { type: string }, amount: { type: number } } } }
+        total: { type: number }
+    CheckoutResponse:
+      type: object
+      properties:
+        cart: { type: object, properties: { total: { type: number }, weight: { type: number }, count: { type: integer } } }
+        shipment: { type: object, properties: { shippingWeight: { type: number }, numBoxes: { type: integer } } }
+        freeShippingOffered: { type: boolean }
+        quote: { type: object }
+        selectedShipping: { type: object, properties: { id: { type: string }, title: { type: string }, cost: { type: number } } }
+        products: { type: array, items: { type: object } }
+        orderBeforeShipping: { $ref: '#/components/schemas/OrderInfo' }
+        orderBeforeTotals: { $ref: '#/components/schemas/OrderInfo' }
+        orderAfterTotals: { $ref: '#/components/schemas/OrderInfo' }
+        orderTotals:
+          type: array
+          items:
+            type: object
+            properties:
+              code: { type: string, example: ot_total }
+              title: { type: string, example: 'Total:' }
+              text: { type: string, example: '<strong>$1,010.77</strong>' }
+              value: { type: number, example: 1010.7679 }
+              sortOrder: { type: integer }
+    Product:
+      type: object
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        model: { type: string }
+        price: { type: string }
+        specialPrice: { type: string, nullable: true }
+        weight: { type: string }
+        taxClassId: { type: integer }
+        options: { type: array, items: { type: object } }
