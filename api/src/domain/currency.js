@@ -9,13 +9,9 @@
  * Rules: BR-07, BR-08 (plus Q-03, Q-10)
  */
 
-// eslint-disable-next-line no-unused-vars
 const { phpToNumber, phpNumberFormat } = require('./phpNumber');
-// eslint-disable-next-line no-unused-vars
 const { tepRound, tepNotNull } = require('./general');
-// eslint-disable-next-line no-unused-vars
 const { addTax } = require('./tax');
-const { NotImplemented } = require('./errors');
 
 /**
  * currencies::calculate_price($products_price, $products_tax, $quantity): currencies.php line 50.
@@ -23,7 +19,10 @@ const { NotImplemented } = require('./errors');
  *   return tep_round(tep_add_tax($products_price, $products_tax), decimal_places) * $quantity;
  *
  * decimal_places is that of the SELECTED DISPLAY currency, even though prices
- * are in the default currency (Q-10).
+ * are in the default currency (Q-10). tep_round is called on the unit price
+ * BEFORE multiplying by qty, so rounding error accumulates (Q-03).
+ *
+ * BR-07: round per-unit then multiply by quantity.
  *
  * @param {number|string} price
  * @param {number} taxRate
@@ -32,15 +31,24 @@ const { NotImplemented } = require('./errors');
  * @returns {number}
  */
 function calculatePrice(price, taxRate, qty, ctx) {
-  throw new NotImplemented('T5', 'calculatePrice');
+  const decimalPlaces = parseInt(ctx.currency.decimal_places, 10);
+  // tep_add_tax returns number|string; tepRound accepts both
+  const withTax = addTax(price, taxRate, ctx.displayPriceWithTax);
+  // tepRound may return a string (when it just truncates) — multiply via phpToNumber (Q-03)
+  return phpToNumber(tepRound(withTax, decimalPlaces)) * qty;
 }
 
 /**
- * currencies::format($number, $calculate_currency_value, $currency_type, $currency_value): currencies.php line 35.
+ * currencies::format($number, $calculate_currency_value, $currency_type, $currency_value): currencies.php lines 35-48.
  *
- * With applyRate, multiply by `rateOverride` when tep_not_null(rateOverride),
- * otherwise by currency.value. Then tep_round() to decimal_places,
- * number_format() with the currency's separators, and wrap in symbol_left/right.
+ * With applyRate (default true):
+ *   rate = tep_not_null(rateOverride) ? rateOverride : currency.value
+ *   format tep_round($number * rate, decimal_places) with the currency's separators
+ * Without applyRate:
+ *   format tep_round($number, decimal_places) directly
+ * Wrap in symbol_left / symbol_right.
+ *
+ * BR-08: format() applies the exchange rate and formats with the currency's separators.
  *
  * @param {number|string} number
  * @param {import('./types').Currency} currency
@@ -49,7 +57,25 @@ function calculatePrice(price, taxRate, qty, ctx) {
  * @returns {string} e.g. "$1,010.77" or "183,09€"
  */
 function format(number, currency, applyRate = true, rateOverride = null) {
-  throw new NotImplemented('T5', 'format');
+  const decimalPlaces = parseInt(currency.decimal_places, 10);
+
+  let rounded;
+  if (applyRate) {
+    // tep_not_null($currency_value) ? $currency_value : $this->currencies[$currency_type]['value']
+    const rate = tepNotNull(rateOverride) ? rateOverride : currency.value;
+    rounded = tepRound(phpToNumber(number) * phpToNumber(rate), decimalPlaces);
+  } else {
+    rounded = tepRound(number, decimalPlaces);
+  }
+
+  const formatted = phpNumberFormat(
+    rounded,
+    decimalPlaces,
+    currency.decimal_point,
+    currency.thousands_point
+  );
+
+  return currency.symbol_left + formatted + currency.symbol_right;
 }
 
 module.exports = { calculatePrice, format };

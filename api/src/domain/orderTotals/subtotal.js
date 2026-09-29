@@ -9,24 +9,30 @@
  * Rules: BR-26
  */
 
-// eslint-disable-next-line no-unused-vars
 const { format } = require('../currency');
-// eslint-disable-next-line no-unused-vars
 const C = require('../constants');
-const { NotImplemented } = require('../errors');
 
 /**
- * ot_subtotal::process()
+ * ot_subtotal::process(): ot_subtotal.php lines 26-31.
  *
  * One line: title C.MODULE_ORDER_TOTAL_SUBTOTAL_TITLE + ':', value order.info.subtotal,
  * text format(value, ctx.currency, true, order.info.currencyValue).
+ *
+ * BR-26: subtotal line shows order.info.subtotal formatted with currency.
  *
  * @param {import('../types').Order} order
  * @param {import('../types').OrderTotalContext} ctx
  * @returns {Array<import('../types').OtLine>} the module's $this->output
  */
 function process(order, ctx) {
-  throw new NotImplemented('T9', 'ot_subtotal.process');
+  const value = order.info.subtotal;
+  return [
+    {
+      title: C.MODULE_ORDER_TOTAL_SUBTOTAL_TITLE + ':',
+      text: format(value, ctx.currency, true, order.info.currencyValue),
+      value,
+    },
+  ];
 }
 
 module.exports = { process };

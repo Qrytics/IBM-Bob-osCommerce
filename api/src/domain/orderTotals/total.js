@@ -9,24 +9,30 @@
  * Rules: BR-26
  */
 
-// eslint-disable-next-line no-unused-vars
 const { format } = require('../currency');
-// eslint-disable-next-line no-unused-vars
 const C = require('../constants');
-const { NotImplemented } = require('../errors');
 
 /**
- * ot_total::process()
+ * ot_total::process(): ot_total.php lines 26-31.
  *
  * One line: title C.MODULE_ORDER_TOTAL_TOTAL_TITLE + ':', value order.info.total,
  * text '<strong>' + format(value, ctx.currency, true, order.info.currencyValue) + '</strong>'.
+ *
+ * BR-26: total line shows order.info.total formatted with currency, wrapped in <strong>.
  *
  * @param {import('../types').Order} order
  * @param {import('../types').OrderTotalContext} ctx
  * @returns {Array<import('../types').OtLine>} the module's $this->output
  */
 function process(order, ctx) {
-  throw new NotImplemented('T9', 'ot_total.process');
+  const value = order.info.total;
+  return [
+    {
+      title: C.MODULE_ORDER_TOTAL_TOTAL_TITLE + ':',
+      text: '<strong>' + format(value, ctx.currency, true, order.info.currencyValue) + '</strong>',
+      value,
+    },
+  ];
 }
 
 module.exports = { process };
