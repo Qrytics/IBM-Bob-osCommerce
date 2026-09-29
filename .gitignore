@@ -1,0 +1,9 @@
+node_modules/
+coverage/
+.env
+.DS_Store
+legacy-harness/tools/*.phar
+legacy-harness/.phpunit.result.cache
+.holdout/
+.golden-work/
+.golden-verify/

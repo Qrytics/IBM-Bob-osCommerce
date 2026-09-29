@@ -1,0 +1,40 @@
+{
+  "name": "cleancart",
+  "private": true,
+  "description": "CleanCart: osCommerce v2.3.4 pricing logic modernized into a tested Node.js REST API",
+  "license": "GPL-2.0-only",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "api"
+  ],
+  "scripts": {
+    "start": "npm start -w api",
+    "dev": "npm run dev -w api",
+    "test": "npm run check:protected && npm test -w api",
+    "verify": "npm run check:protected && npm run lint && npm run check:integrity && npm run check:docs && npm run test:coverage -w api",
+    "lint": "npm run lint -w api",
+    "status": "npm run status -w api",
+    "check:protected": "node scripts/protect.mjs check",
+    "check:integrity": "node scripts/check-integrity.mjs",
+    "check:docs": "node scripts/check-docs.mjs",
+    "check:general": "npm test -w api -- test/equivalence -t \"\\[general\\]\"",
+    "check:tax": "npm test -w api -- test/equivalence -t \"\\[tax\\]\"",
+    "check:currency": "npm test -w api -- test/equivalence -t \"\\[currency\\]\"",
+    "check:cart": "npm test -w api -- test/equivalence -t \"\\[cart\\]\"",
+    "check:order": "npm test -w api -- test/equivalence -t \"\\[order\\]\"",
+    "check:shipping": "npm test -w api -- test/equivalence -t \"\\[shipping\\]\"",
+    "check:ot": "npm test -w api -- test/equivalence -t \"\\[ot\\]\"",
+    "check:pipeline": "npm test -w api -- test/equivalence test/api/pricing.test.js -t \"\\[pipeline\\]|POST|GET\"",
+    "check:all": "npm test -w api -- test/equivalence test/api",
+    "legacy:test": "node scripts/legacy-test.mjs",
+    "golden:generate": "node scripts/golden/generate.mjs",
+    "golden:verify": "node scripts/golden/verify.mjs",
+    "holdout": "node scripts/golden/holdout.mjs",
+    "protect:update": "node scripts/protect.mjs update"
+  },
+  "devDependencies": {
+    "@php-wasm/cli": "^3.1.56"
+  }
+}
